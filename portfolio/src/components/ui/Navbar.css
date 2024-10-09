@@ -13,9 +13,9 @@
     align-items: center;
     justify-content: center;
     padding:8px 10px;
-    background-color: #272829;
+    background-color: var(--foreground-color);
     border-radius: 30px;
-    border: solid 1px #3b3b3b;
+    border: solid 1px var(--border-color);
     gap: 10px;
     box-shadow: 0px 5px 10px #4646462a;
     /* width: 300px; */
@@ -26,8 +26,8 @@
 
 .nav-link {
     text-decoration: none;
-    color: rgb(231, 231, 231);
-    transition: 0.4s;
+    color: var(--icon-color);
+    transition: 0.3s;
     align-items: center;
     position: relative;
     border-radius: 10px;
@@ -35,13 +35,13 @@
 }
 
 .nav-link.active {
-    background-color: rgb(175, 175, 175);
+    background-color: var(--icon-color);
     border-radius: 50px;
     padding: 8px;
 }
 
 .nav-link.active .icon{
-    color: #272829;
+    color: var(--background-color);
 }
 
 .icon {
