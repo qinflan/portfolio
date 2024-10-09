@@ -6,19 +6,23 @@ import Home from './components/pages/home/Home'
 import Experience from './components/pages/experience/Experience'
 import Designs from './components/pages/designs/Designs'
 import Contact from './components/pages/contact/Contact'
+import Projects from './components/pages/projects/Projects'
 
 //ui
 import Navbar from './components/ui/Navbar'
 
 const App = () => {
   return (
+    <>
+    <Navbar />
     <Routes>
       <Route path='/' element={<Home />}/>
       <Route path='/experience' element={<Experience />}/>
-      <Route path='/designs' element={<Designs />}/>
+      <Route path='/design' element={<Designs />}/>
       <Route path='/contact' element={<Contact />}/>
+      <Route path='/projects' element={<Projects />}/>
     </Routes>
-    
+    </>
   )
 }
 
