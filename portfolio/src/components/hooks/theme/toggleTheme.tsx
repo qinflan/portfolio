@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
-import "./ToggleTheme.css"
+import { BsSun } from "react-icons/bs";
+import { PiMoonStarsDuotone } from "react-icons/pi";
 import { ThemeContext } from './ThemeContext';
 
 // define toggleTheme as functional component
@@ -15,14 +16,12 @@ export const ToggleTheme: React.FC = () => {
 
     return (
         <div className="toggle-container">
-            <input
-            type="checkbox"
-            id="check"
-            className="toggle"
-            onChange={toggleTheme}
-            checked={theme === "light"}
-            />
-            <label htmlFor="check"></label>
+            {/* Conditionally render the icons based on the current theme */}
+            {theme === "light" ? (
+                <BsSun className="icon cursor-pointer" size={28} onClick={toggleTheme} />
+            ) : (
+                <PiMoonStarsDuotone className="icon cursor-pointer" size={28} onClick={toggleTheme} />
+            )}
         </div>
     )
 

@@ -1,14 +1,12 @@
 import React, {useEffect, useRef} from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import "./Navbar.css"
-import { PiMoonStarsDuotone } from "react-icons/pi";
 import { TbHome } from "react-icons/tb";
 import { PiBriefcaseDuotone } from "react-icons/pi";
 import { IoCubeOutline } from "react-icons/io5";
 import { LuPaintbrush2 } from "react-icons/lu";
 import { TbUserHexagon } from "react-icons/tb";
-
-
+import { ToggleTheme } from '../hooks/theme/toggleTheme';
 
 
 // Navigation Bar
@@ -40,27 +38,28 @@ const Navbar = () => {
     <nav className="navbar-container">
         <div className="navbar-content">
             <NavLink className="nav-link" to="/">
-                <TbHome size={28}/>
+                <TbHome className="icon" size={28}/>
                 <span className="tooltip">Home</span>
             </NavLink>
             <NavLink className="nav-link" to="/experience">
-                <PiBriefcaseDuotone size={28}/>
+                <PiBriefcaseDuotone className="icon" size={28}/>
                 <span className="tooltip">Experience</span>
             </NavLink>
             <NavLink className="nav-link" to="/projects">
-                <IoCubeOutline size={28}/>
+                <IoCubeOutline className="icon" size={28}/>
                 <span className="tooltip">Projects</span>
             </NavLink>
             <NavLink className="nav-link" to="/design">
-                <LuPaintbrush2 size={26}/>
+                <LuPaintbrush2 className="icon" size={28}/>
                 <span className="tooltip">Designs</span>
             </NavLink>
             <NavLink className="nav-link" to="/contact">
-                <TbUserHexagon size={28}/>
+                <TbUserHexagon className="icon" size={28}/>
                 <span className="tooltip">Contact Me</span>
             </NavLink>
+            <span className="h-8 w-px bg-gray-600 flex-shrink-0"></span>
             <div className="nav-link theme-btn">
-            <PiMoonStarsDuotone size={28} />
+                <ToggleTheme />
             </div>
         </div>
     </nav>

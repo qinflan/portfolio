@@ -1,3 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tooltip {
+  @apply invisible opacity-0 absolute bg-[#353535] text-white px-2 py-1 rounded-md text-sm whitespace-nowrap z-10;
+  top: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  font-variant-ligatures: none;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+.nav-link:hover .tooltip {
+  @apply visible opacity-100;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -12,4 +31,5 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
