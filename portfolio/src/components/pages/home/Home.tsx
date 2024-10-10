@@ -1,11 +1,12 @@
 import React from 'react'
+import "./Home.css"
 
 const Home = () => {
   return (
     <div>
-        <h1 className="hero-text">
-            Hi! I'm Quinn
-        </h1>
+        <div className="name-logo-container">
+            <img className="logo-name" src="assets/bubble-name.svg"/>
+        </div>
     </div>
 
   )

@@ -33,12 +33,12 @@
 }
 
 [data-theme="dark"] {
-  --background-color: #262B2F;
-  --foreground-color: #202427;
+  --background-color: #292827;
+  --foreground-color: #292827;
   --foreground-hover-color:#2d2e30;
   --primary-text-color: #F3F3F3;
   --secondary-text-color: #F3F3F3;
-  --icon-color: rgba(243, 240, 255, 0.733);
+  --icon-color: #d3cbbc;
   --icon-active-color: #262B2F;
   --logo-color: #F3F3F3;
   --shadow-color: #4646462a;
