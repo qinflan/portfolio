@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
         <div className="name-logo-container">
-            <img className="logo-name" src="assets/bubble-name.svg"/>
+          <h1>Quinn Flanigan</h1>
         </div>
     </div>
 

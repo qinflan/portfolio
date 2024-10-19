@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: neue-haas-grotesk, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--page-background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme="dark"] {
+  --page-background: #2F2D2C;
+  --page-foreground: #292827;
+  --foreground-hover:#2d2e30;
+  --nav-text:  #E3DDD9;
+  --nav-active-text:  #F3F3F3;
+  --nav-hover-text: #;
+  --header-text: #F3F3F3;
+  --primary-text: #F3F3F3;
+  --secondary-text: #F3F3F3;
+  --widget-shadow: #;
+  --widget-border: #;
+  --button-background: #d1d1d1;
+  --button-background-hover: #272829;
+  --button-text: #1F1F1F;
+  --button-text-hover: #F3F3F3;
+  --widget-background: #3b3b3b;
+}
+
+[data-theme="light"] {
+  --page-background: #F0E8E5;
+  --page-foreground: #292827;
+  --foreground-hover:#2d2e30;
+  --nav-text:  #686868;
+  --nav-active-text:  #1D1D1D;
+  --nav-hover-text: #;
+  --header-text: #1F1F1F;
+  --primary-text: #303030;
+  --secondary-text: #4F4F4F;
+  --widget-shadow: #;
+  --widget-border: #;
+  --button-background: #d1d1d1;
+  --button-background-hover: #272829;
+  --button-text: #1F1F1F;
+  --button-text-hover: #F3F3F3;
+  --widget-background: #E5DCD6;
+}
