@@ -18,7 +18,7 @@
 }
 
 [data-theme="dark"] {
-  --page-background: #2F2D2C;
+  --page-background: #2C2D2F;
   --page-foreground: #292827;
   --foreground-hover:#2d2e30;
   --nav-text:  #A1A1A1;
@@ -38,7 +38,7 @@
 }
 
 [data-theme="light"] {
-  --page-background: #F0E8E5;
+  --page-background: #F0F0F0;
   --page-foreground: #292827;
   --foreground-hover:#2d2e30;
   --nav-text:  #686868;
