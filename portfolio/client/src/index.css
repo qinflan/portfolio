@@ -21,12 +21,13 @@
   --page-background: #2F2D2C;
   --page-foreground: #292827;
   --foreground-hover:#2d2e30;
-  --nav-text:  #E3DDD9;
+  --nav-text:  #A1A1A1;
   --nav-active-text:  #F3F3F3;
   --nav-hover-text: #;
-  --header-text: #F3F3F3;
-  --primary-text: #F3F3F3;
-  --secondary-text: #F3F3F3;
+  --icon: #A1A1A1;
+  --header-text: #FFFBF8;
+  --primary-text: #E3DDD9;
+  --secondary-text: #E3DDD9;
   --widget-shadow: #;
   --widget-border: #;
   --button-background: #d1d1d1;
@@ -43,6 +44,7 @@
   --nav-text:  #686868;
   --nav-active-text:  #1D1D1D;
   --nav-hover-text: #;
+  --icon: #686868;
   --header-text: #1F1F1F;
   --primary-text: #303030;
   --secondary-text: #4F4F4F;
