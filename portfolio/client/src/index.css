@@ -23,7 +23,8 @@
   --foreground-hover:#2d2e30;
   --nav-text:  #A1A1A1;
   --nav-active-text:  #F3F3F3;
-  --nav-hover-text: #;
+  --nav-hover-text: #A1A1A1;
+  --page-divider: #A1A1A1;
   --icon: #A1A1A1;
   --header-text: #FFFBF8;
   --primary-text: #E3DDD9;
@@ -44,6 +45,7 @@
   --nav-text:  #686868;
   --nav-active-text:  #1D1D1D;
   --nav-hover-text: #;
+  --page-divider: #686868;
   --icon: #686868;
   --header-text: #1F1F1F;
   --primary-text: #303030;
