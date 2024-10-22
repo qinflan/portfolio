@@ -14,13 +14,13 @@ import Navbar from './components/ui/Navbar'
 const App = () => {
   return (
     <>
-    <Navbar />
+    {/* <Navbar /> */}
     <Routes>
       <Route path='/' element={<Home />}/>
-      <Route path='/experience' element={<Experience />}/>
+      {/* <Route path='/experience' element={<Experience />}/>
       <Route path='/design' element={<Designs />}/>
       <Route path='/contact' element={<Contact />}/>
-      <Route path='/projects' element={<Projects />}/>
+      <Route path='/projects' element={<Projects />}/> */}
     </Routes>
     </>
   )

@@ -1,0 +1,69 @@
+
+.left-panel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50%;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.socials-container {
+    display: flex;
+    gap: 12px;
+}
+
+.socials-container img{
+    width: 40px;
+}
+.logo {
+    fill: var(--icon)
+}
+.icon-link {
+    color: var(--icon)
+}
+
+.hero-text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.hero-name, .role-text {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+}
+
+.role-text {
+    font-size: 22pt;
+    font-weight: 600;
+    color: var(--primary-text);
+    letter-spacing: -0.01em;
+
+}
+
+.mantra-text {
+    font-size: 12pt;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 400;
+    text-wrap: auto;
+    max-width: 400px;
+    color: var(--secondary-text);
+    margin-top: 16px;
+    
+}
+
+.hero-name {
+    font-size: 42pt;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    color: var(--header-text);
+    cursor: default;
+    user-select: none; 
+}

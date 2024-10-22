@@ -1,0 +1,8 @@
+.scroll-right-panel {
+    display: flex;
+    position: relative;
+    align-items:center;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+}

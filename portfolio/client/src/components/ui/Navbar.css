@@ -1,18 +1,14 @@
 .navbar-wrapper {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
     position: fixed;
-    bottom: 0;
-    width: 50vw;
-    height: 20vw;
-
+    align-items: flex-start;
+    justify-self: flex-start;
+    Bottom: 0;
+    width: 200px;
+    height:400px;
 }
-
 .navbar-container {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
 }
 
 .navbar-wrapper span {

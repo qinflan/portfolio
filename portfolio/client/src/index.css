@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: neue-haas-grotesk, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -25,17 +25,17 @@
   --nav-active-text:  #F3F3F3;
   --nav-hover-text: #c2c2c2;
   --page-divider: #A1A1A1;
-  --icon: #A1A1A1;
+  --icon: #EDEDED;
   --header-text: #FFFBF8;
   --primary-text: #E3DDD9;
   --secondary-text: #E3DDD9;
-  --widget-shadow: #;
-  --widget-border: #;
   --button-background: #d1d1d1;
+  --button-stroke: 1px solid #EDEDED;
   --button-background-hover: #272829;
-  --button-text: #1F1F1F;
+  --button-text: #EDEDED;
   --button-text-hover: #F3F3F3;
-  --widget-background: #3b3b3b;
+  --button-shadow: 3px 3px 0px 0px #EDEDED;
+  --widget-background: #989B9E;
 }
 
 [data-theme="light"] {
@@ -46,15 +46,15 @@
   --nav-active-text:  #1D1D1D;
   --nav-hover-text: #181818;
   --page-divider: #686868;
-  --icon: #686868;
+  --icon: #303030;
   --header-text: #1F1F1F;
   --primary-text: #303030;
-  --secondary-text: #4F4F4F;
-  --widget-shadow: #;
-  --widget-border: #;
+  --secondary-text: #303030;
   --button-background: #d1d1d1;
+  --button-stroke: 1px solid #303030;
   --button-background-hover: #272829;
   --button-text: #1F1F1F;
   --button-text-hover: #F3F3F3;
-  --widget-background: #E5DCD6;
+  --button-shadow: 3px 3px 0px 0px #303030;
+  --widget-background: #FFFFFF;
 }

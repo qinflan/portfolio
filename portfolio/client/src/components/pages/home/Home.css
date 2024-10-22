@@ -1,6 +1,21 @@
-.name-logo-container .logo-name {
-    position: absolute;
-    width: 600px;
-    top: 14rem;
-    left: 14rem;
+.page-content-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.format-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    width: 1440px;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+
 }

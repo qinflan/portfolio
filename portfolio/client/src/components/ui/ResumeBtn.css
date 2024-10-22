@@ -1,0 +1,16 @@
+.resume-btn {
+    width: 175px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 83px;
+    border: var(--button-stroke);
+    box-shadow: var(--button-shadow);
+    color: var(--button-text);
+    text-align: center;
+    font-feature-settings: 'dlig' on;
+    font-family: "Neue Haas Grotesk Text Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

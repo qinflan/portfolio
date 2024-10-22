@@ -35,26 +35,27 @@ const Navbar = () => {
                 <span className="w-1 bg-[var(--page-divider)] flex-shrink-0 rounded-full"></span>
                 <nav className="navbar-container">
                     <div className="navbar-content">
+                        <div className="nav-link theme-btn">
+                            <ToggleTheme />
+                        </div>
+                        {/* add IDs to component URL ## */}
                         <NavLink className="nav-link" to="/">
                             HOME
                         </NavLink>
-                        <NavLink className="nav-link" to="/experience">
+                        <NavLink className="nav-link" to="/">
                             EXPERIENCE
                         </NavLink>
-                        <NavLink className="nav-link" to="/projects">
+                        <NavLink className="nav-link" to="/">
                             PROJECTS
                         </NavLink>
-                        <NavLink className="nav-link" to="/design">
+                        <NavLink className="nav-link" to="/">
                             DESIGN
                         </NavLink>
-                        <NavLink className="nav-link" to="/contact">
+                        <NavLink className="nav-link" to="/">
                             CONTACT
                         </NavLink>
                     </div>
                 </nav>
-            </div>
-            <div className="nav-link theme-btn">
-                <ToggleTheme />
             </div>
         </div>
 
