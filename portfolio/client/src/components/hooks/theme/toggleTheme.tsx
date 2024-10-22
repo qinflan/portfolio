@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { BsSun } from "react-icons/bs";
-import { PiMoonStarsDuotone } from "react-icons/pi";
+import { SiMoonrepo } from "react-icons/si";
 import { ThemeContext } from './ThemeContext';
 
 // define toggleTheme as functional component
@@ -20,7 +20,7 @@ export const ToggleTheme: React.FC = () => {
             {theme === "light" ? (
                 <BsSun className="icon cursor-pointer" size={28} onClick={toggleTheme} />
             ) : (
-                <PiMoonStarsDuotone className="icon cursor-pointer" size={28} onClick={toggleTheme} />
+                <SiMoonrepo className="icon cursor-pointer" size={28} onClick={toggleTheme} />
             )}
         </div>
     )

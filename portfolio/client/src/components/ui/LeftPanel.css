@@ -25,7 +25,8 @@
     fill: var(--icon)
 }
 .icon-link {
-    color: var(--icon)
+    color: var(--icon);
+    cursor: pointer;
 }
 
 .hero-text-container {

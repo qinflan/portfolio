@@ -29,12 +29,12 @@
   --header-text: #FFFBF8;
   --primary-text: #E3DDD9;
   --secondary-text: #E3DDD9;
-  --button-background: #d1d1d1;
-  --button-stroke: 1px solid #EDEDED;
+  --button-background: #2C2D2F;
+  --button-stroke: #EDEDED;
   --button-background-hover: #272829;
   --button-text: #EDEDED;
   --button-text-hover: #F3F3F3;
-  --button-shadow: 3px 3px 0px 0px #EDEDED;
+  --button-shadow:#EDEDED;
   --widget-background: #989B9E;
 }
 
@@ -50,11 +50,11 @@
   --header-text: #1F1F1F;
   --primary-text: #303030;
   --secondary-text: #303030;
-  --button-background: #d1d1d1;
-  --button-stroke: 1px solid #303030;
+  --button-background: #F0F0F0;
+  --button-stroke: #303030;
   --button-background-hover: #272829;
   --button-text: #1F1F1F;
   --button-text-hover: #F3F3F3;
-  --button-shadow: 3px 3px 0px 0px #303030;
+  --button-shadow:#303030;
   --widget-background: #FFFFFF;
 }
