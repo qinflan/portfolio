@@ -44,7 +44,7 @@
     color: var(--header-text);
     text-align: center;
     max-width: 300px;
-    font-family: "Clash Display Variable";
+    font-family: "ClashDisplay";
     font-size: 54px;
     font-style: normal;
     font-weight: 700;
@@ -76,11 +76,4 @@
     text-align: center;
     cursor: default;
     user-select: none; 
-}
-
-.navbar-component {
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }

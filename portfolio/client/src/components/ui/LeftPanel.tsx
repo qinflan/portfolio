@@ -29,9 +29,7 @@ const LeftPanel = () => {
                     </a>
                 </div>
             </div>
-            <div className='navbar-component'>
-                <Navbar />
-            </div>
+            <Navbar />
         </div>
     )
 }

@@ -1,12 +1,16 @@
+
 .navbar-wrapper {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     Bottom: 0;
     width: 200px;
     height:300px;
 }
 .navbar-container {
     display: flex;
+    justify-content: center;
+    width: 70%;
 }
 
 .navbar-wrapper span {
@@ -15,7 +19,6 @@
 .navbar-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     padding:5px 8px;
     gap: 0px;
     transform-origin: center;
