@@ -60,7 +60,8 @@
     font-weight: 500;
     color: var(--primary-text);
     letter-spacing: -0.01em;
-
+    cursor: default;
+    user-select: none; 
 }
 
 .mantra-text {
@@ -73,6 +74,8 @@
     color: var(--secondary-text);
     margin-top: 10px;
     text-align: center;
+    cursor: default;
+    user-select: none; 
 }
 
 .navbar-component {
