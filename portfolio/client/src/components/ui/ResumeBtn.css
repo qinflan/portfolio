@@ -19,5 +19,6 @@
 .resume-btn:hover {
     transition: 0.4s;
     box-shadow: 5px 5px 0 -2px var(--button-shadow), 5px 5px 0 0 var(--button-stroke);
+    background-color: var(--button-background-hover);
 
 }

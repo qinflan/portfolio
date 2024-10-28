@@ -1,33 +1,22 @@
-import React, { useEffect, useRef } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React, { useEffect, useState, useRef } from 'react'
 import "./Navbar.css"
 import { ToggleTheme } from '../hooks/theme/toggleTheme';
 
 
 // Navigation Bar
 const Navbar = () => {
-    //     // drop down menu boolean display
-    //     const [openLinks, setOpenLinks] = useState(false)
+    const [activeSection, setActiveSection] = useState('');
+    const experienceRef = useRef<HTMLDivElement | null>(null);
+    const projectsRef = useRef<HTMLDivElement | null>(null);
+    const designsRef = useRef<HTMLDivElement | null>(null);
+    const contactRef = useRef<HTMLDivElement | null>(null);
 
-    //     const toggleNavbar = () => {
-    //       setOpenLinks(!openLinks);
-    //     };
-
-    //     // click outside close - hamburger menu
-    //     const menuRef = useRef();
-
-    //     useEffect(() => {
-    //       const handler = (e) => {
-    //           if (!menuRef.current?.contains(e.target)){
-    //             setOpenLinks(false);
-    //           }
-    //       }
-
-    //       document.addEventListener('mousedown', handler)
-    //       return () => {
-    //         document.removeEventListener('mousedown', handler)
-    //       }
-    //   });
+    const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+        ref.current?.scrollIntoView({
+            behavior: "smooth",
+            block: "start", // Scroll to the top of the section
+        });
+    };
 
     return (
         <div className="navigation">
@@ -36,24 +25,13 @@ const Navbar = () => {
                 <nav className="navbar-container">
                     <div className="navbar-content">
                         <div className="nav-link theme-btn">
-                            <ToggleTheme />
                         </div>
-                        {/* add IDs to component URL ## */}
-                        <NavLink className="nav-link" to="/">
-                            HOME
-                        </NavLink>
-                        <NavLink className="nav-link" to="/">
-                            EXPERIENCE
-                        </NavLink>
-                        <NavLink className="nav-link" to="/">
-                            PROJECTS
-                        </NavLink>
-                        <NavLink className="nav-link" to="/">
-                            DESIGN
-                        </NavLink>
-                        <NavLink className="nav-link" to="/">
-                            CONTACT
-                        </NavLink>
+                        <a className="nav-link" href="/">HOME</a>
+                        <a className="nav-link" href="#experience" onClick={() => scrollToSection(experienceRef)}>EXPERIENCE</a>
+                        <a className="nav-link" href="#projects" onClick={() => scrollToSection(projectsRef)}>PROJECTS</a>
+                        <a className="nav-link" href="#designs" onClick={() => scrollToSection(designsRef)}>DESIGN</a>
+                        <a className="nav-link" href="#contact" onClick={() => scrollToSection(contactRef)}>CONTACT</a>
+                        <ToggleTheme />
                     </div>
                 </nav>
             </div>
