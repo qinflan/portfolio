@@ -20,14 +20,16 @@ const LeftPanel = () => {
                 <div className="hero-text-container">
                     <h1 className="hero-name">Quinn Flanigan</h1>
                     <h3 className="role-text">
-                        Fullstack Software Developer
+                        Software Developer
                     </h3>
                     <h3 className="mantra-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        consectetur adipiscing elit, et dolore magna aliqua.
+                        consectetur adipiscing elit.
                     </h3>
                 </div>
                 <ResumeBtn />
+            </div>
+            <div className='navbar-component'>
                 <Navbar />
             </div>
         </div>
