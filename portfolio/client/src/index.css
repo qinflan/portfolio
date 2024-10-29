@@ -40,6 +40,7 @@
   --button-text-hover: #F3F3F3;
   --button-shadow:#EDEDED;
   --widget-background: #989B9E;
+  --widget-border: #EDEDED;
 }
 [data-theme="light"] {
   --page-background: #F0F0F0;
@@ -60,6 +61,7 @@
   --button-text-hover: #F3F3F3;
   --button-shadow:#303030;
   --widget-background: #FFFFFF;
+  --widget-border: #303030;
 }
 
 /* Font Faces */

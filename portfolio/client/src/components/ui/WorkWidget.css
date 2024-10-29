@@ -1,0 +1,9 @@
+.workWidgetContainer {
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 200px;
+    background-color: var(--widget-background);
+    border-radius: 12px;
+    border: solid 1px var(--widget-border);
+}
