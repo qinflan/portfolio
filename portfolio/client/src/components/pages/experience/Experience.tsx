@@ -1,12 +1,21 @@
 import React from 'react'
 import { useRef } from 'react';
 import WorkWidget from '../../ui/WorkWidget'
+import { workData } from './WorkData';
 
-const Experience = () => {
+const Experience: React.FC = () => {
   return (
-    // add expandable modal for viewing resume, as well as cards for current things im doing
-    <WorkWidget />
-  
+    <div className="work-section-container">
+      {workData.map((workItem, index) =>
+        <WorkWidget
+          key={index}
+          title={workItem.title}
+          company={workItem.company}
+          dates={workItem.dates}
+          description={workItem.description}
+          skills={workItem.skills} />
+      )}
+    </div>
   )
 }
 
