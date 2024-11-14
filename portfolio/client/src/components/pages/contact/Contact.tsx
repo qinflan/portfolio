@@ -35,9 +35,8 @@ const Contact = () => {
   }
   
   return (
-    <div className="contact-container">
-      <form className="inquiry-form" onSubmit={handleSubmit}>
-
+    <div className="flex flex-col justify-center bg-gray-50 sm:py-12 border-solid border-2 border-zinc-800">
+      <form className="flex flex-col" onSubmit={handleSubmit}>
         <input 
           type="text" 
           className="input-field" 

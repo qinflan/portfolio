@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import "./LeftPanel.css"
 import ResumeBtn from './ResumeBtn';
-import { IoLogoGithub } from "react-icons/io5";
+import { TbBrandGithubFilled } from "react-icons/tb";
 import { GrLinkedinOption } from "react-icons/gr";
 
 const LeftPanel = () => {
@@ -22,7 +22,7 @@ const LeftPanel = () => {
                 <div className="socials-container">
                 <ResumeBtn />
                     <a href="https://github.com/qinflan" target="_blank" rel="noopener noreferrer">
-                        <IoLogoGithub size={28} className="icon-link" />
+                        <TbBrandGithubFilled size={28} className="icon-link" />
                     </a>
                     <a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer">
                         <GrLinkedinOption size={28} className="icon-link" />

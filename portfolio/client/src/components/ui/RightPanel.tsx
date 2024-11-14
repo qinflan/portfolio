@@ -6,6 +6,7 @@ import Contact from '../pages/contact/Contact'
 const RightPanel = () => {
     return (
         <div className="scroll-right-panel">
+            {/* add about me paragraph at top*/}
             {/* pass card sub components as children within a glass container */}
             <Experience />
             <Contact/>
