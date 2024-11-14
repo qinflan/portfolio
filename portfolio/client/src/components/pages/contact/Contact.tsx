@@ -23,6 +23,9 @@ const Contact = () => {
 
       if (formResponse.status == 200) {
         toast.success("Email sent successfully")
+        setEmail('');
+        setSubject('');
+        setBody('');
       }
     } catch (error) {
       console.error("Error sending email: ", error)
@@ -33,7 +36,7 @@ const Contact = () => {
   
   return (
     <div className="contact-container">
-      <form className="inquiry-form">
+      <form className="inquiry-form" onSubmit={handleSubmit}>
 
         <input 
           type="text" 
@@ -51,15 +54,14 @@ const Contact = () => {
           onChange={(e) => setSubject(e.target.value)}
           required/>
 
-        <input 
-          type="text" 
+        <textarea
           className="input-field" 
           placeholder="What would you like to contact me for?"
           value={body}
           onChange={(e) => setBody(e.target.value)}
           required/>
           
-        <button type="submit" className="submit-email-form">
+        <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           Send
         </button>
 
