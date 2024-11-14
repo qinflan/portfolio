@@ -12,5 +12,26 @@ export const workData = [
       dates: "Jun 2021 - Dec 2021",
       description: "Assisted with web development and improved application efficiency.",
       skills: ["JavaScript", "CSS", "HTML"]
-    }
+    },
+    {
+        title: "Intern",
+        company: "Startup Inc.",
+        dates: "Jun 2021 - Dec 2021",
+        description: "Assisted with web development and improved application efficiency.",
+        skills: ["JavaScript", "CSS", "HTML"]
+      },
+      {
+        title: "Intern",
+        company: "Startup Inc.",
+        dates: "Jun 2021 - Dec 2021",
+        description: "Assisted with web development and improved application efficiency.",
+        skills: ["JavaScript", "CSS", "HTML"]
+      },
+      {
+        title: "Intern",
+        company: "Startup Inc.",
+        dates: "Jun 2021 - Dec 2021",
+        description: "Assisted with web development and improved application efficiency.",
+        skills: ["JavaScript", "CSS", "HTML"]
+      }
   ];

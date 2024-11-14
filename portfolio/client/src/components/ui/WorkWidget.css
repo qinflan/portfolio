@@ -7,3 +7,7 @@
     border-radius: 12px;
     border: solid 1px var(--widget-border);
 }
+
+.workWidgetContainer h1, h2, h3, h4, p {
+    color: black;
+}
