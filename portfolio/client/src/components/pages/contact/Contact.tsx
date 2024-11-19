@@ -6,6 +6,8 @@ import 'react-toastify/dist/ReactToastify.css'
 const Contact = () => {
 
   // declare state for email contents to be validated in backend
+  const [fName, setfName] = useState('');
+  const [lName, setlName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [body, setBody] = useState('');
@@ -14,8 +16,10 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const formResponse = await axios.post("/api/dummy/endpoint",
+      const formResponse = await axios.post("/api/sendContactEmail/",
         {
+          fName,
+          lName,
           email,
           subject,
           body
@@ -37,6 +41,22 @@ const Contact = () => {
   return (
     <div className="flex flex-col justify-center bg-gray-50 sm:py-12 border-solid border-2 border-zinc-800">
       <form className="flex flex-col" onSubmit={handleSubmit}>
+        <input 
+          type="text" 
+          className="input-field" 
+          placeholder="Enter your first name"
+          value={fName}
+          onChange={(e) => setfName(e.target.value)}
+          required/>
+
+        <input 
+          type="text" 
+          className="input-field" 
+          placeholder="Enter your last name"
+          value={lName}
+          onChange={(e) => setlName(e.target.value)}
+          required/>
+
         <input 
           type="text" 
           className="input-field" 
