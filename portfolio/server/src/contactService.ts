@@ -49,7 +49,5 @@ export const sendMail = async (options: IEmailOptions): Promise<void> => {
     } catch (err) {
         console.error("Error sending email, please try again later...")
         console.error(err);
-        console.log(process.env.USER);
-        console.log(process.env.APP_PASSWD);
     }
 }

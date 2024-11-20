@@ -3,13 +3,10 @@ import "./ResumeBtn.css"
 
 const ResumeBtn = () => {
 
-  const handleDownload = () => {
-    
-  }
   return (
-    <button className="resume-btn">
-        Download Resume
-    </button>
+    <a href="/assets/Quinn-Flanigan-Resume-2024.pdf" download="Quinn-Flanigan-Resume.pdf">
+      <button className="resume-btn">Download Resume</button>
+    </a>
   )
 }
 
