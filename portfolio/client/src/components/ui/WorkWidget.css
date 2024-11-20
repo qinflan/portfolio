@@ -6,7 +6,7 @@
     width: 80%;
     min-height: 200px;
     padding: 20px;
-    /* border: 1px solid var(--button-stroke); */
+    border: 1px solid var(--button-stroke);
     gap:10px;
 }
 

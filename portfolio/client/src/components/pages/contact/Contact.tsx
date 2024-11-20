@@ -31,6 +31,8 @@ const Contact = () => {
         setEmail('');
         setSubject('');
         setBody('');
+        setfName('');
+        setlName('');
       }
     } catch (error) {
       console.error("Error sending email: ", error)
