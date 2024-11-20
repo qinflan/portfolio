@@ -47,7 +47,7 @@ const Contact = () => {
         <input 
           type="text" 
           className="input-field" 
-          placeholder="hi! what's your name?"
+          placeholder="hi, what's your name?"
           value={fName}
           onChange={(e) => setfName(e.target.value)}
           required/>

@@ -1,12 +1,3 @@
-
-.navbar-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    Bottom: 0;
-    width: 200px;
-    height:300px;
-}
 .navbar-container {
     display: flex;
     justify-content: center;
@@ -20,10 +11,11 @@
     display: flex;
     flex-direction: column;
     padding:5px 8px;
-    gap: 0px;
+    gap: 5px;
     transform-origin: center;
     position: relative;
     margin-left: 20px;
+    height:20em;
 }
 
 .nav-link {
@@ -54,5 +46,12 @@
 .nav-link:hover {
     transition: 0.2s;
     color: var(--nav-hover-text);
+}
+
+.nav-button-container {
+    display: flex;
+    position: fixed;
+    gap: 10px;
+    bottom: 2em;
 }
 

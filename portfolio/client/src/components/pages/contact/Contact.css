@@ -25,4 +25,9 @@
     padding: 10px;
     color: var(--primary-text);
     background-color: var(--page-foreground);
+    font-family: "ClashGrotesk", sans-serif;
+    font-size: 1.08rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
