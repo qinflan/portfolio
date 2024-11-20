@@ -1,32 +1,55 @@
-import { createTransport } from "nodemailer";
+import nodemailer from "nodemailer";
+import dotenv from 'dotenv'
 
-const transporter = createTransport({
-    service: "gmail",
+dotenv.config();
+
+interface IEmailOptions {
+    senderName: string;
+    senderEmail: string;
+    subject: string;
+    message: string;
+}
+
+const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
+    port: 465,
+    secure: true,
     auth: {
         user: process.env.USER,
         pass: process.env.APP_PASSWD,
     },
 });
 
-const mailOptions = {
-    from: {
-        name: "Portfolio Form",
-        address: process.env.USER,
-    },
-    to: process.env.USER,
-    subject: "test", // pass in req.body 
-    text: "Hello World!" // pass in req.body
-}
+export const sendMail = async (options: IEmailOptions): Promise<void> => {
+    const { senderName, senderEmail, subject, message } = options;
 
-const sendMail = async (transporter: any, mailOptions: any) => {
+    const mailOptions = {
+        from: {
+            name: "Portfolio Form",
+            address: process.env.USER!,
+        },
+        to: process.env.USER,
+        subject: subject, 
+        text: `
+        You received a new message from your portfolio contact form:
+        
+        Name: ${senderName}
+        Email: ${senderEmail}
+        
+        Message:
+        ${message}
+        
+        `,
+    };
+
+
     try {
         await transporter.sendMail(mailOptions);
         console.log("Email sent successfully!");
     } catch (err) {
         console.error("Error sending email, please try again later...")
+        console.error(err);
+        console.log(process.env.USER);
+        console.log(process.env.APP_PASSWD);
     }
 }
-sendMail(transporter, mailOptions)

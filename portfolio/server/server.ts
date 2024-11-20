@@ -4,6 +4,8 @@ import morgan from 'morgan';
 import dotenv from 'dotenv'
 import contactRouter from './src/contactRoute';
 
+dotenv.config();
+
 // Express app type
 const app = express();
 app.use(cors());
@@ -11,9 +13,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(morgan("dev"));
 
-dotenv.config();
-
-const PORT: string | number = process.env.PORT || 3001;
+const PORT: string | number = process.env.PORT || 9000;
 const prefix = "/api";
 
 app.get("/api", (req: Request, res: Response) => {
@@ -23,10 +23,10 @@ app.get("/api", (req: Request, res: Response) => {
 (async () => {
     try {
       app.listen(PORT, () => {
-        console.log(`Server listening on port ${PORT} ...`)
+        console.log(`Server running on port ${PORT}`)
       });
     } catch (err) {
-      console.error("Server unable to start, please try again later")
+      console.error("Server unable to start, please try again later");
       process.exit(1);
     }
   })();
