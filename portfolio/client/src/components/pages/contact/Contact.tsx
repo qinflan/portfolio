@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import axios from 'axios';
 import { ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+import "./Contact.css";
 
 const Contact = () => {
 
@@ -39,12 +40,12 @@ const Contact = () => {
   }
   
   return (
-    <div className="flex flex-col justify-center bg-gray-50 sm:py-12 border-solid border-2 border-zinc-800">
-      <form className="flex flex-col" onSubmit={handleSubmit}>
+    <div className="form-section-container">
+      <form className="form-container" onSubmit={handleSubmit}>
         <input 
           type="text" 
           className="input-field" 
-          placeholder="Enter your first name"
+          placeholder="hi! what's your name?"
           value={fName}
           onChange={(e) => setfName(e.target.value)}
           required/>
@@ -52,7 +53,7 @@ const Contact = () => {
         <input 
           type="text" 
           className="input-field" 
-          placeholder="Enter your last name"
+          placeholder="last name?"
           value={lName}
           onChange={(e) => setlName(e.target.value)}
           required/>
@@ -60,7 +61,7 @@ const Contact = () => {
         <input 
           type="text" 
           className="input-field" 
-          placeholder="Enter your email"
+          placeholder="enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required/>
@@ -68,20 +69,20 @@ const Contact = () => {
           <input 
           type="text" 
           className="input-field" 
-          placeholder="Enter subject of email"
+          placeholder="enter subject"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
           required/>
 
         <textarea
           className="input-field" 
-          placeholder="What would you like to contact me for?"
+          placeholder="what's up?"
           value={body}
           onChange={(e) => setBody(e.target.value)}
           required/>
           
-        <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Send
+        <button type="submit" className="brutal-btn">
+          send message
         </button>
 
       <ToastContainer/>

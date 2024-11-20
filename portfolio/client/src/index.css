@@ -44,7 +44,7 @@
 }
 [data-theme="light"] {
   --page-background: #F0F0F0;
-  --page-foreground: #292827;
+  --page-foreground: #ffffff;
   --foreground-hover:#2d2e30;
   --nav-text:  #686868;
   --nav-active-text:  #1D1D1D;

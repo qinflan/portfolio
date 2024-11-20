@@ -5,5 +5,22 @@
     flex-direction: column;
     width: 50%;
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: .6em;
+}
+
+::-webkit-scrollbar-track {
+    margin: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--page-divider);
+}
+
+::-webkit-scrollbar-thumb:hover {
+
 }

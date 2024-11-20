@@ -1,13 +1,50 @@
-.workWidgetContainer {
+.work-widget-container {
     display: flex;
-    position: relative;
+    flex-direction: column;
+    background-color: var(--page-foreground);
+    border-radius: 8px;
     width: 80%;
-    height: 200px;
-    background-color: var(--widget-background);
-    border-radius: 12px;
-    border: solid 1px var(--widget-border);
+    min-height: 200px;
+    padding: 20px;
+    /* border: 1px solid var(--button-stroke); */
+    gap:10px;
 }
 
-.workWidgetContainer h1, h2, h3, h4, p {
-    color: black;
+.work-widget-header {
+    display: flex;
+    gap:20px;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.widget-title {
+    color: var(--primary-text);
+    font-family: "ClashGrotesk", sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.widget-date {
+    color: var(--primary-text);
+    font-family: "ClashGrotesk", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.widget-description {
+    color: var(--primary-text);
+    font-family: "eurostile", sans-serif;
+}
+
+.widget-skill-tiles {
+    color: var(--primary-text);
+    font-family: "ClashGrotesk", sans-serif;
+    
+    
+}
+
+.widget-skill-tile {
+    color: var(--primary-text);
 }
