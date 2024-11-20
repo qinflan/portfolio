@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default at DOM Level/Fallbacks */
+/* ------------------------------------------------------------ */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--page-background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global CSS Colors by Theme*/
+/* ------------------------------------------------------------ */
+[data-theme="dark"] {
+  --page-background: #2C2D2F;
+  --page-foreground: #292827;
+  --foreground-hover:#2d2e30;
+  --nav-text:  #A1A1A1;
+  --nav-active-text:  #F3F3F3;
+  --nav-hover-text: #c2c2c2;
+  --page-divider: #A1A1A1;
+  --icon: #EDEDED;
+  --header-text: #FFFBF8;
+  --primary-text: #E3DDD9;
+  --secondary-text: #E3DDD9;
+  --button-background: #2C2D2F;
+  --button-stroke: #EDEDED;
+  --button-background-hover: #272829;
+  --button-text: #EDEDED;
+  --button-text-hover: #F3F3F3;
+  --button-shadow:#EDEDED;
+  --widget-background: #989B9E;
+  --widget-border: #EDEDED;
+}
+[data-theme="light"] {
+  --page-background: #F0F0F0;
+  --page-foreground: #292827;
+  --foreground-hover:#2d2e30;
+  --nav-text:  #686868;
+  --nav-active-text:  #1D1D1D;
+  --nav-hover-text: #181818;
+  --page-divider: #686868;
+  --icon: #303030;
+  --header-text: #1F1F1F;
+  --primary-text: #303030;
+  --secondary-text: #303030;
+  --button-background: #F0F0F0;
+  --button-stroke: #303030;
+  --button-background-hover: #ffffff;
+  --button-text: #1F1F1F;
+  --button-text-hover: #F3F3F3;
+  --button-shadow:#303030;
+  --widget-background: #FFFFFF;
+  --widget-border: #303030;
+}
+
+/* Font Faces */
+/* ------------------------------------------------------------ */
+@font-face {
+  font-family: 'ClashDisplay';
+  font-weight: bold; /* Bold */
+  src: url('/fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('/fonts/ClashDisplay-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  font-weight: 600; /* Semibold */
+  src: url('/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+       url('/fonts/ClashDisplay-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ClashGrotesk';
+  font-weight: 500; /* Medium */
+  src: url('/fonts/ClashGrotesk-Medium.woff2') format('woff2'),
+       url('/fonts/ClashGrotesk-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'ClashGrotesk';
+  font-weight: 600; /* Semibold */
+  src: url('/fonts/ClashGrotesk-Semibold.woff2') format('woff2'),
+       url('/fonts/ClashGrotesk-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SpaceGrotesk';
+  font-weight: bold; /* Bold */
+  src: url('/fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
+       url('/fonts/SpaceGrotesk-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'SpaceGrotesk';
+  font-weight: normal; /* Regular */
+  src: url('/fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
+       url('/fonts/SpaceGrotesk-Regular.woff') format('woff');
+}

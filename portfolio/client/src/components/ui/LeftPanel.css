@@ -1,0 +1,79 @@
+
+.left-panel-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 50%;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.socials-container {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.socials-container img{
+    width: 40px;
+}
+.logo {
+    fill: var(--icon)
+}
+.icon-link {
+    color: var(--icon);
+    cursor: pointer;
+}
+
+.hero-text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.hero-name {
+    color: var(--header-text);
+    text-align: center;
+    max-width: 300px;
+    font-family: "ClashDisplay";
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.58px;
+    cursor: default;
+    user-select: none; 
+}
+
+.role-text {
+    font-family: "ClashDisplay", sans-serif;
+    font-size: 22pt;
+    font-weight: 500;
+    color: var(--primary-text);
+    letter-spacing: -0.01em;
+    cursor: default;
+    user-select: none; 
+}
+
+.mantra-text {
+    font-size: 14pt;
+    font-family: "eurostile", sans-serif;
+    letter-spacing: 0.36px;
+    font-weight: 400;
+    text-wrap: auto;
+    max-width: 400px;
+    color: var(--secondary-text);
+    margin-top: 10px;
+    text-align: center;
+    cursor: default;
+    user-select: none; 
+}
