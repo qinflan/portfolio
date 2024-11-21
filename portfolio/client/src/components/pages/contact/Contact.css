@@ -51,6 +51,7 @@ textarea.input-field {
     border-radius: 4px; 
     padding: 0.5em;
     resize:none; 
+    min-height: 150px;
 }
 
 .input-field:focus {

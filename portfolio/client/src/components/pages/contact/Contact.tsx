@@ -71,6 +71,7 @@ const Contact = () => {
           className="input-field" 
           placeholder="what's up?"
           value={body}
+          maxLength={370}
           onChange={(e) => setBody(e.target.value)}
           required/>
         </div>
