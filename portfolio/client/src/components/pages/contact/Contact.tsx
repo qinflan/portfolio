@@ -7,8 +7,7 @@ import "./Contact.css";
 const Contact = () => {
 
   // declare state for email contents to be validated in backend
-  const [fName, setfName] = useState('');
-  const [lName, setlName] = useState('');
+  const [Name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [body, setBody] = useState('');
@@ -19,8 +18,7 @@ const Contact = () => {
     try {
       const formResponse = await axios.post("http://localhost:9000/api/contactRouter/sendContactEmail",
         {
-          fName,
-          lName,
+          Name,
           email,
           subject,
           body
@@ -31,8 +29,7 @@ const Contact = () => {
         setEmail('');
         setSubject('');
         setBody('');
-        setfName('');
-        setlName('');
+        setName('');
       }
     } catch (error) {
       console.error("Error sending email: ", error)
@@ -43,21 +40,15 @@ const Contact = () => {
   
   return (
     <div className="form-section-container">
+      <h1 className="section-title">contact me</h1>
       <form className="form-container" onSubmit={handleSubmit}>
+        <div className="input-fields-container">
         <input 
           type="text" 
           className="input-field" 
           placeholder="hi, what's your name?"
-          value={fName}
-          onChange={(e) => setfName(e.target.value)}
-          required/>
-
-        <input 
-          type="text" 
-          className="input-field" 
-          placeholder="last name?"
-          value={lName}
-          onChange={(e) => setlName(e.target.value)}
+          value={Name}
+          onChange={(e) => setName(e.target.value)}
           required/>
 
         <input 
@@ -82,6 +73,7 @@ const Contact = () => {
           value={body}
           onChange={(e) => setBody(e.target.value)}
           required/>
+        </div>
           
         <button type="submit" className="brutal-btn">
           send message

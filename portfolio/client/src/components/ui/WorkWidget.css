@@ -3,7 +3,7 @@
     flex-direction: column;
     background-color: var(--page-foreground);
     border-radius: 8px;
-    width: 80%;
+    width: 90%;
     min-height: 200px;
     padding: 20px;
     border: 1px solid var(--button-stroke);
