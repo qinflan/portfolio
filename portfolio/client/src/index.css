@@ -22,17 +22,17 @@
 /* Global CSS Colors by Theme*/
 /* ------------------------------------------------------------ */
 [data-theme="dark"] {
-  --page-background: #2C2D2F;
-  --page-foreground: #292827;
+  --page-background: #252525;
+  --page-foreground: #222222;
   --foreground-hover:#2d2e30;
-  --nav-text:  #A1A1A1;
-  --nav-active-text:  #F3F3F3;
-  --nav-hover-text: #c2c2c2;
-  --page-divider: #A1A1A1;
+  --nav-text:  #b6b6b6;
+  --nav-active-text:  #ffffff;
+  --nav-hover-text: #cccccc;
+  --page-divider: #494949;
   --icon: #EDEDED;
   --header-text: #FFFBF8;
-  --primary-text: #E3DDD9;
-  --secondary-text: #E3DDD9;
+  --primary-text: #e6e6e6;
+  --secondary-text: #b6b6b6;
   --button-background: #2C2D2F;
   --button-stroke: #EDEDED;
   --button-background-hover: #272829;
@@ -41,7 +41,7 @@
   --button-shadow:#EDEDED;
   --widget-background: #989B9E;
   --widget-border: #EDEDED;
-  --widget-stroke: #4E4B4B;
+  --widget-stroke: #494949;
 }
 [data-theme="light"] {
   --page-background: #F0F0F0;
