@@ -1,11 +1,10 @@
 .scroll-right-panel {
     display: flex;
     position: relative;
-    align-items:center;
     flex-direction: column;
+    align-items: center;
     width: 50%;
-    height: 100vh;
-    overflow-y: auto;
+    /* height: auto; */
 }
 
 .about-me {

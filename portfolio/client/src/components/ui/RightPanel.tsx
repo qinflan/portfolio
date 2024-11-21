@@ -14,15 +14,21 @@ const RightPanel = () => {
     return (
         <div className="scroll-right-panel">
             <div className="about-me" ref={aboutRef} id="about">
-                Tortor finibus iaculis lorem mattis maecenas senectus pellentesque pretium augue. Ac commodo senectus aliquet proin cubilia 
+                <p>Tortor finibus iaculis lorem mattis maecenas senectus pellentesque pretium augue. Ac commodo senectus aliquet proin cubilia 
                 feugiat vehicula ultricies. Cubilia litora congue dapibus conubia dui porta tempor elit dictum. Etiam magna enim nibh ante eleifend. 
-                Molestie magnis eget mauris et pulvinar accumsan. Donec dictum dis nascetur adipiscing curae sapien nibh venenatis quis. Mi fermentum 
+                Molestie magnis eget mauris et pulvinar accumsan. 
+                
+                Donec dictum dis nascetur adipiscing curae sapien nibh venenatis quis. Mi fermentum 
                 fringilla massa dictum sagittis donec lobortis tortor. In nec duis phasellus dolor maecenas; parturient ligula. Justo class neque quam 
                 dapibus consectetur. Nec volutpat felis conubia finibus tellus aliquet luctus eget.
+                </p>
             </div>
             {/* pass card sub components as children within a glass container */}
             <div className="relative w-full" ref={workRef} id="experience">
                 <Experience />
+            </div>
+
+            <div className="relative w-full" id="projects">
             </div>
 
             <div className="relative w-full" ref={contactRef} id="contact">

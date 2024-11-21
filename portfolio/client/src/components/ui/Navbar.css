@@ -7,15 +7,16 @@
 .navbar-wrapper span {
     height: 100%;
 }
+
 .navbar-content {
     display: flex;
     flex-direction: column;
     padding:5px 8px;
     gap: 5px;
-    transform-origin: center;
     position: relative;
     margin-left: 20px;
     height:20em;
+    align-items: flex-start;
 }
 
 .nav-link {
