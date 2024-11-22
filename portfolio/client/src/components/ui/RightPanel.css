@@ -44,3 +44,9 @@
 ::-webkit-scrollbar-thumb:hover {
 
 }
+
+@media (max-width: 750px) {
+    .scroll-right-panel {
+        width: 90%;
+    }
+}

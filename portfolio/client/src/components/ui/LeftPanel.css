@@ -70,6 +70,12 @@
     cursor: default;
     user-select: none; 
 }
+@media (max-width: 900px) {
+    .hero-container {
+        position: unset;
+        text-align: center;
+    }
+}
 
 @media (min-resolution:125dpi) {
     .hero-container .brutal-btn {

@@ -14,3 +14,12 @@
     margin: auto;
     position: relative;
 }
+
+@media (max-width: 750px) {
+    .format-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}

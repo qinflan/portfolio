@@ -8,12 +8,6 @@
     width: 20%;
 }
 
-/*     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 8rem; */
-
 .navbar-container {
     display: flex;
     justify-content: center;
@@ -67,6 +61,12 @@
     position: fixed;
     gap: 10px;
     bottom: 2em;
+}
+
+@media (max-width: 750px) {
+    .navbar-container {
+        display:none;
+    }
 }
 
 
