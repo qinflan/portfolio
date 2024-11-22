@@ -6,7 +6,7 @@ title: string;
 company: string;
 dates: string;
 description: string;
-skills: string[];
+skills?: string[];
 }
 
 

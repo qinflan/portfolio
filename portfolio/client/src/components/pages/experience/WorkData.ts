@@ -25,5 +25,5 @@ export const workData = [
         company: "Skyworks Solutions",
         dates: "Jun 2021 - Dec 2021",
         description: "Learned to work in a clean-room fabrication environment that produces computer chips for companies such as Apple and Samsung. Earned multiple certifications on various machines, and inspected computer chips for damage. ",
-      },
+      }
   ];
