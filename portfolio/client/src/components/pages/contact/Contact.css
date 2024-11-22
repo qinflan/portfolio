@@ -28,7 +28,7 @@
     border: 1px solid var(--widget-stroke);
     border-radius: 8px;
     padding: 40px;
-    gap: 20px;
+    gap: 24px;
 }
 
 .input-field {
@@ -46,19 +46,23 @@
     outline: none;
 }
 
+.input-field:focus {
+    border-bottom: 2px solid var(--input-field-focus);
+    transition: border-color 0.3s ease;
+}
+
+.input-field::placeholder {
+    color: var(--placeholder-text);
+}
+
 textarea.input-field {
     border: 2px solid gray;
     border-radius: 4px; 
     padding: 0.5em;
     resize:none; 
     min-height: 150px;
+    margin-top: 20px;;
 }
-
-.input-field:focus {
-    border-bottom: 2px solid black;
-    transition: border-color 0.3s ease;
-}
-
 textarea.input-field:focus {
     border-bottom: 2px solid gray;
 }

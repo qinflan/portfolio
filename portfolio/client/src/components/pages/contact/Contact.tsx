@@ -25,7 +25,7 @@ const Contact = () => {
         });
 
       if (formResponse.status == 200) {
-        toast.success("Email sent successfully")
+        toast.success("Thank you for contacting me!")
         setEmail('');
         setSubject('');
         setBody('');
@@ -33,7 +33,7 @@ const Contact = () => {
       }
     } catch (error) {
       console.error("Error sending email: ", error)
-      toast.error("Failed to send email, ensure all fields are valid")
+      toast.error("Message failed to send")
     }
 
   }
@@ -80,7 +80,7 @@ const Contact = () => {
           send message
         </button>
 
-      <ToastContainer/>
+      <ToastContainer position="bottom-right"/>
       </form>
     </div>
   )
