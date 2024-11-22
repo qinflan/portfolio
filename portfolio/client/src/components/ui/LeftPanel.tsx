@@ -10,10 +10,10 @@ const LeftPanel = () => {
                 <div className="hero-text-container">
                     <h1 className="hero-name">Quinn Flanigan</h1>
                     <h3 className="role-text">
-                        Software Developer
+                        software developer
                     </h3>
                     <h3 className="mantra-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         consectetur adipiscing elit.
                     </h3>
                 </div>

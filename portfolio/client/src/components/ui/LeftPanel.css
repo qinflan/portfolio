@@ -70,7 +70,7 @@
     cursor: default;
     user-select: none; 
 }
-@media (max-width: 900px) {
+@media (max-width: 750px) {
     .hero-container {
         position: unset;
         text-align: center;
