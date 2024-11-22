@@ -1,22 +1,35 @@
+.navigation {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    width: 20%;
+}
+
+/*     display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 8rem; */
+
 .navbar-container {
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 60%;
 }
 
-.navbar-wrapper span {
-    height: 100%;
-}
 
 .navbar-content {
     display: flex;
     flex-direction: column;
     padding:5px 8px;
     gap: 5px;
-    position: relative;
     margin-left: 20px;
-    height:20em;
+    height: auto;
     align-items: flex-start;
+    height: 30vh;
 }
 
 .nav-link {
@@ -56,3 +69,15 @@
     bottom: 2em;
 }
 
+
+@media (min-resolution:150dpi) {
+    .nav-button-container {
+        display: none;
+    }
+}
+
+@media (min-resolution:125dpi) {
+    .navbar-content {
+        height: 35vh;
+    }
+}
