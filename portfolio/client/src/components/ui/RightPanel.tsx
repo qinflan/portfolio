@@ -2,6 +2,7 @@ import "./RightPanel.css"
 import Experience from '../pages/experience/Experience'
 import Contact from '../pages/contact/Contact'
 import Projects from "../pages/projects/Projects"
+import DesignBento from "./DesignBento"
 import { useRef, useState } from "react"
 
 const RightPanel = () => {
@@ -30,6 +31,10 @@ const RightPanel = () => {
 
             <div className="relative w-full" id="projects">
                 <Projects/>
+            </div>
+
+            <div className="relative w-full" id="design">
+                <DesignBento/>
             </div>
 
             <div className="relative w-full" ref={contactRef} id="contact">

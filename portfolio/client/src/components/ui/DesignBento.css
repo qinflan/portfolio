@@ -1,0 +1,16 @@
+.design-section-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.design-item {
+  flex: 1 1 45%; 
+  margin-bottom: 20px;
+}
+
+.design-image {
+    justify-self: center;
+  width: 80%; 
+  height: auto;
+  border-radius: 8px;
+}
