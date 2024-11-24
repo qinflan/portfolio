@@ -1,6 +1,7 @@
 import "./RightPanel.css"
 import Experience from '../pages/experience/Experience'
 import Contact from '../pages/contact/Contact'
+import Projects from "../pages/projects/Projects"
 import { useRef, useState } from "react"
 
 const RightPanel = () => {
@@ -19,8 +20,7 @@ const RightPanel = () => {
                 Molestie magnis eget mauris et pulvinar accumsan. 
                 
                 Donec dictum dis nascetur adipiscing curae sapien nibh venenatis quis. Mi fermentum 
-                fringilla massa dictum sagittis donec lobortis tortor. In nec duis phasellus dolor maecenas; parturient ligula. Justo class neque quam 
-                dapibus consectetur. Nec volutpat felis conubia finibus tellus aliquet luctus eget.
+                fringilla massa dictum sagittis donec lobortis tortor. In nec duis phasellus dolor maecenas.
                 </p>
             </div>
             {/* pass card sub components as children within a glass container */}
@@ -29,6 +29,7 @@ const RightPanel = () => {
             </div>
 
             <div className="relative w-full" id="projects">
+                <Projects/>
             </div>
 
             <div className="relative w-full" ref={contactRef} id="contact">

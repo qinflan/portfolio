@@ -11,13 +11,13 @@ export const workData = [
       company: "Ur Wealth",
       dates: "Sep 2024 - Present",
       description: "Leading the development of a full-stack MERN wealth management application, managing a team of engineers. Aiming to provide users with an intuitive dashboard to manage various wealth assets.",
-      skills: ["Typescript", "React", "Node.js", "MongoDB", "Express.js"]
+      skills: ["Typescript", "React", "Node.js", "MongoDB", "Express.js", "Docker"]
     },
     {
         title: "CS Teacher Assistant",
         company: "Microsoft TEALS",
         dates: "Sep 2024 - Present",
-        description: "Supporting computer science education at Boston Latin Academy by assisting an AP Computer Science course. I review student code while providing course insights, contributing to curriculum development and improving student learning outcomes",
+        description: "Supporting computer science education at Boston Latin Academy by assisting an AP Computer Science course. I review student code while providing course insights, contributing to curriculum development and student learning outcomes.",
         skills: ["Python", "HTML", "CSS"]
       },
       {
@@ -25,5 +25,6 @@ export const workData = [
         company: "Skyworks Solutions",
         dates: "May 2022 - Oct 2022",
         description: "Learned to work in a clean-room fabrication environment that produces computer chips for companies such as Apple and Samsung. Earned multiple certifications on various machines, and inspected computer chips for damage. ",
+        skills: ["Semi-Conductor Fabrication", "Quality Assurance", "Clean Room"]
       }
   ];

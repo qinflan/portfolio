@@ -53,10 +53,10 @@ const Navbar = () => {
                     <div className="nav-button-container">
                         <ToggleTheme />
                         <a href="https://github.com/qinflan" target="_blank" rel="noopener noreferrer">
-                            <TfiGithub  size={34} className="bg-[var(--page-foreground)] rounded-lg border border-gray-300 text-[var(--icon)] cursor-pointer p-1" />
+                            <TfiGithub  size={30} className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1" />
                         </a>
                         <a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer">
-                            <GrLinkedinOption size={34} className="bg-[var(--page-foreground)] rounded-lg border border-gray-300 text-[var(--icon)] cursor-pointer p-1" />
+                            <GrLinkedinOption size={30} className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1" />
                         </a>
                     </div>
                 </div>

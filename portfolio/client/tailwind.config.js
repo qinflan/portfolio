@@ -21,6 +21,7 @@ export default {
         'button-text-hover': 'var(--button-text-hover)',
         'widget-background': 'var(--widget-background)',
         'page-divider': 'var(--page-divider)',
+        'widget-stroke': 'var(--widget-stroke)'
         // 'widget-shadow': 'var(--widget-shadow)',
         // 'widget-border': 'var(--widget-border)',
       },
