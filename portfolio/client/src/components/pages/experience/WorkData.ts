@@ -11,7 +11,7 @@ export const workData = [
       company: "Ur Wealth",
       dates: "Sep 2024 - Present",
       description: "Leading the development of a full-stack MERN wealth management application, managing a team of engineers. Aiming to provide users with an intuitive dashboard to manage various wealth assets.",
-      skills: ["Typescript", "React", "Node.js", "MongoDB", "Express.js", "Plaid"]
+      skills: ["Typescript", "React", "Node.js", "MongoDB", "Express.js"]
     },
     {
         title: "CS Teacher Assistant",
@@ -23,7 +23,7 @@ export const workData = [
       {
         title: "Fabrication Technician",
         company: "Skyworks Solutions",
-        dates: "Jun 2021 - Dec 2021",
+        dates: "May 2022 - Oct 2022",
         description: "Learned to work in a clean-room fabrication environment that produces computer chips for companies such as Apple and Samsung. Earned multiple certifications on various machines, and inspected computer chips for damage. ",
       }
   ];

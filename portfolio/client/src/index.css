@@ -29,7 +29,7 @@
 [data-theme="dark"] {
 
   /* page */
-  --page-background: #252525;
+  --page-background: #1a1a1a;
   --page-foreground: #222222;
   --foreground-hover:#2d2e30;
   --page-divider: #494949;
@@ -46,7 +46,7 @@
   --nav-hover-text: #cccccc;
 
   /* buttons */
-  --button-background: #2C2D2F;
+  --button-background: #1a1a1a;
   --button-stroke: #EDEDED;
   --button-background-hover: #272829;
   --button-text: #EDEDED;
@@ -120,6 +120,12 @@
 
 @font-face {
   font-family: 'ClashGrotesk';
+  font-weight: 400; /* Regular */
+  src: url('/fonts/ClashGrotesk-Regular.woff2') format('woff2'),
+       url('/fonts/ClashGrotesk-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'ClashGrotesk';
   font-weight: 500; /* Medium */
   src: url('/fonts/ClashGrotesk-Medium.woff2') format('woff2'),
        url('/fonts/ClashGrotesk-Medium.woff') format('woff');
@@ -146,7 +152,7 @@
 
 /* Toast Containers */
 .Toastify__toast-body {
-  font-family: "eurostile", sans-serif;
+  font-family: "ClashGrotesk", Inter, sans-serif;
   color: var(--secondary-text);
 }
 .Toastify__toast {

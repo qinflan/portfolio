@@ -30,13 +30,13 @@
     text-decoration: none;
     color: var(--nav-text);
     position: relative;
-    font-family: "SpaceGrotesk", eurostile, sans-serif;
-    font-size: 16px;
+    font-family: "ClashGrotesk", Inter, sans-serif;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.36px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     transition: 0.2s;
 }
 

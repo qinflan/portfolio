@@ -22,8 +22,11 @@ const WorkWidget: React.FC<WorkWidgetProps> = ({title, company, dates, descripti
         <p>{description}</p>
       </div>
       <div className="widget-skill-tiles">
-        {/* map skills with classname that will style as tile */}
-        <h4 className="widget-skill-tile">{skills}</h4> 
+        {skills?.map((skill, index) => (
+          <div key={index} className="widget-skill-tile">
+            {skill}
+          </div>
+        ))}
       </div>
     </div>
   )

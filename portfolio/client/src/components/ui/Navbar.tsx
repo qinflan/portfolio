@@ -12,14 +12,15 @@ const Navbar = () => {
                 <span className="w-1 bg-[var(--page-divider)] flex-shrink-0 rounded-full"></span>
                 <div className="navbar-content">
                     
-                    <a className="nav-link" href="/">HOME</a>
+                    <a className="nav-link" href="/">home</a>
 
                     <button className="nav-link" onClick={() => {
                         const element = document.getElementById('experience');
                         element?.scrollIntoView({
                             behavior: 'smooth'
                         })
-                        }}>EXPERIENCE
+                        }}>
+                            experience
                     </button>
 
                     <button className="nav-link" onClick={() => {
@@ -28,7 +29,7 @@ const Navbar = () => {
                             behavior: 'smooth'
                         })
                         }}>
-                            PROJECTS
+                            projects
                     </button>
 
                     <button className="nav-link" onClick={() => {
@@ -36,7 +37,8 @@ const Navbar = () => {
                         element?.scrollIntoView({
                             behavior: 'smooth'
                         })
-                        }}>DESIGN
+                        }}>
+                            design
                     </button>
 
                     <button className="nav-link" onClick={() => {
@@ -44,7 +46,8 @@ const Navbar = () => {
                         element?.scrollIntoView({
                             behavior: 'smooth'
                         })
-                        }}>CONTACT
+                        }}>
+                            contact
                     </button>
 
                     <div className="nav-button-container">
