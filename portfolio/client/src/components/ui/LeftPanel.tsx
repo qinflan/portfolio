@@ -17,7 +17,9 @@ const LeftPanel = () => {
                         consectetur adipiscing elit.
                     </h3>
                 </div>
-                <ResumeBtn />
+                <div className="resume-btn-container">
+                    <ResumeBtn />
+                </div>
             </div>
             <Navbar />
         </div>

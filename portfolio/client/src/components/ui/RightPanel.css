@@ -28,25 +28,31 @@
     justify-self: flex-start;
 }
 
+/*  scroll bar chrome */
 ::-webkit-scrollbar {
     width: 8px;
 }
-
 ::-webkit-scrollbar-track {
     margin: 2em;
 }
-
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background: var(--page-divider);
 }
 
-::-webkit-scrollbar-thumb:hover {
-
-}
-
-@media (max-width: 750px) {
+/* mobile */
+@media (max-width: 768px) {
     .scroll-right-panel {
         width: 90%;
+    }
+    .about-me {
+        font-size: medium;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: x-large;
     }
 }

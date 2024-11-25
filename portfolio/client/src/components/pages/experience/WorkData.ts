@@ -1,7 +1,7 @@
 export const workData = [
     {
       title: "IT Project Coordinator",
-      company: "Veolia",
+      company: "Veolia North America",
       dates: "Jun 2024 - Present",
       description: "I analyzed diverse data sets using Power BI and Lucidchart to build project dashboards and process diagrams. Contributed to designing a new organizational architecture for the use of Smartsheet SaaS in our company.",
       skills: ["Power BI", "Smartsheet", "Jira", "Lucidchart", "Project Management"]

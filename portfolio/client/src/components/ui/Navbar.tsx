@@ -74,7 +74,9 @@ const Navbar = () => {
                             <button className="mobile-nav-link" onClick={() => scrollToSection("design")}>design</button>
                             <button className="mobile-nav-link" onClick={() => scrollToSection("contact")}>contact</button>
                         </div>
+                        
                     )}
+                    <ToggleTheme />
                 </div>
             </nav>
         </div>

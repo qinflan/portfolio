@@ -70,10 +70,51 @@
     cursor: default;
     user-select: none; 
 }
-@media (max-width: 750px) {
+@media (max-width: 768px) {
+    .resume-btn-container {
+        display: none;
+    }
+    .left-panel-container {
+        position: relative;
+        width: 100%;
+    }
     .hero-container {
-        position: unset;
-        text-align: center;
+        position: relative;
+        width: 90%;
+    }
+    .hero-text-container {
+        text-align: left;
+        gap: 10px;
+        align-items: flex-start;
+        padding: 0 5%;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .hero-name {
+        font-size: 6rem;
+        position: relative;
+        text-align: left;
+    }
+    .role-text {
+        font-size: xx-large;
+        position: relative;
+        width: 90%;
+        text-align: left;
+    }
+    .mantra-text {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-name {
+        font-size: 4rem;
+        position: relative;
+        text-align: left;
+    }
+    .role-text {
+        font-size: x-large;
     }
 }
 

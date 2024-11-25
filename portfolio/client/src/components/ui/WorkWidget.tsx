@@ -14,9 +14,11 @@ const WorkWidget: React.FC<WorkWidgetProps> = ({title, company, dates, descripti
   return (
     <div className="work-widget-container">
       <div className="work-widget-header">
-        <h2 className="widget-title">{title}</h2>
-        <h2 className="widget-title">{company}</h2>
-        <h3 className="widget-date">{dates}</h3>
+        <div className="widget-title-container">
+          <h2 className="widget-title">{title}</h2>
+          <h2 className="widget-company">{company}</h2>
+        </div>
+          <h3 className="widget-date">{dates}</h3>
       </div>
       <div className="widget-description">
         <p>{description}</p>

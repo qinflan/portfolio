@@ -13,6 +13,7 @@
 .work-widget-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -24,11 +25,20 @@
     font-size: 1.1rem;
 }
 
+.widget-company {
+    color: var(--secondary-text);
+    font-family: "ClashGrotesk", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
 .widget-date {
     color: var(--primary-text);
     font-family: "ClashGrotesk", sans-serif;
     font-weight: 500;
     font-size: 0.9rem;
+    align-self: flex-start;
+    text-align: right;
 }
 
 .widget-description {
@@ -49,7 +59,6 @@
     justify-content: center;
     gap: 5px;
     flex-wrap: wrap;
-    
 }
 
 .widget-skill-tile {
@@ -59,4 +68,29 @@
     border-radius: 8px;
     background-color: var(--page-background);
     cursor:default;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .widget-title {
+        font-size: medium;
+    }
+
+    .widget-company {
+        font-size: small;
+    }
+
+    .widget-description {
+        font-size: small;
+        line-height: 18px;
+    }
+
+    .widget-date {
+        font-size: 12px;
+    }
+
+    .widget-skill-tile {
+        font-size: 12px;
+    }
+
 }

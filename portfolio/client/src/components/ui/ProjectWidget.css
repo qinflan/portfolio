@@ -31,3 +31,8 @@
 
 }
 
+@media (max-width: 600px) {
+    .project-widget-title {
+        font-size: medium;
+    }
+}
