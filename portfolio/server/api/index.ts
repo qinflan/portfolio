@@ -3,6 +3,6 @@ import contactRouter from './contactRoute'
 
 const router = express.Router();
 
-router.use("/contact")
+router.use("/contact", contactRouter)
 
 export default router;
