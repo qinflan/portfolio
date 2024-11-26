@@ -2,14 +2,14 @@ export const projectData = [
     {
       title: "Gradelab",
       dates: "Ongoing",
-      description: "I analyzed diverse data sets using Power BI and Lucidchart to build project dashboards and process diagrams. Contributed to designing a new organizational architecture for the use of Smartsheet SaaS in our company.",
+      description: "Developed key frontend components and backend API endpoints, optimizing data transfer. Integrated Chart.js for class statistics visualization and OpenAI for real-time dataset analysis. Modeled and maintained MySQL databases with Sequelize ORM in AWS RDS, enhancing data accessibility.",
       skills: ["Javascript", "React", "Node.js", "AWS", "MySQL", "Express.js"],
       gif: "/assets/gradelabs-demo.gif",
     },
     {
       title: "KeyLocker",
       dates: "May 2024",
-      description: "Leading the development of a full-stack MERN wealth management application, managing a team of engineers. Aiming to provide users with an intuitive dashboard to manage various wealth assets.",
+      description: "Created a secure password manager desktop app with encrypted storage, using Fernet Encryption for secure password handling and unique user keys. Designed a minimal user interface with Figma, Adobe Illustrator, and CustomTkinter to enhance user experience.",
       skills: ["Python", "Cryptography", "Custom Tkinter", "Git", "Figma"],
       gif: "/assets/keylocker-portfolio.gif",
       repo: "https://github.com/qinflan/KeyLocker.py"
