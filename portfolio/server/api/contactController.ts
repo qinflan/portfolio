@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import type { VercelRequest, VercelResponse } from '@vercel/node'
 import { sendMail } from "./contactService";
 
 interface IEmail {
@@ -9,7 +9,7 @@ interface IEmail {
 }
 
 // handles data passed in from contact form to be validated and formatted
-export const contactController = async (req:Request, res:Response): Promise<void> => {
+export const contactController = async (req:VercelRequest, res:VercelResponse): Promise<void> => {
     const {Name, email, subject, body}: IEmail = req.body;
 
     // validate req body
