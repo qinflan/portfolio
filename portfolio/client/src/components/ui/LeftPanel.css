@@ -1,3 +1,15 @@
+/* Animations */
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
 
 .left-panel-container {
     display: flex;
@@ -45,6 +57,7 @@
     letter-spacing: -0.58px;
     cursor: default;
     user-select: none; 
+    animation: fade-up 0.5s;
 }
 
 .role-text {
@@ -55,6 +68,7 @@
     letter-spacing: -0.01em;
     cursor: default;
     user-select: none; 
+    animation: fade-up 0.5s;
 }
 
 .mantra-text {
@@ -69,6 +83,7 @@
     text-align: center;
     cursor: default;
     user-select: none; 
+    animation: fade-up 0.5s;
 }
 @media (max-width: 768px) {
     .resume-btn-container {

@@ -5,6 +5,7 @@
     width: 100%;
     align-items: center;
     margin-top: 40px;
+    animation: fade-up 0.5s;
 }
 
 .work-widgets-container {

@@ -15,6 +15,7 @@
     font-size: larger;
     letter-spacing: 0.36px;
     font-weight: 400;
+    animation: fade-up 0.5s;
 }
 
 .section-title {

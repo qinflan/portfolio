@@ -12,7 +12,7 @@
     font-weight: 500;
     line-height: normal;
     box-shadow: 4px 4px 0 -2px var(--page-background), 4px 4px 0 0 var(--button-stroke);
-    transition: 0.4s;
+    animation: fade-up 0.5s;
 }
 
 .brutal-btn:hover {
