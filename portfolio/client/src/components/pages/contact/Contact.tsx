@@ -16,7 +16,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const formResponse = await axios.post("http://localhost:9000/api/contactRouter/sendContactEmail",
+      const formResponse = await axios.post("http://localhost:5000/api/contact/sendContactEmail",
         {
           Name,
           email,
