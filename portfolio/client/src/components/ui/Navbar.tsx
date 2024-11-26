@@ -62,10 +62,10 @@ const Navbar = () => {
 
                 {/* Mobile Hamburger Menu */}
                 <div className="mobile-menu-container" ref={menuRef}>
+                    <ToggleTheme />
                     <button className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1" onClick={toggleMobileMenu}>
                         {isMobileMenuOpen ? <IoClose size={20} /> : <TbMenu  size={20} />}
                     </button>
-
                     {isMobileMenuOpen && (
                         <div className="mobile-menu-dropdown">
                             <a className="mobile-nav-link" href="/" onClick={() => scrollToSection("home")}>home</a>
@@ -76,7 +76,6 @@ const Navbar = () => {
                         </div>
                         
                     )}
-                    <ToggleTheme />
                 </div>
             </nav>
         </div>
