@@ -69,7 +69,7 @@ const Navbar = () => {
                     {isMobileMenuOpen && (
                         <div className="mobile-menu-dropdown">
                             <a className="mobile-nav-link" href="/" onClick={() => scrollToSection("home")}>home</a>
-                            <button className="mobile-nav-link" onClick={() => scrollToSection("experience")}>experience</button>
+                            <button className="mobile-nav-link" onClick={() => scrollToSection("experience")}>work</button>
                             <button className="mobile-nav-link" onClick={() => scrollToSection("projects")}>projects</button>
                             <button className="mobile-nav-link" onClick={() => scrollToSection("design")}>design</button>
                             <button className="mobile-nav-link" onClick={() => scrollToSection("contact")}>contact</button>
