@@ -1,31 +1,15 @@
 {
-    "version": 2,
-    "projects": [
-      {
-        "name": "portfolio-client",
-        "path": "client",
-        "buildCommand": "npm run build",
-        "outputDirectory": "dist"
-      },
-      {
-        "name": "portfolio-server",
-        "path": "server",
-        "functions": {
-          "api/index.ts": {
-            "runtime": "vercel/node"
-          }
-        }
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "server/api/server.ts"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "client/$1"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
