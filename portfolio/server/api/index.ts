@@ -13,6 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use('api/contact', contactRouter);
+export default app;
 
 const PORT: string | number = process.env.PORT || 5000;
 
