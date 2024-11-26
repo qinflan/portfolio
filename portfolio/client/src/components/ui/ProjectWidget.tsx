@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import "./ProjectWidget.css"
 import { MdViewInAr } from "react-icons/md";
 

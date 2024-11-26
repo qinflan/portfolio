@@ -1,4 +1,3 @@
-import React from 'react'
 import { designData } from '../pages/designs/designData'
 import "./DesignBento.css"
 

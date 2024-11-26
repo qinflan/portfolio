@@ -1,4 +1,3 @@
-import React from 'react'
 import "./neobrute-btn.css"
 
 const ResumeBtn = () => {

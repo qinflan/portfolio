@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Home.css"
 import LeftPanel from '../../ui/LeftPanel'
 import RightPanel from '../../ui/RightPanel'

@@ -3,7 +3,7 @@ import Experience from '../pages/experience/Experience'
 import Contact from '../pages/contact/Contact'
 import Projects from "../pages/projects/Projects"
 import DesignBento from "./DesignBento"
-import { useRef, useState } from "react"
+import { useRef} from "react"
 
 const RightPanel = () => {
 

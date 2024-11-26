@@ -1,5 +1,4 @@
 import React from 'react'
-import { useRef } from 'react';
 import WorkWidget from '../../ui/WorkWidget'
 import { workData } from './WorkData';
 import "./Experience.css"

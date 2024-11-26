@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from './Navbar'
 import "./LeftPanel.css"
 import ResumeBtn from './ResumeBtn';

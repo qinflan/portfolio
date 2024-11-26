@@ -3,7 +3,7 @@ import "./Navbar.css"
 import { ToggleTheme } from '../hooks/theme/toggleTheme';
 import { GrLinkedinOption } from "react-icons/gr";
 import { TfiGithub } from "react-icons/tfi";
-import { IoMenu, IoClose } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 import { TbMenu } from "react-icons/tb";
 
 
