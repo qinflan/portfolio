@@ -109,7 +109,7 @@
   },
   "include": [
     "api/**/*.ts",
-    "server.ts"
+    "index.ts"
   ],
   "exclude": [
     "node_modules"
