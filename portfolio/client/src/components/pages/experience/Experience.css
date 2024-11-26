@@ -1,0 +1,18 @@
+.work-section-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    margin-top: 40px;
+    animation: fade-up 0.5s;
+}
+
+.work-widgets-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    align-items: center;
+}

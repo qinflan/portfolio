@@ -2,8 +2,7 @@ import { Request, Response } from "express";
 import { sendMail } from "./contactService";
 
 interface IEmail {
-    fName: string;
-    lName: string;
+    Name: string;
     email: string;
     subject: string;
     body: string;
@@ -11,17 +10,17 @@ interface IEmail {
 
 // handles data passed in from contact form to be validated and formatted
 export const contactController = async (req:Request, res:Response): Promise<void> => {
-    const {fName, lName, email, subject, body}: IEmail = req.body;
+    const {Name, email, subject, body}: IEmail = req.body;
 
     // validate req body
-    if (!fName || !lName || !email || !subject || !body) {
+    if ( !Name || !email || !subject || !body) {
         res.status(400).json({ message: "All fields are required." });
         return;
     }
 
     try {
         await sendMail({
-            senderName: `${fName} ${lName}`,
+            senderName: Name,
             senderEmail: email,
             subject: subject,
             message: body,

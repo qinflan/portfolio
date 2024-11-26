@@ -1,8 +1,8 @@
-
 .left-panel-container {
     display: flex;
+    position: relative;
     flex-direction: column;
-    height: 100vh;
+    align-items: center;
     width: 50%;
 }
 
@@ -10,22 +10,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    position: fixed;
+    top: 8rem;
 }
 
-.socials-container {
-    display: flex;
-    gap: 22px;
-    align-items: center;
-}
-
-.socials-container img{
-    width: 40px;
-}
 .logo {
     fill: var(--icon)
 }
+
 .icon-link {
     color: var(--icon);
     cursor: pointer;
@@ -52,6 +44,7 @@
     letter-spacing: -0.58px;
     cursor: default;
     user-select: none; 
+    animation: fade-up 0.5s;
 }
 
 .role-text {
@@ -62,11 +55,12 @@
     letter-spacing: -0.01em;
     cursor: default;
     user-select: none; 
+    animation: fade-up 0.5s;
 }
 
 .mantra-text {
     font-size: 14pt;
-    font-family: "eurostile", sans-serif;
+    font-family: "ClashGrotesk", sans-serif;
     letter-spacing: 0.36px;
     font-weight: 400;
     text-wrap: auto;
@@ -76,4 +70,77 @@
     text-align: center;
     cursor: default;
     user-select: none; 
+    animation: fade-up 0.5s;
+}
+@media (max-width: 768px) {
+    .resume-btn-container {
+        display: none;
+    }
+    .left-panel-container {
+        position: relative;
+        width: 100%;
+    }
+    .hero-container {
+        position: relative;
+        width: 90%;
+    }
+    .hero-text-container {
+        text-align: left;
+        gap: 10px;
+        align-items: flex-start;
+        padding: 0 5%;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .hero-name {
+        font-size: 4rem;
+        position: relative;
+        text-align: left;
+    }
+    .role-text {
+        font-size: xx-large;
+        position: relative;
+        width: 90%;
+        text-align: left;
+    }
+    .mantra-text {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-name {
+        font-size: 3.6rem;
+        position: relative;
+        text-align: left;
+    }
+    .role-text {
+        font-size: x-large;
+    }
+}
+
+@media (min-resolution:125dpi) {
+    .hero-container .brutal-btn {
+        display: none;
+    }
+}
+
+@media (min-resolution:150dpi) {
+    .hero-container {
+        top: 10vh;
+    }
+}
+
+/* Animations */
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
 }

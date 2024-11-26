@@ -1,21 +1,26 @@
 .page-content-container {
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
     height: 100vh;
+    display: flex;
 }
 
 .format-display {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     justify-self: center;
-    width: 1440px;
+    max-width: 1440px;
     height: 100vh;
     margin: auto;
     position: relative;
+}
 
+@media (max-width: 768px) {
+    .format-display {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
 }

@@ -2,12 +2,12 @@ import React, {useState} from 'react'
 import axios from 'axios';
 import { ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+import "./Contact.css";
 
 const Contact = () => {
 
   // declare state for email contents to be validated in backend
-  const [fName, setfName] = useState('');
-  const [lName, setlName] = useState('');
+  const [Name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [body, setBody] = useState('');
@@ -18,49 +18,43 @@ const Contact = () => {
     try {
       const formResponse = await axios.post("http://localhost:9000/api/contactRouter/sendContactEmail",
         {
-          fName,
-          lName,
+          Name,
           email,
           subject,
           body
         });
 
       if (formResponse.status == 200) {
-        toast.success("Email sent successfully")
+        toast.success("Thank you for contacting me!")
         setEmail('');
         setSubject('');
         setBody('');
+        setName('');
       }
     } catch (error) {
       console.error("Error sending email: ", error)
-      toast.error("Failed to send email, ensure all fields are valid")
+      toast.error("Message failed to send")
     }
 
   }
   
   return (
-    <div className="flex flex-col justify-center bg-gray-50 sm:py-12 border-solid border-2 border-zinc-800">
-      <form className="flex flex-col" onSubmit={handleSubmit}>
+    <div className="form-section-container">
+      <h1 className="section-title">contact me</h1>
+      <form className="form-container" onSubmit={handleSubmit}>
+        <div className="input-fields-container">
         <input 
           type="text" 
           className="input-field" 
-          placeholder="Enter your first name"
-          value={fName}
-          onChange={(e) => setfName(e.target.value)}
+          placeholder="hi, what's your name?"
+          value={Name}
+          onChange={(e) => setName(e.target.value)}
           required/>
 
         <input 
           type="text" 
           className="input-field" 
-          placeholder="Enter your last name"
-          value={lName}
-          onChange={(e) => setlName(e.target.value)}
-          required/>
-
-        <input 
-          type="text" 
-          className="input-field" 
-          placeholder="Enter your email"
+          placeholder="enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required/>
@@ -68,23 +62,25 @@ const Contact = () => {
           <input 
           type="text" 
           className="input-field" 
-          placeholder="Enter subject of email"
+          placeholder="enter subject"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
           required/>
 
         <textarea
           className="input-field" 
-          placeholder="What would you like to contact me for?"
+          placeholder="what's up?"
           value={body}
+          maxLength={370}
           onChange={(e) => setBody(e.target.value)}
           required/>
+        </div>
           
-        <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Send
+        <button type="submit" className="brutal-btn">
+          send message
         </button>
 
-      <ToastContainer/>
+      <ToastContainer position="bottom-right"/>
       </form>
     </div>
   )

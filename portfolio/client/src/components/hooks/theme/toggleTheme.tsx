@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import { BsSun } from "react-icons/bs";
-import { SiMoonrepo } from "react-icons/si";
+import { BsFillSunFill } from "react-icons/bs";
+import { WiMoonAltThirdQuarter } from "react-icons/wi";
 import { ThemeContext } from './ThemeContext';
 
 // define toggleTheme as functional component
@@ -18,9 +18,9 @@ export const ToggleTheme: React.FC = () => {
         <div className="toggle-container">
             {/* Conditionally render the icons based on the current theme */}
             {theme === "light" ? (
-                <BsSun className="icon cursor-pointer" size={28} onClick={toggleTheme} />
+                <BsFillSunFill  className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1" size={30} onClick={toggleTheme} />
             ) : (
-                <SiMoonrepo className="icon cursor-pointer" size={28} onClick={toggleTheme} />
+                <WiMoonAltThirdQuarter  className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1" size={30} onClick={toggleTheme} />
             )}
         </div>
     )

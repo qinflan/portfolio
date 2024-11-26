@@ -17,51 +17,90 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* toast container */
+  --toastify-icon-color-success: var(--toast-success);
+  --toastify-icon-color-error: var(--toast-error);
+
 }
 
 /* Global CSS Colors by Theme*/
 /* ------------------------------------------------------------ */
 [data-theme="dark"] {
-  --page-background: #2C2D2F;
-  --page-foreground: #292827;
+
+  /* page */
+  --page-background: #1a1a1a;
+  --page-foreground: #222222;
   --foreground-hover:#2d2e30;
-  --nav-text:  #A1A1A1;
-  --nav-active-text:  #F3F3F3;
-  --nav-hover-text: #c2c2c2;
-  --page-divider: #A1A1A1;
+  --page-divider: #494949;
   --icon: #EDEDED;
+  --input-field-focus: #e4e4e4;
+
+  /* text */
   --header-text: #FFFBF8;
-  --primary-text: #E3DDD9;
-  --secondary-text: #E3DDD9;
-  --button-background: #2C2D2F;
+  --primary-text: #e6e6e6;
+  --secondary-text: #b6b6b6;
+  --placeholder-text: #a7a7a7;
+  --nav-text:  #b6b6b6;
+  --nav-active-text:  #ffffff;
+  --nav-hover-text: #cccccc;
+
+  /* buttons */
+  --button-background: #1a1a1a;
   --button-stroke: #EDEDED;
   --button-background-hover: #272829;
   --button-text: #EDEDED;
   --button-text-hover: #F3F3F3;
   --button-shadow:#EDEDED;
+
+  /* widgets */
   --widget-background: #989B9E;
   --widget-border: #EDEDED;
+  --widget-stroke: #494949;
+
+  /* react-toastify colors */
+  --toast-shadow: #3d3d3d;
+  --toast-success: #7CE25D;
+  --toast-error: #E05454;
+  --toast-close-icon: #ffffff;
 }
+
 [data-theme="light"] {
+  /* page */
   --page-background: #F0F0F0;
-  --page-foreground: #292827;
+  --page-foreground: #ffffff;
   --foreground-hover:#2d2e30;
-  --nav-text:  #686868;
-  --nav-active-text:  #1D1D1D;
-  --nav-hover-text: #181818;
   --page-divider: #686868;
-  --icon: #303030;
+  --icon: #3d3d3d;
+  --input-field-focus: #000000;
+
+  /* text */
   --header-text: #1F1F1F;
   --primary-text: #303030;
   --secondary-text: #303030;
+  --placeholder-text: #a0a0a0;
+  --nav-text:  #686868;
+  --nav-active-text:  #1D1D1D;
+  --nav-hover-text: #181818;
+
+  /* buttons */
   --button-background: #F0F0F0;
   --button-stroke: #303030;
   --button-background-hover: #ffffff;
   --button-text: #1F1F1F;
   --button-text-hover: #F3F3F3;
   --button-shadow:#303030;
+
+  /* widgets */
   --widget-background: #FFFFFF;
   --widget-border: #303030;
+  --widget-stroke: #E2E2E2;
+
+  /* react-toastify colors */
+  --toast-shadow: #0000000c;
+  --toast-success: #7CE25D;
+  --toast-error: #E05454;
+  --toast-close-icon: #000000;
 }
 
 /* Font Faces */
@@ -79,6 +118,12 @@
        url('/fonts/ClashDisplay-Semibold.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'ClashGrotesk';
+  font-weight: 400; /* Regular */
+  src: url('/fonts/ClashGrotesk-Regular.woff2') format('woff2'),
+       url('/fonts/ClashGrotesk-Regular.woff') format('woff');
+}
 @font-face {
   font-family: 'ClashGrotesk';
   font-weight: 500; /* Medium */
@@ -103,4 +148,24 @@
   font-weight: normal; /* Regular */
   src: url('/fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
        url('/fonts/SpaceGrotesk-Regular.woff') format('woff');
+}
+
+/* Toast Containers */
+.Toastify__toast-body {
+  font-family: "ClashGrotesk", Inter, sans-serif;
+  color: var(--secondary-text);
+}
+.Toastify__toast {
+  background-color: var(--page-foreground);
+  border: solid 1px var(--widget-stroke);
+  box-shadow: 0px 0px 5px 0px var(--toast-shadow);
+}
+.Toastify__close-button {
+  color: var(--toast-close-icon);
+}
+.Toastify__progress-bar--success {
+  background-color: var(--toast-success);
+}
+.Toastify__progress-bar--error {
+  background-color: var(--toast-error);
 }

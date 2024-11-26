@@ -1,0 +1,68 @@
+.form-section-container {
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction:column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10dvh;
+}
+
+.input-fields-container {
+    display: flex;
+    position: relative;
+    flex-direction:column;
+    align-items: center;
+    width: 90%;
+    background-color: var(--page-foreground);
+    border: 1px solid var(--widget-stroke);
+    border-radius: 8px;
+    padding: 40px;
+    gap: 24px;
+}
+
+.input-field {
+    width: 90%;
+    background: none;;
+    padding: 10px 0px;
+    color: var(--primary-text);
+    font-family: "ClashGrotesk", sans-serif;
+    font-size: 1.08rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-bottom: 2px solid gray;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+.input-field:focus {
+    border-bottom: 2px solid var(--input-field-focus);
+    transition: border-color 0.3s ease;
+}
+
+.input-field::placeholder {
+    color: var(--placeholder-text);
+}
+
+textarea.input-field {
+    border: 2px solid gray;
+    border-radius: 4px; 
+    padding: 0.5em;
+    resize:none; 
+    min-height: 150px;
+    margin-top: 20px;;
+}
+textarea.input-field:focus {
+    border-bottom: 2px solid gray;
+}

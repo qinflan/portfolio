@@ -1,42 +1,42 @@
-
-.navbar-wrapper {
+.navigation {
+    position: fixed;
+    bottom: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    Bottom: 0;
-    width: 200px;
-    height:300px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    width: 20%;
 }
+
 .navbar-container {
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 60%;
 }
 
-.navbar-wrapper span {
-    height: 100%;
-}
+
 .navbar-content {
     display: flex;
     flex-direction: column;
     padding:5px 8px;
-    gap: 0px;
-    transform-origin: center;
-    position: relative;
+    gap: 2px;
     margin-left: 20px;
+    height: auto;
+    align-items: flex-start;
+    height: 30vh;
 }
 
 .nav-link {
     text-decoration: none;
     color: var(--nav-text);
     position: relative;
-    font-family: "SpaceGrotesk", eurostile, sans-serif;
-    font-size: 16px;
+    font-family: "ClashGrotesk", Inter, sans-serif;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.36px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     transition: 0.2s;
 }
 
@@ -56,3 +56,108 @@
     color: var(--nav-hover-text);
 }
 
+.nav-button-container {
+    display: flex;
+    position: fixed;
+    gap: 10px;
+    bottom: 2em;
+}
+
+/* Mobile Menu */
+.mobile-menu-container {
+    display: none;
+    position: fixed;
+    top: 2dvh;
+    left: 1dvh;
+    z-index: 1000;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .mobile-menu-dropdown {
+    position: absolute;
+    top: 50px;
+    background-color: var(--page-foreground);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    display: flex;
+    gap: 8px;
+    width: 120px;
+    padding: 16px 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 9999;
+    animation: fade-down 0.3s;
+    border: 1px solid var(--widget-stroke);
+  }
+  
+  .mobile-nav-link {
+    font-size: 1.1rem;
+    font-family: "ClashGrotesk", Inter, sans-serif;
+    color: var(--primary-text);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    text-transform: lowercase;
+    transition: 0.2s;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+@media (max-width: 768px) {
+    .navbar-content {
+        display:none;
+    }
+
+    .navigation {
+        z-index: 1;
+        width: 100%;
+        height: 4rem;
+        top: 0;
+        background-color: var(--page-background);
+    }
+
+    .mobile-menu-container {
+        display: flex;
+      }
+}
+
+
+@media (min-resolution:150dpi) {
+    .nav-button-container {
+        display: none;
+    }
+}
+
+@media (min-resolution:125dpi) {
+    .navbar-content {
+        height: 35vh;
+    }
+}
+
+/* Animations */
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-out {
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+}
