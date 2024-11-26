@@ -1,9 +1,10 @@
 export const projectData = [
     {
       title: "Gradelab",
-      dates: "Feb 2024",
+      dates: "Ongoing",
       description: "I analyzed diverse data sets using Power BI and Lucidchart to build project dashboards and process diagrams. Contributed to designing a new organizational architecture for the use of Smartsheet SaaS in our company.",
-      skills: ["Javascript", "React", "Node.js", "AWS", "MySQL", "Express.js"]
+      skills: ["Javascript", "React", "Node.js", "AWS", "MySQL", "Express.js"],
+      gif: "/assets/gradelabs-demo.gif",
     },
     {
       title: "KeyLocker",
@@ -16,7 +17,7 @@ export const projectData = [
     {
         title: "Portfolio Website",
         dates: "Fall 2024",
-        description: "you are looking at it! :)",
+        description: "You are looking at it! :)",
         skills: ["Typescript", "React", "Tailwind", "Node.js", "Git", "Figma"],
         repo: "https://github.com/qinflan/portfolio"
       },

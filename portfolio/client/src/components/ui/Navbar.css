@@ -74,13 +74,6 @@
     gap: 8px;
   }
   
-  .mobile-menu-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--icon);
-  }
-  
   .mobile-menu-dropdown {
     position: absolute;
     top: 60px;

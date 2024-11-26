@@ -62,8 +62,8 @@ const Navbar = () => {
 
                 {/* Mobile Hamburger Menu */}
                 <div className="mobile-menu-container" ref={menuRef}>
-                    <button className="mobile-menu-button" onClick={toggleMobileMenu}>
-                        {isMobileMenuOpen ? <IoClose size={34} /> : <TbMenu  size={34} />}
+                    <button className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1" onClick={toggleMobileMenu}>
+                        {isMobileMenuOpen ? <IoClose size={20} /> : <TbMenu  size={20} />}
                     </button>
 
                     {isMobileMenuOpen && (
