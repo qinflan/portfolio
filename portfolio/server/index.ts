@@ -12,8 +12,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-const PORT: string | number = process.env.PORT || 5000
-const prefix = "/api";
+const PORT: string | number = process.env.PORT || 5000;
 
 (async () => {
     try {
@@ -26,4 +25,4 @@ const prefix = "/api";
     }
   })();
   
-  app.use(`${prefix}/contactRouter`, contactRouter);
+  app.use('api/contact', contactRouter);
