@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "nodemailer": "^6.9.16"
   },
@@ -9,10 +10,13 @@
     "dev": "nodemon --exec ts-node index.ts"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
     "@types/nodemailer": "^6.4.17",
     "@vercel/node": "^2.10.3",
+    "express": "^4.21.1",
     "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.7.2"
   }
 }
