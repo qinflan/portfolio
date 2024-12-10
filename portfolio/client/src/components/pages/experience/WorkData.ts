@@ -10,7 +10,7 @@ export const workData = [
       title: "Software Engineer",
       company: "Ur Wealth",
       dates: "Sep 2024 - Present",
-      description: "Leading the development of a full-stack MERN wealth management app, guiding a team of developers to create an intuitive dashboard for managing wealth assets.",
+      description: "Leading the development of a full-stack MERN wealth management app, guiding a team of developers to create an intuitive fin-tech dashboard for managing wealth assets.",
       skills: ["Typescript", "React", "Node.js", "MongoDB", "Express.js", "Docker"]
     },
     {

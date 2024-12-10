@@ -16,7 +16,7 @@ const RightPanel = () => {
     return (
         <div className="scroll-right-panel">
             <div className="about-me" ref={aboutRef} id="about">
-                <p>As a student studying Information Technology and Computer Science, I’m driven by my passion for technology and problem-solving. Whether I’m building computers from the ground up or developing full-stack web applications, I’m constantly seeking to learn and grow. I specialize in languages like JavaScript, TypeScript, Python, Java, HTML, and CSS, and love using these tools to craft intuitive, scalable solutions. I’m a quick learner, always eager to tackle new challenges in dynamic, fast-paced environments. Above all, I’m committed to creating meaningful digital experiences that make a difference.
+                <p>I'm a college student based in Boston, Massachusetts studying Information Technology and Computer Science, driven by my passion for tech and problem-solving. Whether I’m building computers or developing full-stack web applications, I’m constantly seeking to learn and grow. I specialize in languages like JavaScript, TypeScript, Python, Java, HTML, and CSS, and love using these tools to craft intuitive, scalable solutions. I’m a quick learner, always eager to tackle new challenges in dynamic, fast-paced environments. Above all, I’m committed to creating meaningful digital experiences that make a difference.
                 </p>
             </div>
             {/* pass card sub components as children within a glass container */}
