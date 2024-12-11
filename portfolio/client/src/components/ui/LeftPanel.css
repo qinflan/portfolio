@@ -76,8 +76,9 @@
 .mobile-socials-container {
     display: flex;
     gap: 12px;
-    display: none;
     align-items: center;
+    display: none;
+    margin-bottom: 24px;
 }
 
 @media (max-width: 768px) {
@@ -101,8 +102,6 @@
         padding: 0 5%;
         width: 100%;
         text-align: left;
-        margin-bottom: 10px;
-        margin-top: 30px;
     }
     .hero-name {
         font-size: 4rem;
@@ -118,7 +117,7 @@
 
     .mantra-text {
         text-align: left;
-        font-size: large;
+        font-size: medium;
         margin: unset;
     }
 

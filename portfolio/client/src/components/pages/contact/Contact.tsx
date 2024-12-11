@@ -76,7 +76,7 @@ const Contact = () => {
           required/>
         </div>
           
-        <button type="submit" className="brutal-btn">
+        <button type="submit" className="brutal-button">
           send message
         </button>
 

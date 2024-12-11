@@ -19,10 +19,10 @@ const LeftPanel = () => {
                 </div>
                 <div className="mobile-socials-container">
                     <a href="https://github.com/qinflan" target="_blank" rel="noopener noreferrer">
-                        <TfiGithub size={36.5} className="brutal-btn p-2" />
+                        <TfiGithub size={36.5} className="brutal-button" />
                     </a>
                     <a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer">
-                        <GrLinkedinOption size={36.5} className="brutal-btn p-2" />
+                        <GrLinkedinOption size={36.5} className="brutal-button" />
                     </a>
                     <ResumeBtn />
                 </div>
