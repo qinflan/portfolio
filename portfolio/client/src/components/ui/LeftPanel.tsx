@@ -1,6 +1,8 @@
 import Navbar from './Navbar'
 import "./LeftPanel.css"
 import ResumeBtn from './ResumeBtn';
+import { GrLinkedinOption } from "react-icons/gr";
+import { TfiGithub } from "react-icons/tfi";
 
 const LeftPanel = () => {
     return (
@@ -14,6 +16,15 @@ const LeftPanel = () => {
                     <h3 className="mantra-text">
                         Passionate about creating innovative web experiences, I thrive in fast-paced environments and turn ideas into user-friendly solutions.
                     </h3>
+                </div>
+                <div className="mobile-socials-container">
+                    <a href="https://github.com/qinflan" target="_blank" rel="noopener noreferrer">
+                        <TfiGithub size={36.5} className="brutal-btn p-2" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer">
+                        <GrLinkedinOption size={36.5} className="brutal-btn p-2" />
+                    </a>
+                    <ResumeBtn />
                 </div>
                 <div className="resume-btn-container">
                     <ResumeBtn />

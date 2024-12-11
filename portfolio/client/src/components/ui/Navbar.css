@@ -46,11 +46,6 @@
     font-weight: 700;
 }
 
-.nav-link.active {
-    font-weight: 700;
-    color: var(--nav-active-text);
-}
-
 .nav-link:hover {
     transition: 0.2s;
     color: var(--nav-hover-text);

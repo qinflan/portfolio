@@ -23,6 +23,13 @@
 
 }
 
+@media (max-width: 768px) {
+    .brutal-btn {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+
 @media (max-width: 600px) {
     .brutal-btn {
         font-size: 14px;

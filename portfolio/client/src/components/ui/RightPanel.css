@@ -4,12 +4,12 @@
     flex-direction: column;
     align-items: center;
     width: 50%;
+    margin-top: 100px;
 }
 
 .about-me {
     width: 90%;
     color: var(--primary-text);
-    margin-top: 8rem;
     margin-bottom: 6rem;
     font-family: "ClashGrotesk", Inter, sans-serif;
     font-size: larger;
@@ -45,9 +45,11 @@
 @media (max-width: 768px) {
     .scroll-right-panel {
         width: 90%;
+        margin-top: unset;
     }
     .about-me {
         font-size: medium;
+        margin-bottom: unset;
     }
 }
 
