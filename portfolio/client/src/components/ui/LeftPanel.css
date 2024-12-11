@@ -81,6 +81,23 @@
     margin-bottom: 24px;
 }
 
+/* button styling */
+.brutal-icon-button {
+    padding: 6px;
+    background-color: var(--button-background);
+    border-radius: 8px;
+    border: 2px solid var(--button-stroke);
+    color: var(--button-text);
+    box-shadow: 4px 4px 0 -2px var(--page-background), 4px 4px 0 0 var(--button-stroke);
+    animation: fade-up 0.5s;
+    transition: 0.3s;
+  }
+  .brutal-icon-button:hover {
+    transition: 0.4s;
+    box-shadow: 5px 5px 0 -2px var(--button-shadow), 5px 5px 0 0 var(--button-stroke);
+    background-color: var(--button-background-hover);
+  }
+
 @media (max-width: 768px) {
     .resume-btn-container {
         display: none;
@@ -91,7 +108,7 @@
     }
     .hero-container {
         position: relative;
-        top: 4rem;
+        top: 5rem;
         width: 90%;
         margin-bottom: 100px;
     }
@@ -144,18 +161,6 @@
         text-align: left;
         font-size: medium;
         margin: unset;
-    }
-}
-
-@media (min-resolution:125dpi) {
-    .hero-container .brutal-btn {
-        display: none;
-    }
-}
-
-@media (min-resolution:150dpi) {
-    .hero-container {
-        top: 10vh;
     }
 }
 

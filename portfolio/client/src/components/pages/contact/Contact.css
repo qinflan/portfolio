@@ -32,7 +32,7 @@
 }
 
 .input-field {
-    width: 90%;
+    width: 100%;
     background: none;
     padding: 10px 0px;
     color: var(--primary-text);

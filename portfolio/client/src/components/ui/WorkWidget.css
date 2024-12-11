@@ -69,7 +69,7 @@
     color: var(--primary-text);
     padding: 8px 10px;
     font-weight: 500;
-    border-radius: 8px;
+    border-radius: 12px;
     background-color: var(--page-background);
     cursor:default;
     font-size: 0.9rem;
