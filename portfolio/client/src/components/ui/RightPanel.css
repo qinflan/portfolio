@@ -9,7 +9,7 @@
 
 .about-me {
     width: 90%;
-    color: var(--primary-text);
+    color: var(--secondary-text);
     margin-bottom: 6rem;
     font-family: "ClashGrotesk", Inter, sans-serif;
     font-size: larger;

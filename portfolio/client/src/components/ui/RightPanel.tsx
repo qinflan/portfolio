@@ -24,11 +24,12 @@ const RightPanel = () => {
                 in dynamic, fast-paced environments. Above all, I’m committed to creating meaningful digital experiences that make a difference.
                 </p>
             </div>
-            <div className="relative w-full" ref={projectsRef} id="projects">
-                <Projects/>
-            </div>
             <div className="relative w-full" ref={workRef} id="experience">
                 <Experience />
+            </div>
+            
+            <div className="relative w-full" ref={projectsRef} id="projects">
+                <Projects/>
             </div>
 
             <div className="relative w-full" ref={designsRef} id="design">
