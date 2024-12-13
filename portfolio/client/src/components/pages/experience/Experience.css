@@ -32,9 +32,7 @@
 }
 
 .work-widget-container:hover {
-
     opacity: 1;
-    cursor: pointer;
 }
 
 .work-widgets-container:hover .work-widget-container:not(:hover) {

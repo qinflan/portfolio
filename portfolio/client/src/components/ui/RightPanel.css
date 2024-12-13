@@ -8,6 +8,8 @@
 }
 
 .about-me {
+    display: flex;
+    flex-direction: column;
     width: 90%;
     color: var(--secondary-text);
     margin-bottom: 6rem;
@@ -16,6 +18,11 @@
     letter-spacing: 0.36px;
     font-weight: 400;
     animation: fade-up 0.5s;
+    gap: 20px;
+}
+
+.emphasis-text {
+    font-weight: 500;
 }
 
 .section-title {

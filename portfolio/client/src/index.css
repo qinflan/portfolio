@@ -150,6 +150,11 @@
        url('/fonts/SpaceGrotesk-Regular.woff') format('woff');
 }
 
+::selection {
+  background-color: var(--primary-text); /* Highlight background color */
+  color: var(--page-background);             /* Highlighted text color */
+}
+
 /* Toast Containers */
 .Toastify__toast-body {
   font-family: "ClashGrotesk", Inter, sans-serif;
