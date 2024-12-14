@@ -17,7 +17,7 @@ export const workData = [
         title: "CS Teacher Assistant",
         company: "Microsoft TEALS",
         dates: "Sep 2024 - Present",
-        description: "Supporting computer science education at Boston Latin Academy by assisting with an AP Computer Science course, reviewing student code, and contributing to curriculum development and learning outcomes",
+        description: "Supporting computer science education at Boston Latin Academy by assisting with an AP Computer Science course, reviewing student code, and contributing to curriculum development and learning outcomes.",
         skills: ["Python", "HTML", "CSS"]
       },
       {
