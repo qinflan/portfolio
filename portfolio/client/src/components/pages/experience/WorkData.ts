@@ -4,7 +4,7 @@ export const workData = [
       company: "Veolia North America",
       dates: "Jun 2024 - Present",
       description: "Analyzed datasets in Smartsheet to create intuitive, user-friendly dashboards for project tracking. Played a key role in designing a new organizational architecture to streamline Smartsheet integration.",
-      skills: ["Python", "Smartsheet", "Jira", "Lucidchart", "IT Project Management"]
+      skills: ["Python", "Smartsheet", "Jira", "Data Analysis", "IT Project Management"]
     },
     {
       title: "Software Engineer",
