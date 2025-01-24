@@ -24,3 +24,9 @@
         justify-content: flex-start;
     }
 }
+
+@media (max-width: 600px) {
+    .format-display {
+        gap: 15vh;
+    }
+}
