@@ -6,6 +6,7 @@ import { TfiGithub } from "react-icons/tfi";
 import { IoClose } from "react-icons/io5";
 import { TbMenu } from "react-icons/tb";
 import logo from "/assets/portfolio_logo.svg"
+import { FiArrowUpRight } from "react-icons/fi";
 
 
 // Navigation Bar
@@ -36,7 +37,6 @@ const Navbar = () => {
         element?.scrollIntoView({ behavior: "smooth" });
         setIsMobileMenuOpen(false);
     };
-
 
     return (
         <div className="navigation">
@@ -77,8 +77,18 @@ const Navbar = () => {
                             <button className="mobile-nav-link" onClick={() => scrollToSection("projects")}>projects</button>
                             <button className="mobile-nav-link" onClick={() => scrollToSection("design")}>design</button>
                             <button className="mobile-nav-link" onClick={() => scrollToSection("contact")}>contact</button>
+                            <div className="social-dropdown-container">
+                                <a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer" className="dropdown-social-link">
+                                    LinkedIn
+                                    <FiArrowUpRight />
+                                </a>
+                                <a href="https://github.com/qinflan" target="_blank" rel="noopener noreferrer" className="dropdown-social-link">
+                                    
+                                    GitHub
+                                    <FiArrowUpRight />
+                                </a>
+                            </div>
                         </div>
-                        
                     )}
                 </div>
             </nav>

@@ -156,12 +156,12 @@
     .hero-text-container {
         text-align: center;
         align-items: center;
+        gap: 4px;
     }
 
     .hero-container {
         height: 75vh;
         justify-content: center;
-        width: 80%;
     }
     
     .hero-name {
@@ -178,7 +178,7 @@
     .mantra-text {
         text-align: center;
         font-size: medium;
-        width: 290px;
+        width: 100%;
     }
 
     .mobile-socials-container {
