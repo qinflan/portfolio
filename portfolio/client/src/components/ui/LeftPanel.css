@@ -101,6 +101,7 @@
   .avatar-img {
     width: 200px;
     display:none;
+    animation: fade-up 0.5s;
   }
 
 @media (max-width: 768px) {
