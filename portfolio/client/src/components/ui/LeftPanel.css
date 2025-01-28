@@ -136,6 +136,7 @@
         text-align: left;
         font-size: medium;
         margin: unset;
+        text-wrap: unset;
     }
 
     .mobile-socials-container {
@@ -149,14 +150,15 @@
     .hero-container {
         height: 75vh;
         justify-content: center;
+        width: 80%;
     }
     
     .hero-name {
-        font-size: 38px;
+        font-size: 40px;
         position: relative;
         text-align: left;
         margin-top: auto;
-        width: 400px;
+        width: 200px;
     }
     .role-text {
         font-size: x-large;
@@ -166,6 +168,10 @@
         text-align: left;
         font-size: medium;
         margin: unset;
+    }
+
+    .mobile-socials-container {
+        justify-content: center;
     }
 }
 
