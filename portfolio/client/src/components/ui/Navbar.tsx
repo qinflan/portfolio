@@ -5,6 +5,7 @@ import { GrLinkedinOption } from "react-icons/gr";
 import { TfiGithub } from "react-icons/tfi";
 import { IoClose } from "react-icons/io5";
 import { TbMenu } from "react-icons/tb";
+import logo from "/assets/portfolio_logo.svg"
 
 
 // Navigation Bar
@@ -39,6 +40,9 @@ const Navbar = () => {
 
     return (
         <div className="navigation">
+            <div className="flex">
+            <img src={logo}></img>
+            </div>
             <nav className="navbar-container">
                 <span className="w-1 bg-[var(--page-divider)] flex-shrink-0 rounded-full"></span>
                 <div className="navbar-content">
