@@ -16,8 +16,8 @@ const RightPanel = () => {
 
     return (
         <div className="scroll-right-panel">
+            <h1 className="section-title">about</h1>
             <div className="about-me" ref={aboutRef} id="about">
-                <h1 className="section-title">about</h1>
                 <p>I'm a college student based in <span className="emphasis-text">Boston, Massachusetts</span> studying Information Technology and Computer Science,
                     driven by my passion for tech and problem-solving. Whether I’m building computers or developing full-stack web applications,
                     I’m constantly seeking to learn and grow.
@@ -33,15 +33,15 @@ const RightPanel = () => {
             </div>
 
             <div className="relative w-full" ref={projectsRef} id="projects">
-                <Projects/>
+                <Projects />
             </div>
 
             <div className="relative w-full" ref={designsRef} id="design">
-                <DesignBento/>
+                <DesignBento />
             </div>
 
             <div className="relative w-full" ref={contactRef} id="contact">
-                <Contact/>
+                <Contact />
             </div>
         </div>
     )
