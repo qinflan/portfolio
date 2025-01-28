@@ -66,3 +66,15 @@ textarea.input-field {
 textarea.input-field:focus {
     border-bottom: 2px solid gray;
 }
+
+
+@media(max-width: 600px) {
+    .input-fields-container {
+        width: 90%;
+        background-color: unset;
+        border: unset;
+        border-radius: unset;
+        padding: unset;
+        gap: 24px;
+    }
+}

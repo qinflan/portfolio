@@ -38,3 +38,17 @@
 .work-widgets-container:hover .work-widget-container:not(:hover) {
     opacity: 0.5; 
 }
+
+@media (max-width: 600px) {
+    .work-widget-container {
+        background-color: unset;
+        border-radius: unset;
+        width: 90%;
+        padding: 20px 0px;
+        border: unset;
+        gap: 20px;
+        box-shadow: unset;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+}

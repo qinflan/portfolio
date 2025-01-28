@@ -35,4 +35,9 @@
     .project-widget-title {
         font-size: medium;
     }
+
+    .widget-gif {
+      max-width: 100%;
+    }
+
 }

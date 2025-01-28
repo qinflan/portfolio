@@ -82,6 +82,7 @@
 }
 
 @media (max-width: 600px) {
+
     .widget-title {
         font-size: medium;
     }
@@ -93,6 +94,7 @@
     .widget-description {
         font-size: small;
         line-height: 18px;
+        align-items: flex-start;
     }
 
     .widget-date {
@@ -101,6 +103,11 @@
 
     .widget-skill-tile {
         font-size: 12px;
+        background-color: var(--page-foreground);
+    }
+
+    .widget-skill-tiles {
+        justify-content: flex-start;
     }
 
 }
