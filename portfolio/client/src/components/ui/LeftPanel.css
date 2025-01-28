@@ -98,9 +98,8 @@
     background-color: var(--button-background-hover);
   }
 
-
   .avatar-img {
-    width: 250px;
+    width: 200px;
     display:none;
   }
 
@@ -134,7 +133,7 @@
     .role-text {
         font-size: xx-large;
         position: relative;
-        width: 90%;
+        width: 100%;
         text-align: left;
     }
 
@@ -142,6 +141,7 @@
         text-align: left;
         font-size: medium;
         margin: unset;
+        text-wrap: unset;
     }
 
     .mobile-socials-container {
@@ -152,26 +152,41 @@
 
 @media (max-width: 600px) {
 
+    .hero-text-container {
+        text-align: center;
+        align-items: center;
+    }
+
     .hero-container {
         height: 75vh;
         justify-content: center;
+        width: 80%;
     }
     
     .hero-name {
-        font-size: 38px;
+        font-size: 36px;
         position: relative;
-        text-align: left;
+        text-align: center;
         margin-top: auto;
-        width: 400px;
     }
     .role-text {
         font-size: x-large;
+        text-align: center;
     }
 
     .mantra-text {
-        text-align: left;
+        text-align: center;
         font-size: medium;
-        margin: unset;
+        width: 290px;
+    }
+
+    .mobile-socials-container {
+        justify-content: center;
+    }
+
+    .avatar-img {
+        display: flex;
+        margin-bottom: 1rem;
     }
 }
 

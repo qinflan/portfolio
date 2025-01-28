@@ -3,12 +3,14 @@ import "./LeftPanel.css"
 import ResumeBtn from './ResumeBtn';
 import { GrLinkedinOption } from "react-icons/gr";
 import { TfiGithub } from "react-icons/tfi";
+import avatar from "/assets/profile.png"
 
 const LeftPanel = () => {
     return (
         <div className="left-panel-container">
             <div className="hero-container">
                 <div className="hero-text-container">
+                    <img className="avatar-img" src={avatar}></img>
                     <h1 className="hero-name">Quinn Flanigan</h1>
                     <h3 className="role-text">
                         software developer
