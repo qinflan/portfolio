@@ -14,7 +14,7 @@ const LeftPanel = () => {
                         software developer
                     </h3>
                     <h3 className="mantra-text">
-                        Passionate about creating innovative web experiences, I thrive in fast-paced environments and turn ideas into user-friendly solutions.
+                        Passionate about creating innovative web experiences and turning ideas into user-friendly solutions.
                     </h3>
                 </div>
                 <div className="mobile-socials-container">

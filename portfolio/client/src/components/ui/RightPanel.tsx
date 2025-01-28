@@ -18,13 +18,13 @@ const RightPanel = () => {
         <div className="scroll-right-panel">
             <div className="about-me" ref={aboutRef} id="about">
                 <p>I'm a college student based in <span className="emphasis-text">Boston, Massachusetts</span> studying Information Technology and Computer Science,
-                    driven by my passion for tech and problem-solving. Whether I’m building computers or developing full-stack web applications,
-                    I’m constantly seeking to learn and grow.
+                    driven by my passion for tech and problem-solving. I'm proficient with <span className="emphasis-text">Java, Python, JavaScript, and TypeScript.</span> Whether I’m building computers or developing full-stack web applications,
+                    I’m constantly working on picking up new skills.
                 </p>
 
-                <p>I’m a quick learner, always looking forward towards a new project to work on. I'm usually either working on a personal project or collaborating with friends to build things! Above all, I’m committed to creating meaningful digital experiences that make a difference.</p>
+                <p>I’m a quick learner, always looking forward towards a new project to work on. I'm usually either working on a personal project or collaborating with friends to build things!</p>
 
-                <p>In my spare time I can be found playing music, hiking up a mountain, gaming, or tinkering with computers and music equipment.
+                <p>In my spare time I play music, hike, game, or work on computers and music equipment.
                 </p>
             </div>
             <div className="relative w-full" ref={workRef} id="experience">

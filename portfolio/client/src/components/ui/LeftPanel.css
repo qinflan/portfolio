@@ -64,7 +64,7 @@
     letter-spacing: 0.36px;
     font-weight: 400;
     text-wrap: auto;
-    max-width: 400px;
+    max-width: 302px;
     color: var(--secondary-text);
     margin-top: 10px;
     text-align: center;
@@ -96,6 +96,12 @@
     transition: 0.4s;
     box-shadow: 5px 5px 0 -2px var(--button-shadow), 5px 5px 0 0 var(--button-stroke);
     background-color: var(--button-background-hover);
+  }
+
+
+  .avatar-img {
+    width: 250px;
+    display:none;
   }
 
 @media (max-width: 768px) {
