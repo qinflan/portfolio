@@ -11,8 +11,6 @@ const RightPanel = () => {
     const contactRef = useRef<HTMLDivElement | null>(null);
     const aboutRef = useRef<HTMLDivElement | null>(null);
     const projectsRef = useRef<HTMLDivElement | null>(null);
-    // const designsRef = useRef<HTMLDivElement | null>(null);
-
 
     return (
         <div className="scroll-right-panel">
@@ -35,11 +33,6 @@ const RightPanel = () => {
             <div className="relative w-full" ref={projectsRef} id="projects">
                 <Projects />
             </div>
-
-            {/* NOTE: replace design with certifications section for now */}
-            {/* <div className="relative w-full" ref={designsRef} id="design">
-                <DesignBento />
-            </div> */}
 
             <div className="relative w-full" ref={contactRef} id="contact">
                 <Contact />

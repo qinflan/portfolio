@@ -1,11 +1,6 @@
 export const designData = [
     {
-        src: "/assets/ur-wealth-ux1.gif",
+        src:""
     },
-    {
-        src: "/assets/ur-wealth-ux2.gif",
-    },
-    {
-        src: "/assets/urwealth-darkmode.png",
-    }
+
   ];
