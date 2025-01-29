@@ -123,11 +123,19 @@
     display: flex;
     padding-left: 0.2em;
     transition: 0.3s;
+    align-items: center;
   }
 
   .dropdown-social-link:hover {
     opacity: 60%;
     transition: 0.3s;
+  }
+
+  .logo-container {
+    display: none;
+    position: fixed;
+    top: 0.9dvh;
+    left: 5%;
   }
 
 @media (max-width: 768px) {
@@ -146,6 +154,13 @@
     .mobile-menu-container {
         display: flex;
       }
+}
+
+@media (max-width: 600px) {
+  .logo-container {
+    display: flex;
+  }
+
 }
 
 

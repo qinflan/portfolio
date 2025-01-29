@@ -4,8 +4,17 @@ import ResumeBtn from './ResumeBtn';
 import { GrLinkedinOption } from "react-icons/gr";
 import { TfiGithub } from "react-icons/tfi";
 import avatar from "/assets/profile.png"
+import { BsArrowDownCircle } from "react-icons/bs";
+import { Navigate } from 'react-router';
+
 
 const LeftPanel = () => {
+
+    const skipHero = () => {
+        const element = document.getElementById("about");
+        element?.scrollIntoView({ behavior: "smooth" });
+    }
+
     return (
         <div className="left-panel-container">
             <div className="hero-container">
@@ -16,7 +25,7 @@ const LeftPanel = () => {
                         software developer
                     </h3>
                     <h3 className="mantra-text">
-                        Passionate about creating innovative web experiences and turning ideas into user-friendly solutions.
+                        Passionate about creating innovative web experiences and turning ideas into user friendly solutions.
                     </h3>
                 </div>
                 <div className="mobile-socials-container">
@@ -33,6 +42,7 @@ const LeftPanel = () => {
                 </div>
             </div>
             <Navbar />
+            <BsArrowDownCircle className="skip-hero-btn" size={40} onClick={skipHero}/>
         </div>
     )
 }

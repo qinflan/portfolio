@@ -2,7 +2,7 @@ import "./RightPanel.css"
 import Experience from '../pages/experience/Experience'
 import Contact from '../pages/contact/Contact'
 import Projects from "../pages/projects/Projects"
-import DesignBento from "./DesignBento"
+// import DesignBento from "./DesignBento"
 import { useRef} from "react"
 
 const RightPanel = () => {
@@ -16,10 +16,10 @@ const RightPanel = () => {
 
     return (
         <div className="scroll-right-panel">
-            <h1 className="section-title">about</h1>
-            <div className="about-me" ref={aboutRef} id="about">
+            <div className="about-me">
+                <h1 ref={aboutRef} id="about" className="section-title">about</h1>
                 <p>I'm a college student based in <span className="emphasis-text">Boston, Massachusetts</span> studying Information Technology and Computer Science,
-                    driven by my passion for tech and problem-solving. I'm proficient with <span className="emphasis-text">Java, Python, JavaScript, and TypeScript.</span> Whether I’m building computers or developing full-stack web applications,
+                    driven by my passion for tech and problem-solving. I'm proficient with <span className="emphasis-text">Java, Python, JavaScript, and TypeScript.</span> Whether I'm developing full-stack web applications or building computers from the ground up,
                     I’m constantly working on picking up new skills.
                 </p>
 
@@ -36,9 +36,10 @@ const RightPanel = () => {
                 <Projects />
             </div>
 
-            <div className="relative w-full" ref={designsRef} id="design">
+            {/* NOTE: replace design with certifications section for now */}
+            {/* <div className="relative w-full" ref={designsRef} id="design">
                 <DesignBento />
-            </div>
+            </div> */}
 
             <div className="relative w-full" ref={contactRef} id="contact">
                 <Contact />

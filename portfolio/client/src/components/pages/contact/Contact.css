@@ -34,6 +34,7 @@
 .input-field {
     width: 100%;
     background: none;
+    border-radius: 0;
     padding: 10px 0px;
     color: var(--primary-text);
     font-family: "ClashGrotesk", Inter, sans-serif;
@@ -73,7 +74,7 @@ textarea.input-field:focus {
         width: 90%;
         background-color: unset;
         border: unset;
-        border-radius: unset;
+        border-radius: 0;
         padding: unset;
         gap: 24px;
     }

@@ -1,12 +1,14 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useContext } from "react";
 import "./Navbar.css"
 import { ToggleTheme } from '../hooks/theme/toggleTheme';
 import { GrLinkedinOption } from "react-icons/gr";
 import { TfiGithub } from "react-icons/tfi";
 import { IoClose } from "react-icons/io5";
 import { TbMenu } from "react-icons/tb";
-import logo from "/assets/portfolio_logo.svg"
+import logoDark from "/assets/logo-dark.svg"
+import logoLight from "/assets/logo-light.svg"
 import { FiArrowUpRight } from "react-icons/fi";
+import { ThemeContext } from "../hooks/theme/ThemeContext";
 
 
 // Navigation Bar
@@ -16,6 +18,8 @@ const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
     const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
     const menuRef = useRef<HTMLDivElement>(null);
+    const themeContext = useContext(ThemeContext)
+    const { theme } = themeContext
 
     // click outside to close dropdown
     useEffect(() => {
@@ -40,9 +44,14 @@ const Navbar = () => {
 
     return (
         <div className="navigation">
-            <div className="flex">
-            <img src={logo}></img>
+            <div className="logo-container">
+                {theme === "light" ? (
+                    <img src={logoLight}></img>
+                ) : (
+                    <img src={logoDark}></img>
+                )}
             </div>
+
             <nav className="navbar-container">
                 <span className="w-1 bg-[var(--page-divider)] flex-shrink-0 rounded-full"></span>
                 <div className="navbar-content">
@@ -50,7 +59,7 @@ const Navbar = () => {
                     <a className="nav-link" href="/">home</a>
                     <button className="nav-link" onClick={() => scrollToSection("experience")}>experience</button>
                     <button className="nav-link" onClick={() => scrollToSection("projects")}>projects</button>
-                    <button className="nav-link" onClick={() => scrollToSection("design")}>design</button>
+                    <button className="nav-link" onClick={() => scrollToSection("certifications")}>certifications</button>
                     <button className="nav-link" onClick={() => scrollToSection("contact")}>contact</button>
 
                     <div className="nav-button-container">
@@ -73,19 +82,18 @@ const Navbar = () => {
                     {isMobileMenuOpen && (
                         <div className="mobile-menu-dropdown">
                             <a className="mobile-nav-link" href="/" onClick={() => scrollToSection("home")}>home</a>
+                            <button className="mobile-nav-link" onClick={() => scrollToSection("about")}>about</button>
                             <button className="mobile-nav-link" onClick={() => scrollToSection("experience")}>work</button>
                             <button className="mobile-nav-link" onClick={() => scrollToSection("projects")}>projects</button>
-                            <button className="mobile-nav-link" onClick={() => scrollToSection("design")}>design</button>
                             <button className="mobile-nav-link" onClick={() => scrollToSection("contact")}>contact</button>
                             <div className="social-dropdown-container">
                                 <a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer" className="dropdown-social-link">
-                                    LinkedIn
                                     <FiArrowUpRight />
+                                    linkedin
                                 </a>
                                 <a href="https://github.com/qinflan" target="_blank" rel="noopener noreferrer" className="dropdown-social-link">
-                                    
-                                    GitHub
                                     <FiArrowUpRight />
+                                    github
                                 </a>
                             </div>
                         </div>
