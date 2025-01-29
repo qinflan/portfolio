@@ -11,7 +11,7 @@ const RightPanel = () => {
     const contactRef = useRef<HTMLDivElement | null>(null);
     const aboutRef = useRef<HTMLDivElement | null>(null);
     const projectsRef = useRef<HTMLDivElement | null>(null);
-    const designsRef = useRef<HTMLDivElement | null>(null);
+    // const designsRef = useRef<HTMLDivElement | null>(null);
 
 
     return (

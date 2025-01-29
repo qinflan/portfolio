@@ -5,8 +5,6 @@ import { GrLinkedinOption } from "react-icons/gr";
 import { TfiGithub } from "react-icons/tfi";
 import avatar from "/assets/profile.png"
 import { BsArrowDownCircle } from "react-icons/bs";
-import { Navigate } from 'react-router';
-
 
 const LeftPanel = () => {
 
