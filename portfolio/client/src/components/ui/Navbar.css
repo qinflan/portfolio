@@ -81,9 +81,10 @@
     padding: 16px 14px;
     flex-direction: column;
     align-items: center;
-    padding-top: 8em;
+    padding-top: 6em;
     z-index: 9999;
-    animation: fade-down 0.3s;
+    animation: slide-down 1s;
+    overflow: hidden;
   }
   
   .mobile-nav-link {
@@ -101,7 +102,7 @@
     border-radius: 4px;
     text-align: left;
     cursor: pointer;
-    min-width: 300px;
+    min-width: 275px;
   }
 
   .mobile-nav-link:hover {
@@ -198,5 +199,17 @@
     0% {
         opacity: 0;
         transform: translateY(30px) scale(0.9);
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        height: 0;
+        /* transform: translateY(100px) scale(0.9); */
+    }
+
+    100% {
+        height: 100vh;
+        /* transform: translateY(0px) scale(1); */
     }
 }
