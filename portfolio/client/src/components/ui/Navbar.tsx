@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef, useContext } from "react";
+import {motion, AnimatePresence } from 'motion/react'
 import "./Navbar.css"
 import { ToggleTheme } from '../hooks/theme/toggleTheme';
 import { GrLinkedinOption } from "react-icons/gr";
