@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef, useContext } from "react";
-import {motion, AnimatePresence } from 'motion/react'
+import { motion, AnimatePresence } from 'motion/react'
 import "./Navbar.css"
 import { ToggleTheme } from '../hooks/theme/toggleTheme';
 import { GrLinkedinOption } from "react-icons/gr";
@@ -43,6 +43,12 @@ const Navbar = () => {
         setIsMobileMenuOpen(false);
     };
 
+    const dropdownVariants = {
+        hidden: { height: 0, y: 0, }, 
+        visible: { height: "100vh", transition: { duration: 0.8 } }, 
+        exit: { height: 0, opacity: 0, transition: { duration: 0.3 } }
+    };
+
     return (
         <div className="navigation">
             <div className="logo-container">
@@ -77,27 +83,32 @@ const Navbar = () => {
                 <div className="mobile-menu-container" ref={menuRef}>
                     <ToggleTheme />
                     <button className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1" onClick={toggleMobileMenu}>
-                        {isMobileMenuOpen ? <IoClose size={20} /> : <TbMenu  size={20} />}
+                        {isMobileMenuOpen ? <IoClose size={20} /> : <TbMenu size={20} />}
                     </button>
-                    {isMobileMenuOpen && (
-                        <div className="mobile-menu-dropdown">
-                            <a className="mobile-nav-link" href="/" onClick={() => scrollToSection("home")}>home</a>
-                            <button className="mobile-nav-link" onClick={() => scrollToSection("about")}>about</button>
-                            <button className="mobile-nav-link" onClick={() => scrollToSection("experience")}>work</button>
-                            <button className="mobile-nav-link" onClick={() => scrollToSection("projects")}>projects</button>
-                            <button className="mobile-nav-link" onClick={() => scrollToSection("contact")}>contact</button>
-                            <div className="social-dropdown-container">
-                                <a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer" className="dropdown-social-link">
-                                    <FiArrowUpRight />
-                                    linkedin
-                                </a>
-                                <a href="https://github.com/qinflan" target="_blank" rel="noopener noreferrer" className="dropdown-social-link">
-                                    <FiArrowUpRight />
-                                    github
-                                </a>
-                            </div>
-                        </div>
-                    )}
+                    <AnimatePresence>
+                        {isMobileMenuOpen && (
+                            <motion.div className="mobile-menu-dropdown" initial="hidden"
+                                animate="visible"
+                                exit="exit"
+                                variants={dropdownVariants}>
+                                <a className="mobile-nav-link" href="/" onClick={() => scrollToSection("home")}>home</a>
+                                <button className="mobile-nav-link" onClick={() => scrollToSection("about")}>about</button>
+                                <button className="mobile-nav-link" onClick={() => scrollToSection("experience")}>work</button>
+                                <button className="mobile-nav-link" onClick={() => scrollToSection("projects")}>projects</button>
+                                <button className="mobile-nav-link" onClick={() => scrollToSection("contact")}>contact</button>
+                                <div className="social-dropdown-container">
+                                    <a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer" className="dropdown-social-link">
+                                        <FiArrowUpRight />
+                                        linkedin
+                                    </a>
+                                    <a href="https://github.com/qinflan" target="_blank" rel="noopener noreferrer" className="dropdown-social-link">
+                                        <FiArrowUpRight />
+                                        github
+                                    </a>
+                                </div>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                 </div>
             </nav>
         </div>
