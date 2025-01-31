@@ -44,9 +44,15 @@ const Navbar = () => {
     };
 
     const dropdownVariants = {
-        hidden: { height: 0, y: 0, }, 
-        visible: { height: "100vh", transition: { duration: 0.8 } }, 
-        exit: { height: 0, opacity: 0, transition: { duration: 0.3 } }
+        hidden: { scaleY: 0, y: 0, }, 
+        visible: { scaleY: 1, transition: { duration: 0.8, ease:[0.22, 1, 0.36, 1] } }, 
+        exit: { scaleY: 0, transition: { duration: 0.6, ease:[0.32, 0, 0.36, 1] } }
+    };
+
+    const mobileLinkVars = {
+        hidden: { opacity: 0 }, 
+        visible: { opacity: 1, transition: { duration: 0.6, ease:[0.5, 0, 0.36, 1] } }, 
+        exit: { opacity: 0, transition: { duration: 0.3, ease:[0.22, 1, 0.36, 1] } }
     };
 
     return (
@@ -87,15 +93,18 @@ const Navbar = () => {
                     </button>
                     <AnimatePresence>
                         {isMobileMenuOpen && (
-                            <motion.div className="mobile-menu-dropdown" initial="hidden"
+                            <motion.div 
+                                className="mobile-menu-dropdown origin-top" 
+                                initial="hidden"
                                 animate="visible"
                                 exit="exit"
                                 variants={dropdownVariants}>
-                                <a className="mobile-nav-link" href="/" onClick={() => scrollToSection("home")}>home</a>
-                                <button className="mobile-nav-link" onClick={() => scrollToSection("about")}>about</button>
-                                <button className="mobile-nav-link" onClick={() => scrollToSection("experience")}>work</button>
-                                <button className="mobile-nav-link" onClick={() => scrollToSection("projects")}>projects</button>
-                                <button className="mobile-nav-link" onClick={() => scrollToSection("contact")}>contact</button>
+                                
+                                <motion.button variants={mobileLinkVars} className="mobile-nav-link" onClick={() => location.reload}>home</motion.button>
+                                <motion.button variants={mobileLinkVars} className="mobile-nav-link" onClick={() => scrollToSection("about")}>about</motion.button>
+                                <motion.button variants={mobileLinkVars} className="mobile-nav-link" onClick={() => scrollToSection("experience")}>work</motion.button>
+                                <motion.button variants={mobileLinkVars} className="mobile-nav-link" onClick={() => scrollToSection("projects")}>projects</motion.button>
+                                <motion.button variants={mobileLinkVars} className="mobile-nav-link" onClick={() => scrollToSection("contact")}>contact</motion.button>
                                 <div className="social-dropdown-container">
                                     <a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer" className="dropdown-social-link">
                                         <FiArrowUpRight />
