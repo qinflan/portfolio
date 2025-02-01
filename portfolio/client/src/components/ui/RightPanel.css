@@ -66,6 +66,7 @@
 @media (max-width: 600px) {
     .section-title {
         font-size: x-large;
-        padding: unset;
+        padding-bottom: unset;
+        padding-top: 35px;
     }
 }

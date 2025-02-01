@@ -71,7 +71,7 @@
   
   .mobile-menu-dropdown {
     position: fixed;
-    top: 48px;
+    top: 55px;
     right: 0;
     background-color: var(--page-background);
     border-radius: 6px;
@@ -127,6 +127,7 @@
 
   .logo-container {
     display: none;
+    cursor: pointer;
     position: fixed;
     top: 2dvh;
     left: 5%;

@@ -98,9 +98,9 @@ const Navbar = () => {
         <div className="navigation">
             <div className="logo-container">
                 {theme === "light" ? (
-                    <img src={logoLight}></img>
+                    <img src={logoLight} onClick={() => (window.scrollTo(0, 0), location.reload())}></img>
                 ) : (
-                    <img src={logoDark}></img>
+                    <img src={logoDark} onClick={() => (window.scrollTo(0, 0), location.reload())}></img>
                 )}
             </div>
 
@@ -127,7 +127,7 @@ const Navbar = () => {
                 {/* Mobile Dropdown Menu */}
                 <div className="mobile-menu-container" ref={menuRef}>
                     <ToggleTheme />
-                    <button className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1" onClick={toggleMobileMenu}>
+                    <button className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1.5" onClick={toggleMobileMenu}>
                         {isMobileMenuOpen ? <IoClose size={20} /> : <TbMenu size={20} />}
                     </button>
 
@@ -142,7 +142,7 @@ const Navbar = () => {
                                 >
                                 <motion.div variants={containerVars} initial="hidden" animate="visible" exit="hidden">
                                     {navLinks.map(({ label, id }) => (
-                                        <motion.div className="overflow-hidden">
+                                        <motion.div className="overflow-hidden" key={id}>
                                         <motion.div variants={mobileLinkVars} key={id}>
                                             <motion.button
                                                 whileHover="hover"
