@@ -53,14 +53,14 @@ const Navbar = () => {
     const dropdownVariants = {
         hidden: { scaleY: 0},
         visible: { scaleY: 1, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1]} },
-        exit: { scaleY: 0, transition: { delay: 0.5, duration: 0.6, ease: [0.32, 0, 0.36, 1] } }
+        exit: { scaleY: 0, transition: { delay: 0.3, duration: 0.6, ease: [0.32, 0, 0.36, 1] } }
     };
 
     const mobileLinkVars = {
         hidden: { 
             y: "30vh", 
             transition: {
-                duration: 0.7, 
+                duration: 5, 
                 ease: [0, 0.55, 0.45, 1]}
         },
 
@@ -70,14 +70,18 @@ const Navbar = () => {
                 duration: 0.5, 
                 ease: [0.37, 0, 0.63, 1]} 
         },
-
         hover: { opacity: 0.6 }
     };
+
+    const socialLinkVars = {
+        hidden: { opacity: 0, y: "20vh" },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: [0.37, 0, 0.63, 1] } }
+    }
 
     const containerVars = {
         hidden: {
             transition: {
-                staggerChildren: 0.1,
+                staggerChildren: 0.08,
                 staggerDirection: -1
             }
         },
@@ -85,7 +89,6 @@ const Navbar = () => {
         visible: {
             transition: {
                 staggerChildren: 0.06,
-                delayChildren: 0.2,
                 staggerDirection: 1
             }
         }
@@ -152,17 +155,24 @@ const Navbar = () => {
                                         </motion.div>
                                     ))}
                                 </motion.div>
+                    
 
-                                <div className="social-dropdown-container">
-                                    <a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer" className="dropdown-social-link">
+                                <motion.div
+                                    variants={containerVars}
+                                    initial="hidden"
+                                    animate="visible"
+                                    exit="hidden"
+                                    className="social-dropdown-container overflow-hidden"
+                                >
+                                    <motion.a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer" variants={socialLinkVars} className="dropdown-social-link">
                                         <FiArrowUpRight />
                                         linkedin
-                                    </a>
-                                    <a href="https://github.com/qinflan" target="_blank" rel="noopener noreferrer" className="dropdown-social-link">
+                                    </motion.a>
+                                    <motion.a href="https://github.com/qinflan" target="_blank" rel="noopener noreferrer" variants={socialLinkVars} className="dropdown-social-link">
                                         <FiArrowUpRight />
                                         github
-                                    </a>
-                                </div>
+                                    </motion.a>
+                                </motion.div>
                             </motion.div>
                         )}
                     </AnimatePresence>
