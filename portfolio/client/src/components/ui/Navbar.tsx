@@ -29,7 +29,6 @@ const Navbar = () => {
                 setIsMobileMenuOpen(false);
             }
         }
-
         document.addEventListener('mousedown', handler)
         return () => {
             document.removeEventListener('mousedown', handler)
@@ -43,17 +42,54 @@ const Navbar = () => {
         setIsMobileMenuOpen(false);
     };
 
+    const navLinks = [
+        { label: "home", id: "/" },
+        { label: "about", id: "about" },
+        { label: "work", id: "experience" },
+        { label: "projects", id: "projects" },
+        { label: "contact", id: "contact" },
+    ];
+
     const dropdownVariants = {
-        hidden: { scaleY: 0, y: 0, }, 
-        visible: { scaleY: 1, transition: { duration: 0.8, ease:[0.22, 1, 0.36, 1] } }, 
-        exit: { scaleY: 0, transition: { duration: 0.6, ease:[0.32, 0, 0.36, 1] } }
+        hidden: { scaleY: 0},
+        visible: { scaleY: 1, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1]} },
+        exit: { scaleY: 0, transition: { delay: 0.5, duration: 0.6, ease: [0.32, 0, 0.36, 1] } }
     };
 
     const mobileLinkVars = {
-        hidden: { opacity: 0 }, 
-        visible: { opacity: 1, transition: { duration: 0.6, ease:[0.5, 0, 0.36, 1] } }, 
-        exit: { opacity: 0, transition: { duration: 0.3, ease:[0.22, 1, 0.36, 1] } }
+        hidden: { 
+            y: "30vh", 
+            transition: {
+                duration: 0.7, 
+                ease: [0, 0.55, 0.45, 1]}
+        },
+
+        visible: { 
+            y: 0, 
+            transition: { 
+                duration: 0.5, 
+                ease: [0.37, 0, 0.63, 1]} 
+        },
+
+        hover: { opacity: 0.6 }
     };
+
+    const containerVars = {
+        hidden: {
+            transition: {
+                staggerChildren: 0.1,
+                staggerDirection: -1
+            }
+        },
+
+        visible: {
+            transition: {
+                staggerChildren: 0.06,
+                delayChildren: 0.2,
+                staggerDirection: 1
+            }
+        }
+    }
 
     return (
         <div className="navigation">
@@ -85,26 +121,38 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                {/* Mobile Hamburger Menu */}
+                {/* Mobile Dropdown Menu */}
                 <div className="mobile-menu-container" ref={menuRef}>
                     <ToggleTheme />
                     <button className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1" onClick={toggleMobileMenu}>
                         {isMobileMenuOpen ? <IoClose size={20} /> : <TbMenu size={20} />}
                     </button>
+
                     <AnimatePresence>
                         {isMobileMenuOpen && (
-                            <motion.div 
-                                className="mobile-menu-dropdown origin-top" 
+                            <motion.div
+                                className="mobile-menu-dropdown origin-top"
                                 initial="hidden"
                                 animate="visible"
                                 exit="exit"
-                                variants={dropdownVariants}>
-                                
-                                <motion.button variants={mobileLinkVars} className="mobile-nav-link" onClick={() => location.reload}>home</motion.button>
-                                <motion.button variants={mobileLinkVars} className="mobile-nav-link" onClick={() => scrollToSection("about")}>about</motion.button>
-                                <motion.button variants={mobileLinkVars} className="mobile-nav-link" onClick={() => scrollToSection("experience")}>work</motion.button>
-                                <motion.button variants={mobileLinkVars} className="mobile-nav-link" onClick={() => scrollToSection("projects")}>projects</motion.button>
-                                <motion.button variants={mobileLinkVars} className="mobile-nav-link" onClick={() => scrollToSection("contact")}>contact</motion.button>
+                                variants={dropdownVariants}
+                                >
+                                <motion.div variants={containerVars} initial="hidden" animate="visible" exit="hidden">
+                                    {navLinks.map(({ label, id }) => (
+                                        <motion.div className="overflow-hidden">
+                                        <motion.div variants={mobileLinkVars} key={id}>
+                                            <motion.button
+                                                whileHover="hover"
+                                                className="mobile-nav-link"
+                                                onClick={() => id === "/" ? (window.scrollTo(0, 0), location.reload()) : scrollToSection(id)}
+                                            >
+                                                {label}
+                                            </motion.button>
+                                        </motion.div>
+                                        </motion.div>
+                                    ))}
+                                </motion.div>
+
                                 <div className="social-dropdown-container">
                                     <a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer" className="dropdown-social-link">
                                         <FiArrowUpRight />

@@ -83,7 +83,6 @@
     align-items: center;
     padding-top: 6em;
     z-index: 9999;
-    overflow: hidden;
   }
   
   .mobile-nav-link {
@@ -102,11 +101,6 @@
     text-align: left;
     cursor: pointer;
     min-width: 275px;
-  }
-
-  .mobile-nav-link:hover {
-    opacity: 60%;
-    transition: 0.3s;
   }
 
   .social-dropdown-container {
