@@ -55,8 +55,10 @@
         margin-top: unset;
     }
     .about-me {
+        width: 90%;
         font-size: medium;
         margin-bottom: unset;
+        padding-top: 80px;
     }
 }
 
@@ -64,5 +66,7 @@
 @media (max-width: 600px) {
     .section-title {
         font-size: x-large;
+        padding-bottom: unset;
+        padding-top: 35px;
     }
 }

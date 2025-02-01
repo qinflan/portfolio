@@ -14,8 +14,8 @@ const RightPanel = () => {
 
     return (
         <div className="scroll-right-panel">
-            <div className="about-me">
-                <h1 ref={aboutRef} id="about" className="section-title">about</h1>
+            <div ref={aboutRef} id="about" className="about-me">
+                <h1 className="section-title">about</h1>
                 <p>I'm a college student based in <span className="emphasis-text">Boston, Massachusetts</span> studying Information Technology and Computer Science,
                     driven by my passion for tech and problem-solving. I'm proficient with <span className="emphasis-text">Java, Python, JavaScript, and TypeScript.</span> Whether I'm developing full-stack web applications or building computers from the ground up,
                     I’m constantly working on picking up new skills.

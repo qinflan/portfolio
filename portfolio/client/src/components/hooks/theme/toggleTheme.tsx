@@ -18,9 +18,9 @@ export const ToggleTheme: React.FC = () => {
         <div className="toggle-container">
             {/* Conditionally render the icons based on the current theme */}
             {theme === "light" ? (
-                <BsFillSunFill  className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1" size={30} onClick={toggleTheme} />
+                <BsFillSunFill  className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1.5" size={34} onClick={toggleTheme} />
             ) : (
-                <WiMoonAltThirdQuarter  className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1" size={30} onClick={toggleTheme} />
+                <WiMoonAltThirdQuarter  className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1.5" size={34} onClick={toggleTheme} />
             )}
         </div>
     )
