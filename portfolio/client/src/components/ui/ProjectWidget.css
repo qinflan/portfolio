@@ -53,23 +53,18 @@
 .work-widgets-container:hover .project-widget-container:not(:hover) {
   opacity: 0.5; 
 }
+.project-widget-container .widget-skill-tile {
+  background-color: var(--page-background);
+}
 
 @media (max-width: 600px) {
     .project-widget-title {
         font-size: medium;
     }
 
-    .widget-gif {
-      max-width: 100%;
-    }
-
     .project-widget-container {
-    background-color: unset;
-    border-radius: unset;
     width: 90%;
-    padding: 20px 0px;
-    border: unset;
-    box-shadow: unset;
+    padding: 20px 20px;
     opacity: 1;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }

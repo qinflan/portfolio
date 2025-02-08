@@ -15,7 +15,7 @@ export const projectData = [
     {
         title: "Portfolio Website",
         dates: "2024",
-        description: "Thank you for viewing! I started by designing wireframes in Figma, then developing the site with React and TypeScript. I also built a small backend Express route to handle incoming contact requests.",
+        description: "This website! I started by designing wireframes in Figma, then developed the site with React and TypeScript. I also built a small backend Express route to handle incoming contact requests.",
         skills: ["Typescript", "React", "Tailwind", "Node.js", "Git", "Figma"],
         repo: "https://github.com/qinflan/portfolio"
       },
