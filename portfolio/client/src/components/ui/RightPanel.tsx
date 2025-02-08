@@ -36,11 +36,11 @@ const RightPanel = () => {
                 <Projects />
             </div>
 
-            <div className="relative-w-full" ref={educationRef} id="education">
+            <div className="w-full" ref={educationRef} id="education">
                 <Education/>
             </div>
 
-            <div className="relative w-full" ref={contactRef} id="contact">
+            <div className="w-full" ref={contactRef} id="contact">
                 <Contact />
             </div>
         </div>
