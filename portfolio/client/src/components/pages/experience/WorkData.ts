@@ -1,4 +1,10 @@
 export const workData = [
+    // {
+    //   title: "Software Engineer Fellow",
+    //   company: "Hack.Diversity",
+    //   dates: "Jan 2025 - Present",
+    //   description: "Selected as a SWE Fellow for the 2025 Hack.Diversity Cohort. This program includes various workshops, mentorship, and networking opporutnities to the next generation in tech.",
+    // },
     {
       title: "IT Project Coordinator",
       company: "Veolia North America",
@@ -26,5 +32,5 @@ export const workData = [
         dates: "May 2022 - Oct 2022",
         description: "Gained experience in a clean-room fabrication environment producing chips for companies like Apple and Samsung, earning certifications on various machines and inspecting chips for damage.",
         skills: ["Semi-Conductor Fabrication", "Quality Assurance", "Clean Room"]
-      }
+      },
   ];

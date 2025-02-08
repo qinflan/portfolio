@@ -1,0 +1,73 @@
+.college-header {
+    width: 90%;
+    color: var(--secondary-text);
+    font-family: "ClashGrotesk", Inter, sans-serif;
+    font-size: larger;
+    letter-spacing: 0.36px;
+    font-weight: 400;
+    animation: fade-up 0.5s;
+    margin-bottom: 20px;
+}
+
+.course-header {
+    width: 90%;
+    color: var(--primary-text);
+    font-family: "ClashGrotesk", Inter, sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.36px;
+    font-weight: 500;
+    animation: fade-up 0.5s;
+    margin-bottom: 6px;
+}
+
+
+.courses-container {
+    width: 90%;
+    color: var(--secondary-text);
+    font-family: "ClashGrotesk", Inter, sans-serif;
+    font-size: larger;
+    letter-spacing: 0.36px;
+    font-weight: 400;
+    animation: fade-up 0.5s;
+    margin-bottom: 20px;
+}
+
+.extra-curricular-container {
+    width: 90%;
+    color: var(--secondary-text);
+    font-family: "ClashGrotesk", Inter, sans-serif;
+    font-size: larger;
+    letter-spacing: 0.36px;
+    font-weight: 400;
+    animation: fade-up 0.5s;
+}
+
+.body-text-link {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.body-text-link:hover {
+    opacity: 60%;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+@media (max-width:600px) {
+    .college-header {
+        font-size: medium;
+        margin-top: 0.8rem;
+    }
+    
+    .course-header {
+        font-size: medium;
+    }
+    
+    .courses-container {
+        font-size: medium;
+    }
+    
+    .extra-curricular-container {
+        font-size: medium;
+    }
+}

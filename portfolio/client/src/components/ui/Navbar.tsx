@@ -43,32 +43,34 @@ const Navbar = () => {
     };
 
     const navLinks = [
-        { label: "home", id: "/" },
         { label: "about", id: "about" },
         { label: "work", id: "experience" },
         { label: "projects", id: "projects" },
+        { label: "education", id: "education" },
         { label: "contact", id: "contact" },
     ];
 
     const dropdownVariants = {
-        hidden: { scaleY: 0},
-        visible: { scaleY: 1, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1]} },
+        hidden: { scaleY: 0 },
+        visible: { scaleY: 1, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } },
         exit: { scaleY: 0, transition: { delay: 0.3, duration: 0.6, ease: [0.32, 0, 0.36, 1] } }
     };
 
     const mobileLinkVars = {
-        hidden: { 
-            y: "30vh", 
+        hidden: {
+            y: "30vh",
             transition: {
-                duration: 5, 
-                ease: [0, 0.55, 0.45, 1]}
+                duration: 5,
+                ease: [0, 0.55, 0.45, 1]
+            }
         },
 
-        visible: { 
-            y: 0, 
-            transition: { 
-                duration: 0.5, 
-                ease: [0.37, 0, 0.63, 1]} 
+        visible: {
+            y: 0,
+            transition: {
+                duration: 0.5,
+                ease: [0.37, 0, 0.63, 1]
+            }
         },
         hover: { opacity: 0.6 }
     };
@@ -111,6 +113,7 @@ const Navbar = () => {
                     <a className="nav-link" href="/">home</a>
                     <button className="nav-link" onClick={() => scrollToSection("experience")}>experience</button>
                     <button className="nav-link" onClick={() => scrollToSection("projects")}>projects</button>
+                    <button className="nav-link" onClick={() => scrollToSection("education")}>education</button>
                     <button className="nav-link" onClick={() => scrollToSection("contact")}>contact</button>
 
                     <div className="nav-button-container">
@@ -139,23 +142,23 @@ const Navbar = () => {
                                 animate="visible"
                                 exit="exit"
                                 variants={dropdownVariants}
-                                >
+                            >
                                 <motion.div variants={containerVars} initial="hidden" animate="visible" exit="hidden">
                                     {navLinks.map(({ label, id }) => (
                                         <motion.div className="overflow-hidden" key={id}>
-                                        <motion.div variants={mobileLinkVars} key={id}>
-                                            <motion.button
-                                                whileHover="hover"
-                                                className="mobile-nav-link"
-                                                onClick={() => id === "/" ? (window.scrollTo(0, 0), location.reload()) : scrollToSection(id)}
-                                            >
-                                                {label}
-                                            </motion.button>
-                                        </motion.div>
+                                            <motion.div variants={mobileLinkVars} key={id}>
+                                                <motion.button
+                                                    whileHover="hover"
+                                                    className="mobile-nav-link"
+                                                    onClick={() => id === "/" ? (window.scrollTo(0, 0), location.reload()) : scrollToSection(id)}
+                                                >
+                                                    {label}
+                                                </motion.button>
+                                            </motion.div>
                                         </motion.div>
                                     ))}
                                 </motion.div>
-                    
+
 
                                 <motion.div
                                     variants={containerVars}

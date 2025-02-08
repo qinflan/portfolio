@@ -29,10 +29,10 @@
 [data-theme="dark"] {
 
   /* page */
-  --page-background: #1a1a1a;
-  --page-foreground: #222222;
+  --page-background: #141414;
+  --page-foreground: #181818;
   --foreground-hover:#2d2e30;
-  --page-divider: #494949;
+  --page-divider: #383838;
   --icon: #EDEDED;
   --input-field-focus: #e4e4e4;
 
@@ -46,9 +46,9 @@
   --nav-hover-text: #cccccc;
 
   /* buttons */
-  --button-background: #1a1a1a;
+  --button-background: #141414;
   --button-stroke: #EDEDED;
-  --button-background-hover: #272829;
+  --button-background-hover: #1a1a1a;
   --button-text: #EDEDED;
   --button-text-hover: #F3F3F3;
   --button-shadow:#EDEDED;
