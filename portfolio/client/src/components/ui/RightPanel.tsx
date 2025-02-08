@@ -2,7 +2,7 @@ import "./RightPanel.css"
 import Experience from '../pages/experience/Experience'
 import Contact from '../pages/contact/Contact'
 import Projects from "../pages/projects/Projects"
-// import DesignBento from "./DesignBento"
+import Education from "../pages/education/Education"
 import { useRef} from "react"
 
 const RightPanel = () => {
@@ -11,6 +11,7 @@ const RightPanel = () => {
     const contactRef = useRef<HTMLDivElement | null>(null);
     const aboutRef = useRef<HTMLDivElement | null>(null);
     const projectsRef = useRef<HTMLDivElement | null>(null);
+    const educationRef = useRef<HTMLDivElement | null>(null);
 
     return (
         <div className="scroll-right-panel">
@@ -26,12 +27,17 @@ const RightPanel = () => {
                 <p>In my spare time I play music, hike, game, or work on computers and music equipment.
                 </p>
             </div>
+
             <div className="relative w-full" ref={workRef} id="experience">
                 <Experience />
             </div>
 
             <div className="relative w-full" ref={projectsRef} id="projects">
                 <Projects />
+            </div>
+
+            <div className="relative-w-full" ref={educationRef} id="education">
+                <Education/>
             </div>
 
             <div className="relative w-full" ref={contactRef} id="contact">

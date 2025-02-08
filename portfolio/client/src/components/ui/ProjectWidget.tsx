@@ -15,7 +15,7 @@ repo?: string;
 
 const ProjectWidget: React.FC<ProjectWidgetProps> = ({title, dates, description, skills, repo}) => {
   return (
-    <div className="work-widget-container">
+    <div className="project-widget-container">
       <a className="project-btn-wrapper" href={repo}>
         <div className="project-widget-header">
           <h2 className="project-widget-title">

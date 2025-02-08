@@ -1,3 +1,20 @@
+.project-widget-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--page-foreground);
+  border-radius: 8px;
+  width: 90%;
+  padding: 20px;
+  border: 1px solid var(--widget-stroke);
+  gap:0px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+  user-select: none; 
+}
+.project-widget-container:hover {
+  transform: translate(-3px);
+  transition: 0.3s;
+}
 
 .project-btn-wrapper {
   display: flex;
@@ -29,6 +46,14 @@
 
 }
 
+.project-widget-container:hover {
+  opacity: 1;
+}
+
+.work-widgets-container:hover .project-widget-container:not(:hover) {
+  opacity: 0.5; 
+}
+
 @media (max-width: 600px) {
     .project-widget-title {
         font-size: medium;
@@ -37,5 +62,17 @@
     .widget-gif {
       max-width: 100%;
     }
+
+    .project-widget-container {
+    background-color: unset;
+    border-radius: unset;
+    width: 90%;
+    padding: 20px 0px;
+    border: unset;
+    gap: 20px;
+    box-shadow: unset;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
 
 }

@@ -17,7 +17,6 @@ const Projects: React.FC = () => {
             dates={projectItem.dates}
             description={projectItem.description}
             skills={projectItem.skills} 
-            gif={projectItem.gif}
             repo={projectItem.repo}
             />
         )}
