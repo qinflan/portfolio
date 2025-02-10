@@ -52,23 +52,23 @@ const Navbar = () => {
 
     const dropdownVariants = {
         hidden: { scaleY: 0 },
-        visible: { scaleY: 1, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } },
-        exit: { scaleY: 0, transition: { delay: 0.3, duration: 0.6, ease: [0.32, 0, 0.36, 1] } }
+        visible: { scaleY: 1, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+        exit: { scaleY: 0, transition: { delay: 0.2, duration: 0.6, ease: [0.32, 0, 0.36, 1] } }
     };
 
     const mobileLinkVars = {
         hidden: {
             y: "30vh",
             transition: {
-                duration: 5,
-                ease: [0, 0.55, 0.45, 1]
+                duration: 3,
+                ease: [0, 0.55, 0.7, 1]
             }
         },
 
         visible: {
             y: 0,
             transition: {
-                duration: 0.5,
+                duration: 0.4,
                 ease: [0.37, 0, 0.63, 1]
             }
         },
@@ -83,14 +83,14 @@ const Navbar = () => {
     const containerVars = {
         hidden: {
             transition: {
-                staggerChildren: 0.08,
+                staggerChildren: 0.02,
                 staggerDirection: -1
             }
         },
 
         visible: {
             transition: {
-                staggerChildren: 0.06,
+                staggerChildren: 0.05,
                 staggerDirection: 1
             }
         }
