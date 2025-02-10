@@ -64,6 +64,10 @@
 
 
 @media (max-width: 600px) {
+    .scroll-right-panel {
+        width: 100%;
+    }
+
     .section-title {
         font-size: xx-large;
         padding-bottom: unset;
