@@ -17,7 +17,7 @@ export const workData = [
       company: "Ur Wealth",
       dates: "Sep 2024 - Feb 2025",
       description: "Lead the development of a full-stack MERN wealth management app, guiding a team of developers to create an intuitive fin-tech dashboard for managing wealth assets.",
-      skills: ["Typescript", "React", "Node.js", "MongoDB", "Express.js", "Docker"]
+      skills: ["Typescript", "React", "Node.js", "MongoDB", "Express.js", "Docker", "AWS"]
     },
     {
         title: "CS Teacher Assistant",
