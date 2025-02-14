@@ -11,7 +11,7 @@
 
 .course-header {
     width: 90%;
-    color: var(--primary-text);
+    color: var(--header-text);
     font-family: "ClashGrotesk", Inter, sans-serif;
     font-size: 1.4rem;
     letter-spacing: 0.36px;
