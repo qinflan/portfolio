@@ -11,7 +11,7 @@ const Education = () => {
           I'm currently a student at UMass Boston studying IT and Computer Science.
         </div>
         <div className="course-header">
-          Technical Courses
+          technical courses
         </div>
 
         <div className="courses-container">
