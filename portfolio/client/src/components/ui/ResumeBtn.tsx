@@ -1,4 +1,4 @@
-import ResumePDF from '/assets/Quinn-Flanigan-Resume-2024.pdf'
+import ResumePDF from '/assets/Quinn_Flanigan_CV.pdf'
 const ResumeBtn = () => {
 
   return (
