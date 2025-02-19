@@ -21,7 +21,7 @@ const Education = () => {
         </div>
 
         <p className="extra-curricular-container">
-          Member of the UMB Computer Science Club, and joined <a className="body-text-link" href="https://www.cs.umb.edu/csclub/">UMB Develops</a> in
+          Member of the UMB CS Club, and joined <a className="body-text-link" href="https://www.cs.umb.edu/csclub/">UMB Develops</a> in
           Spring 2024. I quickly became a tech lead, working on multiple full-stack applications.
         </p>
 

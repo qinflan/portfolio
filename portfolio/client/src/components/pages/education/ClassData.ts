@@ -4,5 +4,7 @@ export const classData = [
     "CS220 Discrete Mathematics",
     "CS240 Programming in C",
     "IT428L Information System Security",
-    "IT117 Intermediate Scripting in Python",
+    "IT117 Scripting in Python",
+    "IT240 Web Development",
+    "IT230 Relational Databases"
 ]
