@@ -54,7 +54,7 @@
 }
 
 /* mobile */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .scroll-right-panel {
         width: 90%;
         margin-top: unset;

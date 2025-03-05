@@ -1,17 +1,15 @@
 .navigation {
-    position: fixed;
+    position: relative;
     bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: fixed;
-    width: 20%;
+    margin-left: 5%;
 }
 
 .navbar-container {
     display: flex;
-    justify-content: center;
-    width: 60%;
 }
 
 
@@ -133,7 +131,7 @@
     left: 5%;
   }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .navbar-content {
         display:none;
     }

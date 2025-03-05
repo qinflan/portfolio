@@ -15,7 +15,7 @@
     position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .format-display {
         display: flex;
         position: relative;

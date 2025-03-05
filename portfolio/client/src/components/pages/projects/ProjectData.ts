@@ -19,4 +19,11 @@ export const projectData = [
         skills: ["Typescript", "React", "Tailwind", "Node.js", "Git", "Figma"],
         repo: "https://github.com/qinflan/portfolio"
       },
+      {
+        title: "Ecoquest",
+        dates: "2025",
+        description: "A simple web application created to learn more about your local area's biodiversity. Created in a day for the CivicHacks 2025 Hackathon at Boston University.",
+        skills: ["Javascript", "React", "Tailwind", "Node.js", "Git", "REST API"],
+        repo: "https://github.com/qinflan/ecoquest"
+      },
   ];
