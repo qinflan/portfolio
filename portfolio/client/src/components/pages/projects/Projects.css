@@ -7,8 +7,17 @@
     align-items: center;
 }
 
+.projects-container:hover {
+    opacity: 1;
+}
+
+.project-widgets-container:hover .project-widget-container:not(:hover) {
+    opacity: 0.5; 
+}
+
 @media (max-width:600px) {
     .project-widgets-container {
         margin-top: 0.8rem;
     }
 }
+
