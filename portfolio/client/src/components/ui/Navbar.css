@@ -155,13 +155,6 @@
 
 }
 
-
-@media (min-resolution:150dpi) {
-    .nav-button-container {
-        display: none;
-    }
-}
-
 @media (min-resolution:125dpi) {
     .navbar-content {
         height: 35vh;
