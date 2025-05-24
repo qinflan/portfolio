@@ -2,7 +2,6 @@ import "./RightPanel.css"
 import Experience from '../pages/experience/Experience'
 import Contact from '../pages/contact/Contact'
 import Projects from "../pages/projects/Projects"
-// import Education from "../pages/education/Education"
 import { useRef} from "react"
 
 const RightPanel = () => {
@@ -17,7 +16,7 @@ const RightPanel = () => {
             <div ref={aboutRef} id="about" className="about-me">
                 <h1 className="section-title">about</h1>
                 <div className="about-body">
-                    <p>I'm a college student based in <span className="emphasis-text">Boston, Massachusetts</span> studying Information Technology and Computer Science. I'm a full-stack developer, proficient with <span className="emphasis-text">Java, Python, JavaScript, and TypeScript.</span> I’m always looking forward towards a new project or app to work on. In my spare time I like to play music, hike, travel, and cook!  </p>
+                    <p>College student based in <span className="emphasis-text">Boston, Massachusetts</span> studying Information Technology and Computer Science. As a full-stack engineer, I'm proficient with <span className="emphasis-text">Java, Python, JavaScript, and TypeScript.</span> I'm passionate about creating with both software and hardware, and in my spare time, I enjoy playing music, hiking, traveling, and cooking.</p>
 
                 </div>
             </div>

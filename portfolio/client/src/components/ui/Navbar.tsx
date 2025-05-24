@@ -112,7 +112,6 @@ const Navbar = () => {
                     <a className="nav-link" href="/">home</a>
                     <button className="nav-link" onClick={() => scrollToSection("experience")}>experience</button>
                     <button className="nav-link" onClick={() => scrollToSection("projects")}>projects</button>
-                    {/* <button className="nav-link" onClick={() => scrollToSection("education")}>education</button> */}
                     <button className="nav-link" onClick={() => scrollToSection("contact")}>contact</button>
 
                     <div className="nav-button-container">
