@@ -52,7 +52,8 @@
   opacity: 0.5; 
 }
 .project-widget-container .widget-skill-tile {
-  background-color: var(--page-background);
+  background-color: var(--skill-tile-bg);
+  
 }
 
 @media (max-width: 600px) {

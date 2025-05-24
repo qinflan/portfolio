@@ -119,10 +119,10 @@ const Navbar = () => {
                     <div className="nav-button-container">
                         <ToggleTheme />
                         <a href="https://github.com/qinflan" target="_blank" rel="noopener noreferrer">
-                            <TfiGithub size={34} className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1.5" />
+                            <TfiGithub size={34} className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1.5 hover:opacity-70 transition" />
                         </a>
                         <a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer">
-                            <GrLinkedinOption size={34} className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1.5" />
+                            <GrLinkedinOption size={34} className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1.5 hover:opacity-70 transition" />
                         </a>
                     </div>
                 </div>
