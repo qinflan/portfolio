@@ -7,7 +7,7 @@ interface ThemeContextType {
 };
 
 const defaultThemeContext: ThemeContextType = {
-  theme: "light",
+  theme: "dark",
   toggleTheme: () => {},
 };
 
@@ -22,7 +22,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     // set default theme and declare state
     const [theme, setTheme] = useState<string>(() => {
       const savedTheme = localStorage.getItem("theme");
-      return savedTheme ? savedTheme : "light";
+      return savedTheme ? savedTheme : "dark";
     });
 
     useEffect(() => {

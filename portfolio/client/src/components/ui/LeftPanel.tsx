@@ -22,6 +22,9 @@ const LeftPanel = () => {
                     
                     <h1 className="hero-name">Quinn Flanigan</h1>
                     </div>
+                    {/* <h3 className="role-text">
+                        software engineer
+                    </h3> */}
                     <h3 className="mantra-text">
                         Passionate about turning ideas into clean, user-friendly web experiences.
                     </h3>
