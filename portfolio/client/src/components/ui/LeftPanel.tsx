@@ -17,13 +17,16 @@ const LeftPanel = () => {
         <div className="left-panel-container">
             <div className="hero-container">
                 <div className="hero-text-container">
+                    <div className="pic-name-container">
                     <img className="avatar-img" src={avatar}></img>
+                    
                     <h1 className="hero-name">Quinn Flanigan</h1>
-                    <h3 className="role-text">
+                    </div>
+                    {/* <h3 className="role-text">
                         software engineer
-                    </h3>
+                    </h3> */}
                     <h3 className="mantra-text">
-                        Passionate about creating innovative web experiences and turning ideas into user friendly solutions.
+                        Passionate about turning ideas into clean, user-friendly web experiences.
                     </h3>
                 </div>
                 <div className="mobile-socials-container">

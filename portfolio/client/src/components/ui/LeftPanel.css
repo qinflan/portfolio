@@ -28,17 +28,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
 }
 
 .hero-name {
     color: var(--header-text);
     max-width: 300px;
     font-family: "ClashDisplay";
-    font-size: 54px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    letter-spacing: -0.58px;
+    letter-spacing: -0.3px;
     cursor: default;
     user-select: none; 
     animation: fade-up 0.5s;
@@ -61,9 +62,8 @@
     letter-spacing: 0.36px;
     font-weight: 400;
     text-wrap: auto;
-    max-width: 450px;
+    max-width: 310px;
     color: var(--secondary-text);
-    margin-top: 10px;
     cursor: default;
     user-select: none; 
     animation: fade-up 0.5s;
@@ -95,9 +95,16 @@
   }
 
   .avatar-img {
-    width: 165px;
-    display:none;
+    width: 50px;
     animation: fade-up 0.5s;
+    display: none;
+  }
+
+  .pic-name-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
   }
 
   .skip-hero-btn {
@@ -138,7 +145,7 @@
         text-align: left;
     }
     .hero-name {
-        font-size: 4rem;
+        font-size: 3.6rem;
         position: relative;
         text-align: left;
     }
@@ -200,7 +207,12 @@
 
     .avatar-img {
         display: flex;
-        margin-bottom: 1rem;
+        margin-bottom: .4rem;
+        width: 165px;
+        animation: fade-up 0.5s;
+    }
+      .pic-name-container {
+        flex-direction: column;
     }
     .skip-hero-btn {
         display: flex;
