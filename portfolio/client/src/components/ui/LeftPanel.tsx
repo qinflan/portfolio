@@ -23,7 +23,7 @@ const LeftPanel = () => {
                     <h1 className="hero-name">Quinn Flanigan</h1>
                     </div>
                     <h3 className="mantra-text">
-                        Passionate about creating innovative web experiences and turning ideas into user friendly solutions.
+                        Passionate about turning ideas into clean, user-friendly web experiences.
                     </h3>
                 </div>
                 <div className="mobile-socials-container">

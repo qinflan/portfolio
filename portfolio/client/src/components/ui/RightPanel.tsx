@@ -16,7 +16,7 @@ const RightPanel = () => {
             <div ref={aboutRef} id="about" className="about-me">
                 <h1 className="section-title">about</h1>
                 <div className="about-body">
-                    <p>College student based in <span className="emphasis-text">Boston, Massachusetts</span> studying Information Technology and Computer Science. As a full-stack engineer, I'm proficient with <span className="emphasis-text">Java, Python, JavaScript, and TypeScript.</span> I'm passionate about creating with both software and hardware, and in my spare time, I enjoy playing music, hiking, traveling, and cooking.</p>
+                    <p>I'm a student at <span className="emphasis-text">UMass Boston</span> studying Information Technology and Computer Science. As a full-stack engineer, I'm proficient with <span className="emphasis-text">Java, Python, JavaScript, and TypeScript</span>. I love to create with both software and hardware, and in my spare time, I play music, hike, travel, and cook.</p>
 
                 </div>
             </div>

@@ -35,7 +35,7 @@
     color: var(--header-text);
     max-width: 300px;
     font-family: "ClashDisplay";
-    font-size: 38px;
+    font-size: 46px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
@@ -51,7 +51,7 @@
     letter-spacing: 0.36px;
     font-weight: 400;
     text-wrap: auto;
-    max-width: 450px;
+    max-width: 310px;
     color: var(--secondary-text);
     margin-top: 10px;
     cursor: default;
@@ -87,6 +87,7 @@
   .avatar-img {
     width: 50px;
     animation: fade-up 0.5s;
+    display: none;
   }
 
   .pic-name-container {

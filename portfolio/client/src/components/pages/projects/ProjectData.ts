@@ -10,7 +10,7 @@ export const projectData = [
       title: "KeyLocker",
       dates: "2024",
       description: "Secure password manager app with Fernet Encryption for secure password handling and unique user keys. Includes a graphical user interface for improved UX.",
-      skills: ["Python", "Cryptography", "Custom Tkinter", "Figma"],
+      skills: ["Python", "Cryptography", "Git", "Figma"],
       repo: "https://github.com/qinflan/KeyLocker.py"
     },
     {
