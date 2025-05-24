@@ -10,21 +10,21 @@ export const workData = [
       company: "Hack.Diversity",
       dates: "Jan 2025 - Present",
       description: "Selected from 9% of over 1000+ appplicants for the 2025 cohort. Advancing my full-stack software development and DSA expertise through a technical curriculum under mentorship.",
-      skills: ["Javascript", "Python", "React Native", "Node.js", "MongoDB", "Express.js"]
+      skills: ["Javascript", "Python", "React Native", "MongoDB"]
     },
     {
       title: "Software Engineer",
       company: "Ur Wealth",
       dates: "Sep 2024 - Feb 2025",
       description: "Lead the development of a full-stack MERN wealth management app, guiding a team of developers to create an intuitive fin-tech dashboard for managing wealth assets.",
-      skills: ["Typescript", "React", "Node.js", "MongoDB", "Express.js", "Docker", "AWS"]
+      skills: ["Typescript", "React", "MongoDB", "API Development", "AWS"]
     },
     {
       title: "IT Project Coordinator Intern",
       company: "Veolia North America",
       dates: "Jun 2024 - Jun 2025",
       description: "Developed API integration workflows for numerous applications into the PMO, effectively changing turnaround time on repeitive tasks from hours of manual work to only minutes of automated run-time.",
-      skills: ["Python", "Javascript", "Jira", "Smartsheet", "Postman", "GitLab"]
+      skills: ["Python", "Javascript", "Jira", "GitLab", "Smartsheet"]
     },
     // {
     //     title: "CS Teacher Assistant",

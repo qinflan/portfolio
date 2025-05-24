@@ -46,7 +46,6 @@
         width: 90%;
         padding: 20px 0px;
         border: unset;
-        gap: 20px;
         box-shadow: unset;
         opacity: 1;
         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
