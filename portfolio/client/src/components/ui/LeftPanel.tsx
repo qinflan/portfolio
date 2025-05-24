@@ -20,7 +20,7 @@ const LeftPanel = () => {
                     <img className="avatar-img" src={avatar}></img>
                     <h1 className="hero-name">Quinn Flanigan</h1>
                     <h3 className="role-text">
-                        software developer
+                        software engineer
                     </h3>
                     <h3 className="mantra-text">
                         Passionate about creating innovative web experiences and turning ideas into user friendly solutions.

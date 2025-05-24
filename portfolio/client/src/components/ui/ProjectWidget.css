@@ -4,9 +4,8 @@
   background-color: var(--page-foreground);
   border-radius: 8px;
   width: 90%;
-  padding: 20px;
+  padding: 40px;
   border: 1px solid var(--widget-stroke);
-  gap:20px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
   transition: 0.3s;
   user-select: none; 
@@ -23,27 +22,26 @@
 }
 
 .project-widget-header {
-    display: flex;
-    flex: 2;
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
+  display: flex;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
 
-  .project-widget-title {
-    display: flex;
-    gap: 10px;
-    flex: 1;
-    color: var(--primary-text);
-    font-family: "ClashGrotesk", sans-serif;
-    font-weight: bold;
-    font-size: 1.1rem;
-    align-items: center;
+.project-widget-title {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  color: var(--primary-text);
+  font-family: "ClashGrotesk", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  align-items: center;
 }
 
 .repo-link {
-    display: flex;
-
+  display: flex;
 }
 
 .project-widget-container:hover {
@@ -54,19 +52,20 @@
   opacity: 0.5; 
 }
 .project-widget-container .widget-skill-tile {
-  background-color: var(--page-background);
+  background-color: var(--skill-tile-bg);
+  
 }
 
 @media (max-width: 600px) {
-    .project-widget-title {
-        font-size: medium;
-    }
+  .project-widget-title {
+    font-size: medium;
+  }
 
-    .project-widget-container {
+  .project-widget-container {
     width: 90%;
     padding: 20px 20px;
     opacity: 1;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
+  }
 
 }

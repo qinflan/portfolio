@@ -1,16 +1,17 @@
 export const projectData = [
+      {
+      title: "Macero",
+      dates: "2025",
+      description: "An ESP32-based ethical hacking tool designed to demonstrate modern vulnerabilities in Wi-Fi and Bluetooth/BLE protocols across multiple operating systems. Built to raise awareness of common flaws in wireless communication and embedded systems.",
+      skills: ["C", "C++", "IEEE 802.11", "GATT/GAP", "Penetration Testing"],
+      repo: "https://github.com/qinflan/macero"
+    },
     {
       title: "KeyLocker",
       dates: "2024",
       description: "Built a secure password manager desktop app with Fernet Encryption for secure password handling and unique user keys. Designed and developed a graphical user interface to improve UX using CustomTkinter, Figma, and Illustrator.",
       skills: ["Python", "Cryptography", "Custom Tkinter", "Git", "Figma"],
       repo: "https://github.com/qinflan/KeyLocker.py"
-    },
-    {
-      title: "Gradelab",
-      dates: "2024",
-      description: "Developed key frontend components and numeorus REST API endpoints, optimizing data transfer. I modeled and maintained our MySQL database using an ORM and AWS RDS, enhancing data accessibility.",
-      skills: ["Javascript", "React", "Node.js", "AWS", "MySQL", "Express.js"],
     },
     {
         title: "Portfolio Website",
@@ -22,7 +23,7 @@ export const projectData = [
       {
         title: "Ecoquest",
         dates: "2025",
-        description: "A simple web application created to learn more about your local area's biodiversity. Created in a day for the CivicHacks 2025 Hackathon at Boston University.",
+        description: "A biodiversity exploration app built in 24 hours for CivicHacks 2025 at Boston University. Ecoquest helps users discover local plant and animal species by querying public environmental datasets and presenting results through a clean, responsive interface.",
         skills: ["Javascript", "React", "Tailwind", "Node.js", "Git", "REST API"],
         repo: "https://github.com/qinflan/ecoquest"
       },

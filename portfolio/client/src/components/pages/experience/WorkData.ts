@@ -1,16 +1,16 @@
 export const workData = [
-    // {
-    //   title: "Software Engineer Fellow",
-    //   company: "Hack.Diversity",
-    //   dates: "Jan 2025 - Present",
-    //   description: "Selected as a SWE Fellow for the 2025 Hack.Diversity Cohort. This program includes various workshops, mentorship, and networking opporutnities to the next generation in tech.",
-    // },
+      {
+      title: "Incoming Software Engineer Intern",
+      company: "Liberty Mutual Investments",
+      dates: "June 2025",
+      description: "loading...",
+    },
     {
-      title: "IT Project Coordinator",
-      company: "Veolia North America",
-      dates: "Jun 2024 - Present",
-      description: "Analyzed datasets in Smartsheet to create intuitive, user-friendly dashboards for project tracking. Played a key role in designing a new organizational architecture to streamline Smartsheet integration.",
-      skills: ["Python", "Smartsheet", "Jira", "Data Analysis", "IT Project Management"]
+      title: "Software Engineer Fellow",
+      company: "Hack.Diversity",
+      dates: "Jan 2025 - Present",
+      description: "Selected from 9% of over 1000+ appplicants for the 2025 cohort. Advancing my full-stack software development and DSA expertise through a technical curriculum under mentorship.",
+      skills: ["Javascript", "Python", "React Native", "Node.js", "MongoDB", "Express.js"]
     },
     {
       title: "Software Engineer",
@@ -20,17 +20,17 @@ export const workData = [
       skills: ["Typescript", "React", "Node.js", "MongoDB", "Express.js", "Docker", "AWS"]
     },
     {
-        title: "CS Teacher Assistant",
-        company: "Microsoft TEALS",
-        dates: "Sep 2024 - Present",
-        description: "Supporting computer science education at Boston Latin Academy by assisting with an AP Computer Science course, reviewing student code, and contributing to curriculum development and learning outcomes.",
-        skills: ["Python", "Code Review", "Data Structures"]
-      },
-      {
-        title: "Fabrication Technician",
-        company: "Skyworks Solutions",
-        dates: "May 2022 - Oct 2022",
-        description: "Gained experience in a clean-room fabrication environment producing chips for companies like Apple and Samsung, earning certifications on various machines and inspecting chips for damage.",
-        skills: ["Semi-Conductor Fabrication", "Quality Assurance", "Clean Room"]
-      },
+      title: "IT Project Coordinator Intern",
+      company: "Veolia North America",
+      dates: "Jun 2024 - Jun 2025",
+      description: "Developed API integration workflows for numerous applications into the PMO, effectively changing turnaround time on repeitive tasks from hours of manual work to only minutes of automated run-time.",
+      skills: ["Python", "Javascript", "Jira", "Smartsheet", "Postman", "GitLab"]
+    },
+    // {
+    //     title: "CS Teacher Assistant",
+    //     company: "Microsoft TEALS",
+    //     dates: "Sep 2024 - Present",
+    //     description: "Supporting computer science education at Boston Latin Academy by assisting with an AP Computer Science course, reviewing student code, and contributing to curriculum development and learning outcomes.",
+    //     skills: ["Python", "Code Review", "Data Structures"]
+    //   }
   ];

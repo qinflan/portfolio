@@ -4,7 +4,7 @@
     position: relative;
     width: 100%;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 100px;
     animation: fade-up 0.5s;
 }
 
@@ -23,7 +23,7 @@
     background-color: var(--page-foreground);
     border-radius: 8px;
     width: 90%;
-    padding: 20px;
+    padding: 40px;
     border: 1px solid var(--widget-stroke);
     gap: 20px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
