@@ -9,7 +9,7 @@ export const workData = [
       title: "Software Engineer Fellow",
       company: "Hack.Diversity",
       dates: "Jan 2025 - Present",
-      description: "Selected from 9% of over 1000+ appplicants for the 2025 cohort. Advancing my full-stack software development and DSA expertise through a technical curriculum under mentorship.",
+      description: "Member of the 2025 cohort. I'm advancing my full-stack software development and DSA expertise through a technical curriculum under mentorship.",
       skills: ["Javascript", "Python", "React Native", "MongoDB"]
     },
     {
@@ -23,7 +23,7 @@ export const workData = [
       title: "IT Project Coordinator Intern",
       company: "Veolia North America",
       dates: "Jun 2024 - Jun 2025",
-      description: "Developed API integration workflows for numerous applications into the PMO, effectively changing turnaround time on repeitive tasks from hours of manual work to only minutes of automated run-time.",
+      description: "Developed API Automation workflows for 3rd party applications used by the PMO, effectively reducing turnaround time on repeitive tasks from hours to minutes through scheduled and event based automation.",
       skills: ["Python", "Javascript", "Jira", "GitLab", "Smartsheet"]
     },
     // {

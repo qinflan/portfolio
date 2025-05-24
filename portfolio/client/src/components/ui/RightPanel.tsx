@@ -2,7 +2,7 @@ import "./RightPanel.css"
 import Experience from '../pages/experience/Experience'
 import Contact from '../pages/contact/Contact'
 import Projects from "../pages/projects/Projects"
-import Education from "../pages/education/Education"
+// import Education from "../pages/education/Education"
 import { useRef} from "react"
 
 const RightPanel = () => {
@@ -11,19 +11,13 @@ const RightPanel = () => {
     const contactRef = useRef<HTMLDivElement | null>(null);
     const aboutRef = useRef<HTMLDivElement | null>(null);
     const projectsRef = useRef<HTMLDivElement | null>(null);
-    const educationRef = useRef<HTMLDivElement | null>(null);
 
     return (
         <div className="scroll-right-panel">
             <div ref={aboutRef} id="about" className="about-me">
                 <h1 className="section-title">about</h1>
                 <div className="about-body">
-                    <p>I'm a college student based in <span className="emphasis-text">Boston, Massachusetts</span> studying Information Technology and Computer Science,
-                        driven by my passion for tech and problem-solving. I'm proficient with <span className="emphasis-text">Java, Python, JavaScript, and TypeScript.</span> Whether I'm developing full-stack web applications or building embedded systems,
-                        I’m constantly working on picking up some new skills.
-                    </p>
-
-                    <p>I’m a quick learner, always looking forward towards a new project to work on. In my spare time I play music, hike, game, or work on computers and music equipment!</p>
+                    <p>I'm a college student based in <span className="emphasis-text">Boston, Massachusetts</span> studying Information Technology and Computer Science. I'm a full-stack developer, proficient with <span className="emphasis-text">Java, Python, JavaScript, and TypeScript.</span> I’m always looking forward towards a new project or app to work on. In my spare time I like to play music, hike, travel, and cook!  </p>
 
                 </div>
             </div>
@@ -34,10 +28,6 @@ const RightPanel = () => {
 
             <div className="relative w-full" ref={projectsRef} id="projects">
                 <Projects />
-            </div>
-
-            <div className="w-full" ref={educationRef} id="education">
-                <Education/>
             </div>
 
             <div className="w-full" ref={contactRef} id="contact">

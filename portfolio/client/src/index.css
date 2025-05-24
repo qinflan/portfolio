@@ -29,8 +29,8 @@
 [data-theme="dark"] {
 
   /* page */
-  --page-background: #141414;
-  --page-foreground: #181818;
+  --page-background: #111111;
+  --page-foreground: #131313;
   --foreground-hover:#2d2e30;
   --page-divider: #383838;
   --icon: #EDEDED;
@@ -59,7 +59,7 @@
   --widget-stroke: #2f2f2f;
 
   /* skill tiles */
-  --skill-tile-bg: #2c2c2c;
+  --skill-tile-bg: #252525;
   --skill-tile-text: #e6e6e6;
 
   /* react-toastify colors */
