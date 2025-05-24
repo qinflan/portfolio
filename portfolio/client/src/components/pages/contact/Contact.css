@@ -1,5 +1,5 @@
 .form-section-container {
-    margin-top: 40px;
+    margin-top: 100px;
     position: relative;
     width: 100%;
     display: flex;
@@ -68,6 +68,10 @@ textarea.input-field {
 }
 textarea.input-field:focus {
     border-bottom: 2px solid gray;
+}
+
+.input-fields-container .brutal-button {
+    background-color: var(--page-foreground);
 }
 
 

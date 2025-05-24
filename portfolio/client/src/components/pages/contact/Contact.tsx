@@ -74,11 +74,12 @@ const Contact = () => {
           maxLength={370}
           onChange={(e) => setBody(e.target.value)}
           required/>
-        </div>
-          
+
         <button type="submit" className="brutal-button">
           send message
         </button>
+
+        </div>
 
       <ToastContainer position="bottom-right"/>
       </form>
