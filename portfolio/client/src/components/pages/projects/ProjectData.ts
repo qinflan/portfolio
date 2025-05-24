@@ -10,21 +10,21 @@ export const projectData = [
       title: "KeyLocker",
       dates: "2024",
       description: "Built a secure password manager desktop app with Fernet Encryption for secure password handling and unique user keys. Designed and developed a graphical user interface to improve UX using CustomTkinter, Figma, and Illustrator.",
-      skills: ["Python", "Cryptography", "Custom Tkinter", "Git", "Figma"],
+      skills: ["Python", "Cryptography", "Custom Tkinter", "Figma"],
       repo: "https://github.com/qinflan/KeyLocker.py"
     },
     {
         title: "Portfolio Website",
         dates: "2024",
         description: "This website! I started by designing wireframes in Figma, then developed the site with React and TypeScript. I also built a small backend Express route to handle incoming contact requests.",
-        skills: ["Typescript", "React", "Tailwind", "Node.js", "Git", "Figma"],
+        skills: ["Typescript", "React", "Tailwind", "Node.js", "Figma"],
         repo: "https://github.com/qinflan/portfolio"
       },
       {
         title: "Ecoquest",
         dates: "2025",
         description: "A biodiversity exploration app built in 24 hours for CivicHacks 2025 at Boston University. Ecoquest helps users discover local plant and animal species by querying public environmental datasets and presenting results through a clean, responsive interface.",
-        skills: ["Javascript", "React", "Tailwind", "Node.js", "Git", "REST API"],
+        skills: ["Javascript", "React", "Tailwind", "Node.js", "REST API"],
         repo: "https://github.com/qinflan/ecoquest"
       },
   ];
