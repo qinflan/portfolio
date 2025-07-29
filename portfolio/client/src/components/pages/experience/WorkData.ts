@@ -1,9 +1,10 @@
 export const workData = [
       {
-      title: "Incoming Software Engineer Intern",
+      title: "Software Engineer Intern",
       company: "Liberty Mutual Investments",
-      dates: "June 2025",
-      description: "loading...",
+      dates: "June 2025 - Present",
+      description: "Improved test reliability, boosted dashboard performance for investment stakeholders, and replaced manual workflows with a full-stack automation tool built during an intern hackathon.",
+      skills: ["Python", "Snowflake", "React", "Power BI", "AWS"]
     },
     {
       title: "Software Engineer Fellow",
