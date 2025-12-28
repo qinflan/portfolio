@@ -106,7 +106,6 @@ const Navbar = () => {
             </div>
 
             <nav className="navbar-container">
-                <span className="w-1 bg-[var(--page-divider)] flex-shrink-0 rounded-full"></span>
                 <div className="navbar-content">
 
                     <a className="nav-link" href="/">home</a>

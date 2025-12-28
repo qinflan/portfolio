@@ -1,62 +1,59 @@
-.scroll-right-panel {
+.sections-container {
     display: flex;
     position: relative;
     flex-direction: column;
-    align-items: center;
-    width: 60%;
-    margin-top: 100px;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1440px;
 }
 
 .about-me {
     display: flex;
-    flex-direction: column;
-    width: 90%;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    width: 100%;
     color: var(--secondary-text);
-    /* margin-bottom: 6rem; */
     font-family: "ClashGrotesk", Inter, sans-serif;
-    font-size: large;
+    font-size: x-large;
     letter-spacing: 0.36px;
-    font-weight: 400;
+    font-weight: 500;
     animation: fade-up 0.5s;
 }
 
-.about-body {
+.about-text {
     display: flex;
     flex-direction: column;
+    text-wrap: wrap;
+    
 }
 
 .emphasis-text {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .section-title {
     color: var(--header-text);
     font-family: "ClashDisplay";
-    font-size: xx-large;
-    padding: 0.6em 0em;
+    font-size: 56px;
     position: relative;
-    width: 90%;
+    width: 100%;
     text-align: left;
     justify-self: flex-start;
+    margin-bottom:20px;
 }
 
-/*  scroll bar chrome */
-::-webkit-scrollbar {
-    width: 8px;
-}
-::-webkit-scrollbar-track {
-    margin: 2em;
-}
-::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background: var(--page-divider);
+.avatar-img {
+    display: flex;
+    margin-bottom: .4rem;
+    width: 300px;
+    animation: fade-up 0.5s;
 }
 
 /* mobile */
 @media (max-width: 1000px) {
-    .scroll-right-panel {
+    .sections-container {
         width: 90%;
-        margin-top: unset;
     }
     .about-me {
         width: 90%;
@@ -67,7 +64,7 @@
 }
 
 @media (max-width: 600px) {
-    .scroll-right-panel {
+    .sections-container {
         width: 100%;
     }
 
@@ -79,5 +76,19 @@
 
     .about-body {
         margin-top: 0.8rem;
+    }
+}
+
+
+/* Animations */
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
     }
 }

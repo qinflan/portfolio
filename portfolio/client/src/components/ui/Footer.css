@@ -1,0 +1,52 @@
+.footer-container {
+    display: flex;
+    height: 200px;
+    background-color: var(--page-background);
+    width: 100%;
+    border-top: 2px solid var(--widget-stroke);
+}
+
+.rights-text {
+    text-decoration: none;
+    color: var(--secondary-text);
+    position: relative;
+    height: 100%;
+    align-content: flex-end;
+    font-family: "ClashGrotesk", Inter, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    text-transform: lowercase;
+    padding: 2rem;
+}
+
+.socials-container {
+    align-content: center;
+    margin-left: 50%;
+}
+
+.socials-header {
+    color: var(--header-text);
+    font-family: "ClashDisplay";
+    font-size: 34px;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    justify-self: flex-start;
+}
+
+.social-footer-link {
+    text-decoration: none;
+    color: var(--secondary-text);
+    position: relative;
+    font-family: "ClashGrotesk", Inter, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    text-transform: lowercase;
+    text-wrap: nowrap;
+}

@@ -3,6 +3,7 @@
     flex-direction: column;
     position: relative;
     width: 100%;
+    padding: 0 2em;
     align-items: center;
     margin-top: 100px;
     animation: fade-up 0.5s;
@@ -10,23 +11,20 @@
 
 .work-widgets-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
     position: relative;
-    width: 100%;
-    align-items: center;
 }
 
 .work-widget-container {
     display: flex;
     flex-direction: column;
     background-color: var(--page-foreground);
-    border-radius: 8px;
-    width: 90%;
-    padding: 40px;
-    border: 1px solid var(--widget-stroke);
+    padding: 26px;
+    width: 440px;
+    border: 2px solid var(--widget-stroke);
     gap: 20px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
     opacity: 1;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }

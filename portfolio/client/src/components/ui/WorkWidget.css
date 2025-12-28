@@ -62,7 +62,6 @@
     color: var(--skill-tile-text);
     padding: 6px 10px;
     font-weight: 500;
-    border-radius: 10px;
     background-color: var(--skill-tile-bg);
     cursor:default;
     font-size: 0.85rem;

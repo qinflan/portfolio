@@ -1,7 +1,6 @@
 import { Routes, Route } from 'react-router'
 
-//pages
-import Home from './components/pages/home/Home'
+import Home from './components/sections/home/Home'
 
 const App = () => {
   return (

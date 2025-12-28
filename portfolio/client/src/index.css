@@ -21,7 +21,20 @@
   /* toast container */
   --toastify-icon-color-success: var(--toast-success);
   --toastify-icon-color-error: var(--toast-error);
+}
 
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
+/* Old IE / Edge */
+body {
+  -ms-overflow-style: none;
 }
 
 /* Global CSS Colors by Theme*/
@@ -30,18 +43,18 @@
 
   /* page */
   --page-background: #111111;
-  --page-foreground: #131313;
-  --foreground-hover:#2d2e30;
+  --page-foreground: #111111;
+  --foreground-hover:#313131;
   --page-divider: #383838;
   --icon: #EDEDED;
   --input-field-focus: #e4e4e4;
 
   /* text */
-  --header-text: #FFFBF8;
-  --primary-text: #e6e6e6;
-  --secondary-text: #b6b6b6;
+  --header-text: #ffffff;
+  --primary-text: #ffffff;
+  --secondary-text: #e0e0e0;
   --placeholder-text: #a7a7a7;
-  --nav-text:  #b6b6b6;
+  --nav-text:  #000000;
   --nav-active-text:  #ffffff;
   --nav-hover-text: #cccccc;
 
@@ -55,8 +68,8 @@
 
   /* widgets */
   --widget-background: #989B9E;
-  --widget-border: #EDEDED;
-  --widget-stroke: #2f2f2f;
+  --widget-border: #ffffff;
+  --widget-stroke: #ffffff;
 
   /* skill tiles */
   --skill-tile-bg: #252525;
@@ -71,7 +84,7 @@
 
 [data-theme="light"] {
   /* page */
-  --page-background: #F0F0F0;
+  --page-background: #ffffff;
   --page-foreground: #ffffff;
   --foreground-hover:#2d2e30;
   --page-divider: #686868;
@@ -79,11 +92,11 @@
   --input-field-focus: #000000;
 
   /* text */
-  --header-text: #1F1F1F;
-  --primary-text: #303030;
-  --secondary-text: #303030;
+  --header-text: #000000;
+  --primary-text: #131313;
+  --secondary-text: #202020;
   --placeholder-text: #a0a0a0;
-  --nav-text:  #686868;
+  --nav-text:  #000000;
   --nav-active-text:  #1D1D1D;
   --nav-hover-text: #181818;
 
@@ -97,8 +110,8 @@
 
   /* widgets */
   --widget-background: #FFFFFF;
-  --widget-border: #303030;
-  --widget-stroke: #E2E2E2;
+  --widget-border: #000000;
+  --widget-stroke: #000000;
 
   /* skill tiles */
   --skill-tile-bg: #272727;
@@ -185,10 +198,9 @@
 
 /* button styling */
 .brutal-button {
-  padding: 10px 13px;
+  padding: 14px 22px;
   background-color: var(--button-background);
   flex-shrink: 0;
-  border-radius: 8px;
   border: 2px solid var(--button-stroke);
   color: var(--button-text);
   text-align: center;
