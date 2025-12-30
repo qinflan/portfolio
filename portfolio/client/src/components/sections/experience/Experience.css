@@ -11,7 +11,7 @@
 
 .work-widgets-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 18px;
     position: relative;
@@ -20,14 +20,13 @@
 .work-widget-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--page-foreground);
-    padding: 26px;
+    background-color: var(--background);
+    padding: 26px 0px;
     flex: 1;
     min-width: 300px;
-    border: 2px solid var(--widget-stroke);
-    gap: 10px;
+    gap: 12px;
     opacity: 1;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .work-widget-container:hover {

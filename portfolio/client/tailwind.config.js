@@ -5,8 +5,8 @@ export default {
     extend: {
       // Custom CSS color variables
       colors: {
-        'page-background': 'var(--page-background)',
-        'page-foreground': 'var(--page-foreground)',
+        'page-background': 'var(--background)',
+        'page-foreground': 'var(--foreground)',
         'foreground-hover': 'var(--foreground-hover)',
         'nav-text': 'var(--nav-text)',
         'nav-active-text': 'var(--nav-active-text)',

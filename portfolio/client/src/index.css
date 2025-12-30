@@ -11,7 +11,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: var(--page-background);
+  background-color: var(--background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -42,11 +42,10 @@ body {
 [data-theme="dark"] {
 
   /* page */
-  --page-background: #111111;
-  --page-foreground: #111111;
+  --background: #0a0a0a;
+  --foreground: #ffffff;
   --foreground-hover:#313131;
-  --page-divider: #383838;
-  --icon: #EDEDED;
+  --icon: #ffffff;
   --input-field-focus: #e4e4e4;
 
   /* text */
@@ -54,7 +53,7 @@ body {
   --primary-text: #ffffff;
   --secondary-text: #e0e0e0;
   --placeholder-text: #a7a7a7;
-  --nav-text:  #000000;
+  --nav-text:  #ffffff;
   --nav-active-text:  #ffffff;
   --nav-hover-text: #cccccc;
 
@@ -84,11 +83,11 @@ body {
 
 [data-theme="light"] {
   /* page */
-  --page-background: #ffffff;
-  --page-foreground: #ffffff;
+  --background: #ffffff;
+  --foreground: #020202;
   --foreground-hover:#2d2e30;
   --page-divider: #686868;
-  --icon: #3d3d3d;
+  --icon: #000000;
   --input-field-focus: #000000;
 
   /* text */
@@ -115,7 +114,7 @@ body {
 
   /* skill tiles */
   --skill-tile-bg: #272727;
-  --skill-tile-text: #F0F0F0;
+  --skill-tile-text: #ffffff;
 
   /* react-toastify colors */
   --toast-shadow: #0000000c;
@@ -173,7 +172,7 @@ body {
 
 ::selection {
   background-color: var(--primary-text); /* Highlight background color */
-  color: var(--page-background);             /* Highlighted text color */
+  color: var(--background);             /* Highlighted text color */
 }
 
 /* Toast Containers */
@@ -182,7 +181,7 @@ body {
   color: var(--secondary-text);
 }
 .Toastify__toast {
-  background-color: var(--page-foreground);
+  background-color: var(--background);
   border: solid 1px var(--widget-stroke);
   box-shadow: 0px 0px 5px 0px var(--toast-shadow);
 }
@@ -199,24 +198,25 @@ body {
 /* button styling */
 .brutal-button {
   padding: 14px 22px;
-  background-color: var(--button-background);
+  background-color: var(--foreground);
   flex-shrink: 0;
-  border: 2px solid var(--button-stroke);
-  color: var(--button-text);
+  border: 2px solid var(--foreground);
+  color: var(--background);
   text-align: center;
   font-family: "ClashGrotesk", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  box-shadow: 4px 4px 0 -2px var(--page-background), 4px 4px 0 0 var(--button-stroke);
+  box-shadow: 4px 4px 0 -2px var(--background), 4px 4px 0 0 var(--button-stroke);
   animation: fade-up 0.5s;
   transition: 0.3s;
 }
 .brutal-button:hover {
   transition: 0.4s;
   box-shadow: 5px 5px 0 -2px var(--button-shadow), 5px 5px 0 0 var(--button-stroke);
-  background-color: var(--button-background-hover);
+  background-color: var(--background);
+  color: var(--foreground);
 
 }
 @media (max-width: 1000px) {

@@ -1,28 +1,28 @@
 .project-widget-container {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--page-foreground);
-  padding: 26px;
-  flex: 1;
-  min-width: 300px;
-  border: 2px solid var(--widget-stroke);
-  transition: 0.3s;
-  user-select: none;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    flex: 1;
+    min-width: 300px;
+    border: 2px solid var(--foreground);
+    gap: 10px;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 .project-widget-container:hover {
-  transform: translate(-3px);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .project-btn-wrapper {
   display: flex;
   flex-direction: column;
-  gap:20px;
+  width: 100%;
+  min-height: 300px;
+  padding: 26px;
+  gap: 20px;
 }
 
 .project-widget-header {
-  display: flex;
-  flex: 2;
   display: flex;
   align-items: center;
   width: 100%;
@@ -37,6 +37,19 @@
   font-weight: bold;
   font-size: 1.1rem;
   align-items: center;
+}
+
+.project-widget-description {
+  color: var(--secondary-text);
+  font-family: "ClashGrotesk", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .repo-link {
@@ -64,7 +77,7 @@
     width: 90%;
     padding: 20px 20px;
     opacity: 1;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
   }
 
 }

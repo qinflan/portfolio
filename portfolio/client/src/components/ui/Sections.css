@@ -50,6 +50,14 @@
     animation: fade-up 0.5s;
 }
 
+.resume-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 0 2em;
+}
+
 /* mobile */
 @media (max-width: 1000px) {
     .sections-container {

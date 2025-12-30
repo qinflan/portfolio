@@ -18,7 +18,7 @@ const Sections = () => {
             <div ref={aboutRef} id="about" className="about-me">
                 <img className="avatar-img" src={avatar}></img>
                 <div className="about-text">
-                    <h1 className="section-title">bio</h1>
+                    <h1 className="section-title">about</h1>
                     <p>I'm a student at <span className="emphasis-text">UMass Boston</span> studying Information Technology and Computer Science. As a <span className="emphasis-text">full-stack software engineer</span>, I'm proficient with <span className="emphasis-text">Java, Python, JavaScript, and TypeScript</span>. I love to create with both software and hardware, and in my spare time, I play music, hike, travel, and cook.</p>
                 </div>
             </div>
@@ -35,9 +35,10 @@ const Sections = () => {
                 <Contact />
             </div>
 
-            {/* <div className="resume-btn-container">
+            <div className="resume-section">
+                <h1 className="section-title">resume/cv</h1>
                 <ResumeBtn />
-            </div> */}
+            </div>
         </div>
     )
 }

@@ -7,7 +7,7 @@ interface ThemeContextType {
 };
 
 const defaultThemeContext: ThemeContextType = {
-  theme: "dark",
+  theme: "light",
   toggleTheme: () => {},
 };
 

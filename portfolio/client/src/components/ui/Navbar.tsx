@@ -2,8 +2,6 @@ import { useEffect, useState, useRef, useContext } from "react";
 import { motion, AnimatePresence } from 'motion/react'
 import "./Navbar.css"
 import { ToggleTheme } from '../hooks/theme/toggleTheme';
-import { GrLinkedinOption } from "react-icons/gr";
-import { TfiGithub } from "react-icons/tfi";
 import { IoClose } from "react-icons/io5";
 import { TbMenu } from "react-icons/tb";
 import logoDark from "/assets/logo-dark.svg"
@@ -107,27 +105,17 @@ const Navbar = () => {
 
             <nav className="navbar-container">
                 <div className="navbar-content">
-
-                    <a className="nav-link" href="/">home</a>
+                    <button className="nav-link" onClick={() => scrollToSection("about")}>about</button>
                     <button className="nav-link" onClick={() => scrollToSection("experience")}>experience</button>
                     <button className="nav-link" onClick={() => scrollToSection("projects")}>projects</button>
                     <button className="nav-link" onClick={() => scrollToSection("contact")}>contact</button>
-
-                    <div className="nav-button-container">
-                        <ToggleTheme />
-                        <a href="https://github.com/qinflan" target="_blank" rel="noopener noreferrer">
-                            <TfiGithub size={34} className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1.5 hover:opacity-70 transition" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer">
-                            <GrLinkedinOption size={34} className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1.5 hover:opacity-70 transition" />
-                        </a>
-                    </div>
+                    <button className="nav-link" onClick={() => scrollToSection("contact")}>skills</button>
                 </div>
 
                 {/* Mobile Dropdown Menu */}
                 <div className="mobile-menu-container" ref={menuRef}>
                     <ToggleTheme />
-                    <button className="bg-[var(--page-foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1.5" onClick={toggleMobileMenu}>
+                    <button className="bg-[var(--foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1.5" onClick={toggleMobileMenu}>
                         {isMobileMenuOpen ? <IoClose size={20} /> : <TbMenu size={20} />}
                     </button>
 

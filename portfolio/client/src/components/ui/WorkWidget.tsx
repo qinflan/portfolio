@@ -18,7 +18,6 @@ const WorkWidget: React.FC<WorkWidgetProps> = ({title, company, dates, descripti
           <h2 className="widget-title">{title}</h2>
           <h2 className="widget-company">{company}</h2>
         </div>
-          <h3 className="widget-date">{dates}</h3>
       </div>
       <div className="widget-description">
         <p>{description}</p>
@@ -30,6 +29,7 @@ const WorkWidget: React.FC<WorkWidgetProps> = ({title, company, dates, descripti
           </div>
         ))}
       </div>
+      <h3 className="widget-date">{dates}</h3>
     </div>
   )
 }

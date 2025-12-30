@@ -24,7 +24,7 @@ const ProjectWidget: React.FC<ProjectWidgetProps> = ({title, dates, description,
           </h2>
           <h3 className="widget-date">{dates}</h3>
         </div>
-        <div className="widget-description">
+        <div className="project-widget-description">
           <p>{description}</p>
         </div>
         <div className="widget-skill-tiles">

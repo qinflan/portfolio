@@ -1,14 +1,14 @@
 .footer-container {
     display: flex;
     height: 200px;
-    background-color: var(--page-background);
+    background-color: var(--foreground);
     width: 100%;
-    border-top: 2px solid var(--widget-stroke);
+    align-items: center
 }
 
 .rights-text {
     text-decoration: none;
-    color: var(--secondary-text);
+    color: var(--background);
     position: relative;
     height: 100%;
     align-content: flex-end;
@@ -22,13 +22,23 @@
     padding: 2rem;
 }
 
-.socials-container {
-    align-content: center;
-    margin-left: 50%;
+.footer-content-container {
+    display: flex;
+    margin-left: auto;
+    gap: 100px;
+    margin-right:10%;
 }
 
+/* .socials-container {
+    height: 100%;
+}
+
+.code-links-container {
+    height: 100%;
+} */
+
 .socials-header {
-    color: var(--header-text);
+    color: var(--background);
     font-family: "ClashDisplay";
     font-size: 34px;
     position: relative;
@@ -39,12 +49,12 @@
 
 .social-footer-link {
     text-decoration: none;
-    color: var(--secondary-text);
+    color: var(--background);
     position: relative;
     font-family: "ClashGrotesk", Inter, sans-serif;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     line-height: normal;
     letter-spacing: 0.36px;
     text-transform: lowercase;

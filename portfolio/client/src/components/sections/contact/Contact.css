@@ -23,7 +23,7 @@
     width: 100%;
     flex-direction:column;
     align-items: center;
-    background-color: var(--page-foreground);
+    background-color: var(--background);
     border: 2px solid var(--widget-stroke);
     padding: 40px;
     gap: 24px;
@@ -65,7 +65,7 @@ textarea.input-field:focus {
 }
 
 .input-fields-container .brutal-button {
-    background-color: var(--page-foreground);
+    background-color: var(--foreground);
 }
 
 
