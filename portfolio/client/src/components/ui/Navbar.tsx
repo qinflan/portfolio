@@ -2,7 +2,8 @@ import { useEffect, useState, useRef, useContext } from "react";
 import { motion, AnimatePresence } from 'motion/react'
 import "./Navbar.css"
 import { ToggleTheme } from '../hooks/theme/toggleTheme';
-import { IoClose } from "react-icons/io5";
+import { IoCloseSharp } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { TbMenu } from "react-icons/tb";
 import logoDark from "/assets/logo-dark.svg"
 import logoLight from "/assets/logo-light.svg"
@@ -111,61 +112,61 @@ const Navbar = () => {
                     <button className="nav-link" onClick={() => scrollToSection("contact")}>contact</button>
                     <button className="nav-link" onClick={() => scrollToSection("contact")}>skills</button>
                 </div>
+            </nav>
 
-                {/* Mobile Dropdown Menu */}
-                <div className="mobile-menu-container" ref={menuRef}>
-                    <ToggleTheme />
-                    <button className="bg-[var(--foreground)] rounded-lg border border-widget-stroke text-[var(--icon)] cursor-pointer p-1.5" onClick={toggleMobileMenu}>
-                        {isMobileMenuOpen ? <IoClose size={20} /> : <TbMenu size={20} />}
-                    </button>
+            {/* Mobile Dropdown Menu */}
+            <div className="mobile-menu-container" ref={menuRef}>
+                <ToggleTheme />
+                <button className="bg-[var(--background)] border border-widget-stroke text-[var(--icon)] cursor-pointer p-1.5 hover:opacity-70 transition" onClick={toggleMobileMenu}>
+                    {isMobileMenuOpen ? <IoCloseSharp size={20} /> : <GiHamburgerMenu size={20} />}
+                </button>
 
-                    <AnimatePresence>
-                        {isMobileMenuOpen && (
+                <AnimatePresence>
+                    {isMobileMenuOpen && (
+                        <motion.div
+                            className="mobile-menu-dropdown origin-top"
+                            initial="hidden"
+                            animate="visible"
+                            exit="exit"
+                            variants={dropdownVariants}
+                        >
+                            <motion.div variants={containerVars} initial="hidden" animate="visible" exit="hidden">
+                                {navLinks.map(({ label, id }) => (
+                                    <motion.div className="overflow-hidden" key={id}>
+                                        <motion.div variants={mobileLinkVars} key={id}>
+                                            <motion.button
+                                                whileHover="hover"
+                                                className="mobile-nav-link"
+                                                onClick={() => id === "/" ? (window.scrollTo(0, 0), location.reload()) : scrollToSection(id)}
+                                            >
+                                                {label}
+                                            </motion.button>
+                                        </motion.div>
+                                    </motion.div>
+                                ))}
+                            </motion.div>
+
+
                             <motion.div
-                                className="mobile-menu-dropdown origin-top"
+                                variants={containerVars}
                                 initial="hidden"
                                 animate="visible"
-                                exit="exit"
-                                variants={dropdownVariants}
+                                exit="hidden"
+                                className="social-dropdown-container overflow-hidden"
                             >
-                                <motion.div variants={containerVars} initial="hidden" animate="visible" exit="hidden">
-                                    {navLinks.map(({ label, id }) => (
-                                        <motion.div className="overflow-hidden" key={id}>
-                                            <motion.div variants={mobileLinkVars} key={id}>
-                                                <motion.button
-                                                    whileHover="hover"
-                                                    className="mobile-nav-link"
-                                                    onClick={() => id === "/" ? (window.scrollTo(0, 0), location.reload()) : scrollToSection(id)}
-                                                >
-                                                    {label}
-                                                </motion.button>
-                                            </motion.div>
-                                        </motion.div>
-                                    ))}
-                                </motion.div>
-
-
-                                <motion.div
-                                    variants={containerVars}
-                                    initial="hidden"
-                                    animate="visible"
-                                    exit="hidden"
-                                    className="social-dropdown-container overflow-hidden"
-                                >
-                                    <motion.a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer" variants={socialLinkVars} className="dropdown-social-link">
-                                        <FiArrowUpRight />
-                                        linkedin
-                                    </motion.a>
-                                    <motion.a href="https://github.com/qinflan" target="_blank" rel="noopener noreferrer" variants={socialLinkVars} className="dropdown-social-link">
-                                        <FiArrowUpRight />
-                                        github
-                                    </motion.a>
-                                </motion.div>
+                                <motion.a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer" variants={socialLinkVars} className="dropdown-social-link">
+                                    <FiArrowUpRight />
+                                    linkedin
+                                </motion.a>
+                                <motion.a href="https://github.com/qinflan" target="_blank" rel="noopener noreferrer" variants={socialLinkVars} className="dropdown-social-link">
+                                    <FiArrowUpRight />
+                                    github
+                                </motion.a>
                             </motion.div>
-                        )}
-                    </AnimatePresence>
-                </div>
-            </nav>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </div>
         </div>
 
     )

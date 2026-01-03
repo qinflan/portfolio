@@ -1,9 +1,7 @@
 import './hero.css'
 import { Shadersmith } from "shadersmith-r3f";
-import ResumeBtn from '../../ui/ResumeBtn';
 import { GrLinkedinOption } from "react-icons/gr";
 import { TfiGithub } from "react-icons/tfi";
-import avatar from "/assets/profile.png"
 import { BsArrowDownCircle } from "react-icons/bs";
 import Navbar from '../../ui/Navbar';
 import { ToggleTheme } from '../../hooks/theme/toggleTheme';
@@ -33,11 +31,11 @@ const Hero = () => {
                     [0.714, 0.557, 0.624, 1],
                     [0, 0, 0, 1],
                 ] : [
-                   [0.8, 0.8, 1, 1],
-       [0.482, 0.365, 0.455, 1],
-       [0.11, 0.247, 0.247, 1],
-       [0, 0, 0, 1],
-       [0, 0, 0, 1],
+                    [0.62, 0.612, 0.749, 1],
+                    [0.349, 0.325, 0.471, 1],
+                    [0.18, 0.173, 0.208, 1],
+                    [0, 0, 0, 1],
+                    [0.141, 0.094, 0.173, 1],
                 ]}
             >
 

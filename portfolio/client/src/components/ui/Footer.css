@@ -1,14 +1,15 @@
 .footer-container {
     display: flex;
     height: 200px;
-    background-color: var(--foreground);
+    background-color: var(--footer-background);
     width: 100%;
-    align-items: center
+    align-items: center;
+    border-top: 2px solid var(--footer-foreground);
 }
 
 .rights-text {
     text-decoration: none;
-    color: var(--background);
+    color: var(--footer-foreground);
     position: relative;
     height: 100%;
     align-content: flex-end;
@@ -29,16 +30,8 @@
     margin-right:10%;
 }
 
-/* .socials-container {
-    height: 100%;
-}
-
-.code-links-container {
-    height: 100%;
-} */
-
 .socials-header {
-    color: var(--background);
+    color: white;
     font-family: "ClashDisplay";
     font-size: 34px;
     position: relative;
@@ -49,7 +42,7 @@
 
 .social-footer-link {
     text-decoration: none;
-    color: var(--background);
+    color: var(--footer-foreground);
     position: relative;
     font-family: "ClashGrotesk", Inter, sans-serif;
     font-size: 18px;
