@@ -7,6 +7,7 @@
     border: 2px solid var(--foreground);
     gap: 10px;
     opacity: 1;
+    border-radius: 3px;
     transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 .project-widget-container:hover {
@@ -65,19 +66,32 @@
 }
 .project-widget-container .widget-skill-tile {
   background-color: var(--skill-tile-bg);
-  
+  border-radius: 3px;
+}
+
+.project-widget-container .widget-skill-tile:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
+  .project-btn-wrapper {
+    padding: 16px;
+    gap: 10px;
+    min-height: unset;
+  }
   .project-widget-title {
     font-size: medium;
   }
 
   .project-widget-container {
     width: 90%;
-    padding: 20px 20px;
     opacity: 1;
     transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .project-widget-description {
+    font-size: small;
+    line-height: 18px;
   }
 
 }

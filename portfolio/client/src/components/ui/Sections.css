@@ -1,54 +1,17 @@
 .sections-container {
+    width: 100%;
     display: flex;
-    position: relative;
     flex-direction: column;
     align-items: stretch;
-    width: 100%;
-    max-width: 1440px;
+    padding: 2em;
+    gap: 220px;
 }
 
-.about-me {
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-    justify-content: center;
-    width: 100%;
-    padding: 0 2em;
-    color: var(--secondary-text);
-    font-family: "ClashGrotesk", Inter, sans-serif;
-    font-size: x-large;
-    letter-spacing: 0.36px;
-    font-weight: 500;
-    animation: fade-up 0.5s;
-}
-
-.about-text {
-    display: flex;
-    flex-direction: column;
-    text-wrap: wrap;
-    
-}
-
-.emphasis-text {
-    font-weight: 600;
-}
-
-.section-title {
-    color: var(--header-text);
-    font-family: "ClashDisplay";
-    font-size: 56px;
-    position: relative;
-    width: 100%;
-    text-align: left;
-    justify-self: flex-start;
-    margin-bottom:20px;
-}
-
-.avatar-img {
-    display: flex;
-    margin-bottom: .4rem;
-    width: 300px;
-    animation: fade-up 0.5s;
+.work-grid {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
 }
 
 .resume-section {
@@ -56,7 +19,6 @@
     flex-direction: column;
     position: relative;
     width: 100%;
-    padding: 0 2em;
 }
 
 /* mobile */
@@ -67,8 +29,15 @@
     .about-me {
         width: 90%;
         font-size: medium;
-        flex-direction: column;
-        gap: 20px;
+        gap: 2rem;
+    }
+    .section-title{
+        padding: 0;
+        margin: 0;
+    }
+
+    .about-body {
+        gap: 0.8rem;
     }
     .avatar-img {
         width: 200px;
@@ -78,20 +47,31 @@
 @media (max-width: 600px) {
     .sections-container {
         width: 100%;
+        padding: 0;
     }
 
     .avatar-img {
         width: 100px;
+        margin-bottom: unset;
+    }
+
+    .about-me {
+        width: 90%;
+        font-size: medium;
+        flex-direction: column;
+        gap: unset;
+        margin-top:2.2em;
+    }
+
+    .about-body {
+        gap: 0.6rem;
     }
 
     .section-title {
         font-size: xx-large;
         padding-bottom: unset;
-        padding-top: 35px;
-    }
-
-    .about-body {
-        margin-top: 0.8rem;
+        padding-top: unset;
+        margin-top: 6px;
     }
 }
 

@@ -1,8 +1,8 @@
 import './hero.css'
+import './../../../grids.css'
 import { Shadersmith } from "shadersmith-r3f";
-import { GrLinkedinOption } from "react-icons/gr";
-import { TfiGithub } from "react-icons/tfi";
-import { BsArrowDownCircle } from "react-icons/bs";
+import { RiArrowDownDoubleLine } from "react-icons/ri";
+import { MdDownload } from "react-icons/md";
 import Navbar from '../../ui/Navbar';
 import { ToggleTheme } from '../../hooks/theme/toggleTheme';
 import ResumePDF from '/assets/Quinn_Flanigan_Resume_2025.pdf'
@@ -18,7 +18,7 @@ const Hero = () => {
     }
 
     return (
-        <div className="gradient-container">
+        <div className="gradient-container" data-speed="2">
             <Shadersmith
                 preset={theme === "light" ? "valley" : "liquid"}
                 amplitude={14}
@@ -38,35 +38,31 @@ const Hero = () => {
                     [0.141, 0.094, 0.173, 1],
                 ]}
             >
-
+            <div className="hero-grid">
                 <div className="hero-header-container">
-                    <div className="hero-resume-btn">
-                        <a href={ResumePDF} download="Quinn-Flanigan-Resume.pdf">
-                            <button className="resume-btn-text">download resume</button>
-                        </a>
-                    </div>
+                    <a href={ResumePDF} download="Quinn-Flanigan-Resume.pdf">
+                        <button className="hero-resume-btn">
+                            <MdDownload />
+                            download cv
+                        </button>
+                    </a>
                     <ToggleTheme />
                 </div>
-                <div className="hero-footer-container">
+                <div className="hero-name-container">
                     <h1 className="hero-name">quinn flanigan</h1>
-                    <Navbar />
                 </div>
+                    <div className="hero-nav-container">
+                        <RiArrowDownDoubleLine className="skip-hero-btn transition" size={34} onClick={skipHero} />
+                        <Navbar />
+                    </div>
                 
                 <div className="hero-mantra-container">
+                    <RiArrowDownDoubleLine className="skip-hero-btn-mobile transition" size={34} onClick={skipHero} />
                     <h3 className="mantra-text">
-                        Full-Stack Software Engineer passionate about solving interesting problems with code.
+                        <span>I'm a software engineer</span> passionate about building digital systems with intentional design.
                     </h3>
                 </div>
-    
-                {/* <div className="mobile-socials-container">
-                    <a href="https://github.com/qinflan" target="_blank" rel="noopener noreferrer">
-                        <TfiGithub size={36.5} className="brutal-icon-button" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/quinn-flanigan/" target="_blank" rel="noopener noreferrer">
-                        <GrLinkedinOption size={36.5} className="brutal-icon-button" />
-                    </a>
-                </div> */}
-                <BsArrowDownCircle className="skip-hero-btn" size={40} onClick={skipHero} />
+            </div>
             </Shadersmith>
         </div>
     )

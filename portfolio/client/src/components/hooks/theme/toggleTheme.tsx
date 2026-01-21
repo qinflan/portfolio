@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { WiMoonAltThirdQuarter } from "react-icons/wi";
+import { BsCircleHalf } from "react-icons/bs";
 import { FiMoon } from "react-icons/fi";
 import { ThemeContext } from './ThemeContext';
 import { IoMdSunny } from "react-icons/io";
@@ -20,9 +20,9 @@ export const ToggleTheme: React.FC = () => {
         <div className="toggle-container">
             {/* Conditionally render the icons based on the current theme */}
             {theme === "light" ? (
-                <IoMdSunny   className="bg-[var(--background)] border border-widget-stroke text-[var(--icon)] cursor-pointer p-1.5 hover:opacity-70 transition" size={34} onClick={toggleTheme} />
+                <BsCircleHalf   className="bg-[var(--background)] border rounded-[3px] border-widget-stroke text-[var(--icon)] cursor-pointer p-3.5 hover:opacity-70 transition" size={47} onClick={toggleTheme} />
             ) : (
-                <FiMoon className="bg-[var(--background)] border border-widget-stroke text-[var(--icon)] cursor-pointer p-1.5 hover:opacity-70 transition" size={34} onClick={toggleTheme} />
+                <BsCircleHalf className="bg-[var(--background)] border rounded-[3px] border-widget-stroke text-[var(--icon)] cursor-pointer p-3.5 hover:opacity-70 transition" size={47} onClick={toggleTheme} />
             )}
         </div>
     )

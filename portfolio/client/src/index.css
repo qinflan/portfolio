@@ -209,6 +209,7 @@ body {
   background-color: var(--foreground);
   flex-shrink: 0;
   border: 2px solid var(--foreground);
+  border-radius: 3px;
   color: var(--background);
   text-align: center;
   font-family: "ClashGrotesk", sans-serif;

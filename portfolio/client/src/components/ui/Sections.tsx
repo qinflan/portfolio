@@ -1,13 +1,12 @@
 import "./Sections.css"
+import { useRef } from "react"
 import Experience from '../sections/experience/Experience'
 import Contact from '../sections/contact/Contact'
 import Projects from "../sections/projects/Projects"
-import { useRef} from "react"
 import ResumeBtn from "./ResumeBtn"
-import avatar from "/assets/profile.png"
+import About from "../sections/about/about"
 
 const Sections = () => {
-
     const workRef = useRef<HTMLDivElement | null>(null);
     const contactRef = useRef<HTMLDivElement | null>(null);
     const aboutRef = useRef<HTMLDivElement | null>(null);
@@ -15,30 +14,26 @@ const Sections = () => {
 
     return (
         <div className="sections-container">
-            <div ref={aboutRef} id="about" className="about-me">
-                <img className="avatar-img" src={avatar}></img>
-                <div className="about-text">
-                    <h1 className="section-title">about</h1>
-                    <p>I'm a student at <span className="emphasis-text">UMass Boston</span> studying Information Technology and Computer Science. As a <span className="emphasis-text">full-stack software engineer</span>, I'm proficient with <span className="emphasis-text">Java, Python, JavaScript, and TypeScript</span>. I love to create with both software and hardware, and in my spare time, I play music, hike, travel, and cook.</p>
-                </div>
+            <div ref={aboutRef} id="about" data-lag="1">
+                <About/>
             </div>
 
-            <div ref={workRef} id="experience">
+            <div ref={workRef} id="experience" data-lag="1">
                 <Experience />
             </div>
-
-            <div ref={projectsRef} id="projects">
+ 
+            <div ref={projectsRef} id="projects" data-lag="1">
                 <Projects />
             </div>
 
-            <div ref={contactRef} id="contact">
+            <div ref={contactRef} id="contact" data-lag="1">
                 <Contact />
             </div>
 
-            <div className="resume-section">
+            {/* <div className="resume-section">
                 <h1 className="section-title">resume/cv</h1>
                 <ResumeBtn />
-            </div>
+            </div> */}
         </div>
     )
 }

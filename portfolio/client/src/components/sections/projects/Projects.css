@@ -7,13 +7,13 @@
     width: 100%;
 }
 
-.projects-container:hover {
-    opacity: 1;
+/* .projects-container:hover {
+    transform: scale(1);
 }
 
 .project-widgets-container:hover .project-widget-container:not(:hover) {
-    opacity: 0.5; 
-}
+    transform: scale(0.9);
+} */
 
 @media (max-width:600px) {
     .project-widgets-container {

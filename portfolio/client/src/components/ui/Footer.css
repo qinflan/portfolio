@@ -53,3 +53,21 @@
     text-transform: lowercase;
     text-wrap: nowrap;
 }
+
+@media (max-width: 600px) {
+    .footer-container {
+        height: auto;
+        flex-direction: column-reverse;
+        padding: 1rem 0;
+        gap: 4rem;
+    }
+
+    .footer-content-container {
+        margin: 0;
+        gap: 3rem;
+    }
+
+    .rights-text {
+        padding: 0;
+    }
+}

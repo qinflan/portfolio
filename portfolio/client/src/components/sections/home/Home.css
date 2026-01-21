@@ -1,14 +1,24 @@
-.page-content-container {
+.viewpanel {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:100px;
 }
+
+.fade-section {
+  opacity: 0;
+  will-change: opacity;
+}
+
+.fade-item {
+  opacity: 0;
+  will-change: opacity;
+}
+
 
 @media (max-width: 1000px) {
-}
-
-@media (max-width: 600px) {
+    .viewpanel {
+        gap: unset;
+    }
 }

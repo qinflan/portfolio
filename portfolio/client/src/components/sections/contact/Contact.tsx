@@ -54,7 +54,7 @@ const Contact = () => {
         <input 
           type="text" 
           className="input-field" 
-          placeholder="enter your email"
+          placeholder="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required/>
@@ -62,7 +62,7 @@ const Contact = () => {
           <input 
           type="text" 
           className="input-field" 
-          placeholder="enter subject"
+          placeholder="subject"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
           required/>

@@ -1,15 +1,11 @@
-.section-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    padding: 0 2em;
-    align-items: center;
-    margin-top: 100px;
-    animation: fade-up 0.5s;
+.work-section-container {
+    display: grid;
+    grid-template-columns: auto repeat(3, 1fr);
+    gap: 1em;
 }
 
 .work-widgets-container {
+    grid-column: 3 / -1; 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -26,15 +22,6 @@
     min-width: 300px;
     gap: 12px;
     opacity: 1;
-    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-}
-
-.work-widget-container:hover {
-    opacity: 1;
-}
-
-.work-widgets-container:hover .work-widget-container:not(:hover) {
-    opacity: 0.5; 
 }
 
 @media (max-width: 600px) {

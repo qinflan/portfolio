@@ -7,7 +7,7 @@ export const workData = [
     //   skills: ["Python", "Snowflake", "React", "Power BI", "AWS"]
     // },
     {
-      title: "Full-Stack Software Developer",
+      title: "Software Developer",
       company: "Samply",
       dates: "Oct 2025 - Jan 2026",
       description: "Integrated Patreon into our full-stack application so that artists on our platform can grant exclusive audio project access to their patrons.",
@@ -20,13 +20,13 @@ export const workData = [
       description: "Improved test reliability, and boosted dashboard performance for investment stakeholders.",
       skills: ["Python", "Snowflake", "React", "Power BI", "AWS"]
     },
-    {
-      title: "Software Engineer Fellow",
-      company: "Hack.Diversity",
-      dates: "Jan 2025 - Aug 2025",
-      description: "Member of the 2025 cohort. I worked on developing my full-stack and DSA skills through a technical curriculum under mentorship.",
-      skills: ["Javascript", "Python", "React Native", "MongoDB"]
-    },
+    // {
+    //   title: "Software Engineer Fellow",
+    //   company: "Hack.Diversity",
+    //   dates: "Jan 2025 - Aug 2025",
+    //   description: "Member of the 2025 cohort. I worked on developing my full-stack and DSA skills through a technical curriculum under mentorship.",
+    //   skills: ["Javascript", "Python", "React Native", "MongoDB"]
+    // },
     {
       title: "IT Automation Engineer Intern",
       company: "Veolia North America",
