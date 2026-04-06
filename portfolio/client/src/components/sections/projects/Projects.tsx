@@ -5,10 +5,10 @@ import "./Projects.css"
 
 const Projects: React.FC = () => {
   return (
-    <div className="section-container">
-      <div className="section-title">
+    <div className="projects-page-container">
+      {/* <div className="section-title">
         <h1>projects</h1>
-      </div>
+      </div> */}
 
       <div className="project-widgets-container">
         {projectData.map((projectItem, index) =>

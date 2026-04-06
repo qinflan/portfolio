@@ -26,10 +26,11 @@
     text-decoration: none;
     color: var(--nav-text);
     position: relative;
-    font-family: "ClashGrotesk", Inter, sans-serif;
+    font-family: "helvetica-neue-lt-pro", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.3px;
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
     line-height: normal;
     text-transform: lowercase;
     transition: 0.2s;

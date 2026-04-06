@@ -59,7 +59,7 @@ const Hero = () => {
                 <div className="hero-mantra-container">
                     <RiArrowDownDoubleLine className="skip-hero-btn-mobile transition" size={34} onClick={skipHero} />
                     <h3 className="mantra-text">
-                        <span>I'm a software engineer</span> passionate about building digital systems with intentional design.
+                        <span>I'm a software engineer</span> passionate about building systems with intentional design.
                     </h3>
                 </div>
             </div>

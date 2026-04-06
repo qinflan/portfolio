@@ -8,10 +8,12 @@ import logoDark from "/assets/logo-dark.svg"
 import logoLight from "/assets/logo-light.svg"
 import { FiArrowUpRight } from "react-icons/fi";
 import { ThemeContext } from "../hooks/theme/ThemeContext";
+import { useNavigate } from "react-router";
 
 
 // Navigation Bar
 const Navbar = () => {
+    const navigate = useNavigate();
 
     //  boolean - hamburger menu on mobile
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -48,18 +50,11 @@ const Navbar = () => {
         }
     }, []);
 
-    // smooth scroll function
-    const scrollToSection = (id: string) => {
-        const element = document.getElementById(id);
-        element?.scrollIntoView({ behavior: "smooth" });
-        setIsMobileMenuOpen(false);
-    };
-
     const navLinks = [
-        { label: "about", id: "about" },
-        { label: "work", id: "experience" },
-        { label: "projects", id: "projects" },
-        { label: "contact", id: "contact" },
+        { label: "home", path: "" },
+        { label: "work", path: "experience" },
+        { label: "projects", path: "projects" },
+        { label: "contact & info", path: "contact-info" },
     ];
 
     const dropdownVariants = {
@@ -113,10 +108,10 @@ const Navbar = () => {
             <div className="navigation">
                 <nav className="navbar-container">
                     <div className="navbar-content">
-                        <button className="nav-link" onClick={() => scrollToSection("about")}>about</button>
-                        <button className="nav-link" onClick={() => scrollToSection("experience")}>experience</button>
-                        <button className="nav-link" onClick={() => scrollToSection("projects")}>projects</button>
-                        <button className="nav-link" onClick={() => scrollToSection("contact")}>contact</button>
+                        <button className="nav-link" onClick={() => navigate("/")}>home</button>
+                        <button className="nav-link" onClick={() =>  navigate("/experience")}>experience</button>
+                        <button className="nav-link" onClick={() =>  navigate("/projects")}>projects</button>
+                        <button className="nav-link" onClick={() =>  navigate("/contact-info")}>contact</button>
                     </div>
                 </nav>
             </div>
@@ -159,13 +154,13 @@ const Navbar = () => {
                                     variants={dropdownVariants}
                                 >
                                     <motion.div variants={containerVars} initial="hidden" animate="visible" exit="hidden">
-                                        {navLinks.map(({ label, id }) => (
-                                            <motion.div className="overflow-hidden" key={id}>
+                                        {navLinks.map(({ label, path }) => (
+                                            <motion.div className="overflow-hidden">
                                                 <motion.div variants={mobileLinkVars}>
                                                     <motion.button
                                                         whileHover="hover"
                                                         className="mobile-nav-link"
-                                                        onClick={() => scrollToSection(id)}
+                                                        onClick={() => navigate(`/${path}`)}
                                                     >
                                                         {label}
                                                     </motion.button>

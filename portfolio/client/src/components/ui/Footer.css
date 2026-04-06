@@ -1,18 +1,17 @@
 .footer-container {
     display: flex;
-    height: 200px;
-    background-color: var(--footer-background);
+    background-color: var(--page-background);
     width: 100%;
     align-items: center;
-    border-top: 2px solid var(--footer-foreground);
 }
 
 .rights-text {
     text-decoration: none;
-    color: var(--footer-foreground);
+    color: var(--foreground);
     position: relative;
     height: 100%;
     align-content: flex-end;
+    margin-left: auto;
     font-family: "ClashGrotesk", Inter, sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -23,49 +22,7 @@
     padding: 2rem;
 }
 
-.footer-content-container {
-    display: flex;
-    margin-left: auto;
-    gap: 100px;
-    margin-right:10%;
-}
-
-.socials-header {
-    color: white;
-    font-family: "ClashDisplay";
-    font-size: 34px;
-    position: relative;
-    width: 100%;
-    text-align: left;
-    justify-self: flex-start;
-}
-
-.social-footer-link {
-    text-decoration: none;
-    color: var(--footer-foreground);
-    position: relative;
-    font-family: "ClashGrotesk", Inter, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: 0.36px;
-    text-transform: lowercase;
-    text-wrap: nowrap;
-}
-
 @media (max-width: 600px) {
-    .footer-container {
-        height: auto;
-        flex-direction: column-reverse;
-        padding: 1rem 0;
-        gap: 4rem;
-    }
-
-    .footer-content-container {
-        margin: 0;
-        gap: 3rem;
-    }
 
     .rights-text {
         padding: 0;

@@ -1,14 +1,11 @@
 .project-widget-container {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--background);
-    flex: 1;
-    min-width: 300px;
-    border: 2px solid var(--foreground);
-    gap: 10px;
-    opacity: 1;
-    border-radius: 3px;
-    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  border: 1px solid var(--widget-stroke);
+  opacity: 1;
+  border-radius: 3px;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 .project-widget-container:hover {
   transition: 0.2s;
@@ -18,13 +15,13 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 300px;
-  padding: 26px;
-  gap: 20px;
+  padding: 32px;
+  gap: 10px;
 }
 
 .project-widget-header {
   display: flex;
+  gap: 8px;
   align-items: center;
   width: 100%;
 }
@@ -36,14 +33,14 @@
   color: var(--primary-text);
   font-family: "ClashGrotesk", sans-serif;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   align-items: center;
 }
 
 .project-widget-description {
   color: var(--secondary-text);
   font-family: "ClashGrotesk", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 22px;

@@ -1,9 +1,6 @@
 import React, { useContext } from 'react'
 import { BsCircleHalf } from "react-icons/bs";
-import { FiMoon } from "react-icons/fi";
 import { ThemeContext } from './ThemeContext';
-import { IoMdSunny } from "react-icons/io";
-
 
 // define toggleTheme as functional component
 export const ToggleTheme: React.FC = () => {

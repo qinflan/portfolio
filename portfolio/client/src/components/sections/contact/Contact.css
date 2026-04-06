@@ -1,16 +1,28 @@
-.form-section-container {
+.contact-info-container {
+    padding: 2em 2em;
     display: flex;
     flex-direction: column;
+    margin-top: auto;
     width: 100%;
-    max-width: 500px;
+    flex: 1;
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: auto repeat(6, 1fr);
+    width: 100%;
+    gap: 1em;
+    margin-top: auto;
 }
 
 .form-container {
+    grid-column: 1 / 4;
     display: flex;
     position: relative;
     width: 100%;
     flex-direction:column;
     align-items: stretch;
+    max-width: 500px;
 }
 
 .input-fields-container {
@@ -18,10 +30,10 @@
     position: relative;
     width: 100%;
     flex-direction:column;
-    background-color: var(--background);
-    border: 2px solid var(--widget-stroke);
+    /* background-color: var(--background);
+    border: 2px solid var(--widget-stroke); */
     border-radius: 3px;
-    padding: 40px;
+    /* padding: 40px; */
     gap: 24px;
 }
 
@@ -62,6 +74,41 @@ textarea.input-field:focus {
 
 .input-fields-container .brutal-button {
     background-color: var(--foreground);
+}
+
+.social-links {
+    grid-column: 4 / 5;
+}
+
+.code-links {
+    grid-column: 5 / 6;
+}
+
+.socials-header {
+    color: var(--foreground);
+    font-family: "ClashDisplay", Inter, sans-serif;
+    font-size: 34px;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    justify-self: flex-start;
+}
+
+.social-link {
+    text-decoration: none;
+    color: var(--foreground);
+    position: relative;
+    font-family: "ClashGrotesk", Inter, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    text-transform: lowercase;
+    text-wrap: nowrap;
+}
+
+@media (max-width: 600px) {
 }
 
 

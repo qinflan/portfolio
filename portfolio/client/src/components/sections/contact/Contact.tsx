@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import axios from 'axios';
-import { ToastContainer,toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 import "./Contact.css";
 
@@ -11,7 +11,7 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [body, setBody] = useState('');
-  
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -37,52 +37,65 @@ const Contact = () => {
     }
 
   }
-  
+
   return (
-    <div className="form-section-container">
-      <h1 className="section-title">contact me</h1>
-      <form className="form-container" onSubmit={handleSubmit}>
-        <div className="input-fields-container">
-        <input 
-          type="text" 
-          className="input-field" 
-          placeholder="hi, what's your name?"
-          value={Name}
-          onChange={(e) => setName(e.target.value)}
-          required/>
+    <div className="contact-info-container">
+      <h1 className="section-title">contact & info</h1>
+      
+      <div className="contact-info-grid">
+        <form className="form-container" onSubmit={handleSubmit}>
+          <div className="input-fields-container">
+            <input
+              type="text"
+              className="input-field"
+              placeholder="hi, what's your name?"
+              value={Name}
+              onChange={(e) => setName(e.target.value)}
+              required />
 
-        <input 
-          type="text" 
-          className="input-field" 
-          placeholder="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required/>
+            <input
+              type="text"
+              className="input-field"
+              placeholder="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required />
 
-          <input 
-          type="text" 
-          className="input-field" 
-          placeholder="subject"
-          value={subject}
-          onChange={(e) => setSubject(e.target.value)}
-          required/>
+            <input
+              type="text"
+              className="input-field"
+              placeholder="subject"
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+              required />
 
-        <textarea
-          className="input-field" 
-          placeholder="what's up?"
-          value={body}
-          maxLength={370}
-          onChange={(e) => setBody(e.target.value)}
-          required/>
+            <textarea
+              className="input-field"
+              placeholder="what's up?"
+              value={body}
+              maxLength={370}
+              onChange={(e) => setBody(e.target.value)}
+              required />
 
-        <button type="submit" className="brutal-button">
-          send message
-        </button>
+            <button type="submit" className="brutal-button">
+              send message
+            </button>
 
-        </div>
-
-      <ToastContainer position="bottom-right"/>
-      </form>
+          </div>
+          <ToastContainer position="bottom-right" />
+        </form>
+        <ul className="social-links">
+          <h1 className="socials-header">socials</h1>
+          <li className="social-link">instagram</li>
+          <li className="social-link">perfectly imperfect</li>
+          <li className="social-link">x</li>
+        </ul>
+        <ul className="code-links">
+          <h1 className="socials-header">code</h1>
+          <li className="social-link">github</li>
+          <li className="social-link">npm</li>
+        </ul>
+      </div>
     </div>
   )
 }

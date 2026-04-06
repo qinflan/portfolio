@@ -5,6 +5,10 @@
 /* Default at DOM Level/Fallbacks */
 /* ------------------------------------------------------------ */
 :root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -35,6 +39,18 @@ html {
 /* Old IE / Edge */
 body {
   -ms-overflow-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
 }
 
 /* Global CSS Colors by Theme*/
@@ -68,7 +84,7 @@ body {
   /* widgets */
   --widget-background: #a0a0a0;
   --widget-border: #ffffff;
-  --widget-stroke: #ffffff;
+  --widget-stroke: #252525;
 
   /* skill tiles */
   --skill-tile-bg: #252525;
@@ -117,8 +133,9 @@ body {
   --widget-stroke: #000000;
 
   /* skill tiles */
-  --skill-tile-bg: #272727;
-  --skill-tile-text: #ffffff;
+  --skill-tile-bg: #ffffff;
+  --skill-tile-text: #000000;
+  --skill-tile-border: #000000;
 
   /* react-toastify colors */
   --toast-shadow: #0000000c;
@@ -176,6 +193,83 @@ body {
   font-weight: normal; /* Regular */
   src: url('/fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
        url('/fonts/SpaceGrotesk-Regular.woff') format('woff');
+}
+
+/** Typography */
+
+.h1-regular-lg {
+  line-height: 1.2;
+  letter-spacing: -1.9px;
+  color: var(--foreground);
+  font-weight: 400;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-size: 3em;
+}
+
+.nav-link-md{
+  font-size: 1.4rem;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.8px;
+  line-height: 1.1;
+  text-wrap: auto;
+  max-width: 350px;
+  color: var(--foreground);
+  cursor: pointer;
+  user-select: none;
+}
+
+.subheader {
+  font-family: "ClashDisplay";
+  color: var(--foreground);
+  font-size: 1.5em;
+}
+
+.caption-md {
+  color: var(--foreground);
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-weight: 300;
+  font-size: large;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.b-caption-md {
+  color: var(--foreground);
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-weight: 400;
+  font-size: large;
+}
+
+.b-caption-sm {
+  color: var(--foreground);
+  font-family: "ClashGrotesk", sans-serif;
+  font-weight: 400;
+  font-size: medium;
+}
+
+.caption {
+  font-family: "ClashGrotesk", Inter, sans-serif;
+  color: var(--secondary-text);
+  font-size: 1.5em;
+  letter-spacing: -0.3px;
+  font-size: large;
+}
+
+.header-md-normal {
+  color: var(--primary-text);
+  font-family: "ClashGrotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: -0.3px;
+}
+
+.header-md-bold {
+  color: var(--primary-text);
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: -1.2px;
 }
 
 ::selection {

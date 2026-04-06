@@ -11,33 +11,35 @@
 
 .widget-title {
     flex: 2;
-    color: var(--primary-text);
+    color: var(--foreground);
     font-family: "ClashGrotesk", sans-serif;
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: large;
+    letter-spacing: -0.05px;
 }
 
 .widget-company {
     color: var(--secondary-text);
     font-family: "ClashGrotesk", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 300;
+    font-size: medium;
 }
 
 .widget-date {
-    color: var(--primary-text);
+    color: var(--foreground);
     font-family: "ClashGrotesk", sans-serif;
     font-weight: 500;
     font-size: 0.9rem;
     align-self: flex-start;
     text-align: right;
     margin-top: 0.12rem;
+    margin-left: auto;
 }
 
 .widget-description {
     color: var(--secondary-text);
     font-family: "ClashGrotesk", sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
@@ -63,9 +65,10 @@
     padding: 6px 10px;
     font-weight: 500;
     background-color: var(--skill-tile-bg);
+    border: solid 1px var(--skill-tile-border);
     border-radius: 3px;
     cursor:default;
-    font-size: 0.85rem;
+    font-size: 1rem;
     box-shadow: 0px 0px 5px 0px rgba(202, 202, 202, 0.048);
 }
 

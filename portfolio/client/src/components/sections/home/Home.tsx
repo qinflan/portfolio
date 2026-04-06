@@ -1,7 +1,7 @@
 import "./Home.css"
-import Sections from '../../ui/Sections'
+import About from "../about/About";
+import Footer from "../../ui/Footer";
 import Hero from "../hero/Hero"
-import Footer from "../../ui/Footer"
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -56,8 +56,8 @@ const Home = () => {
     <div id="smooth-wrapper">
         <div id="smooth-content" className="viewpanel">
           <Hero/>
-          <Sections />
-          <Footer />
+          <About />
+          {/* <Footer /> */}
         </div>
     </div>
 
