@@ -24,7 +24,7 @@ const WorkWidget: React.FC<WorkWidgetProps> = ({title, company, dates, descripti
       </div>
       <div className="widget-skill-tiles">
         {skills?.map((skill, index) => (
-          <div key={index} className="widget-skill-tile">
+          <div key={index} className="mono-caption-md widget-skill-tile">
             {skill}
           </div>
         ))}

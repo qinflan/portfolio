@@ -234,6 +234,17 @@ body {
   letter-spacing: 0px;
 }
 
+.mono-caption-md {
+  color: var(--secondary-text);
+  font-family: "degular-mono";
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  font-size: 1rem;
+}
+
 .b-caption-md {
   color: var(--foreground);
   font-family: "helvetica-neue-lt-pro", sans-serif;

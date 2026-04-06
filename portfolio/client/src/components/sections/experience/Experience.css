@@ -1,27 +1,22 @@
 .work-page-container {
     display: flex;
     flex-direction: column;
-    min-width: 100vh;
+    width: 100%;
     height: 100%;
     gap: 1em 2em;
     padding: 2em 2em;
     flex: 1;
-}
-
-.work-content-grid {
-    margin-top: auto;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    width: 100%;
-    gap: 1em 2em;
+    justify-content: center;
+    align-items: center;
 }
 
 .work-widgets-container {
-    grid-column: 1 / 6;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
     border: 1px solid var(--widget-stroke);
+    max-width: 1280px;
+    width: 100%;
 }
 
 .work-widget-container {
@@ -42,4 +37,30 @@
 .work-widget-container:last-child,
 .work-widget-container:nth-last-child(2):nth-child(odd) {
     border-bottom: none;
+}
+
+@media (max-width: 1200px) {
+    .work-page-container {
+        padding: 1em;
+        max-width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .work-widgets-container {
+        grid-column: 1 / -1;
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    
+    /* Reset borders for single column - remove right border entirely */
+    .work-widget-container {
+        border-right: none;
+    }
+    
+    /* Only last child should have no bottom border */
+    .work-widget-container:nth-last-child(2):nth-child(odd) {
+        border-bottom: 1px solid var(--widget-stroke);
+    }
 }

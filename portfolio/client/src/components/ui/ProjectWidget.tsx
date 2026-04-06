@@ -1,7 +1,5 @@
 import React from 'react'
 import "./ProjectWidget.css"
-import { MdViewInAr } from "react-icons/md";
-
 
 interface ProjectWidgetProps {
 title: string;
@@ -28,7 +26,7 @@ const ProjectWidget: React.FC<ProjectWidgetProps> = ({title, dates, description,
         </div>
         <div className="widget-skill-tiles">
           {skills?.map((skill, index) => (
-            <div key={index} className="caption-md">
+            <div key={index} className="mono-caption-md widget-skill-tile">
               {skill}
             </div>
           ))}
