@@ -1,0 +1,37 @@
+.tag-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 3px;
+}
+
+.tag-container.pink {
+  background-color: #fddcff;
+  color: #b81cc4;
+  border: 1px solid #bf7fc4;
+}
+
+.tag-container.orange {
+  background-color: #daffaa;
+  color: #398f00;
+  border: 1px solid #398f00;
+}
+
+.tag-container.blue {
+  background-color: #a8d8ff;
+  color: #084078;
+  border: 1px solid #084078;
+}
+
+.tag-container.purple {
+  background-color: #e9cfff;
+  color: #2e00e7;
+  border: 1px solid #453f61;
+}
+
+.tag-container.yellow {
+  background-color: #ffff8b;
+  color: #717808;
+  border: 1px solid #717808;
+}

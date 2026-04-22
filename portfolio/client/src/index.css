@@ -56,11 +56,10 @@ body {
 /* Global CSS Colors by Theme*/
 /* ------------------------------------------------------------ */
 [data-theme="dark"] {
-
   /* page */
   --background: #0a0a0a;
   --foreground: #ffffff;
-  --foreground-hover:#313131;
+  --foreground-hover: #313131;
   --icon: #ffffff;
   --input-field-focus: #e4e4e4;
 
@@ -69,17 +68,17 @@ body {
   --primary-text: #ffffff;
   --secondary-text: #e0e0e0;
   --placeholder-text: #a7a7a7;
-  --nav-text:  #ffffff;
-  --nav-active-text:  #ffffff;
+  --nav-text: #ffffff;
+  --nav-active-text: #ffffff;
   --nav-hover-text: #cccccc;
 
   /* buttons */
   --button-background: #141414;
-  --button-stroke: #EDEDED;
+  --button-stroke: #ededed;
   --button-background-hover: #1a1a1a;
-  --button-text: #EDEDED;
-  --button-text-hover: #F3F3F3;
-  --button-shadow:#EDEDED;
+  --button-text: #ededed;
+  --button-text-hover: #f3f3f3;
+  --button-shadow: #ededed;
 
   /* widgets */
   --widget-background: #a0a0a0;
@@ -99,13 +98,17 @@ body {
   /* Footer */
   --footer-background: #0a0a0a;
   --footer-foreground: #ffffff;
+
+  /* Glass panels */
+  --bg-glass: #0000006e;
+  --glass-border: #5a5a5aad;
 }
 
 [data-theme="light"] {
   /* page */
   --background: #ffffff;
   --foreground: #020202;
-  --foreground-hover:#2d2e30;
+  --foreground-hover: #2d2e30;
   --page-divider: #686868;
   --icon: #000000;
   --input-field-focus: #000000;
@@ -115,20 +118,20 @@ body {
   --primary-text: #131313;
   --secondary-text: #202020;
   --placeholder-text: #a0a0a0;
-  --nav-text:  #000000;
-  --nav-active-text:  #1D1D1D;
+  --nav-text: #000000;
+  --nav-active-text: #1d1d1d;
   --nav-hover-text: #181818;
 
   /* buttons */
-  --button-background: #F0F0F0;
+  --button-background: #f0f0f0;
   --button-stroke: #303030;
   --button-background-hover: #ffffff;
-  --button-text: #1F1F1F;
-  --button-text-hover: #F3F3F3;
-  --button-shadow:#303030;
+  --button-text: #1f1f1f;
+  --button-text-hover: #f3f3f3;
+  --button-shadow: #303030;
 
   /* widgets */
-  --widget-background: #FFFFFF;
+  --widget-background: #ffffff;
   --widget-border: #000000;
   --widget-stroke: #000000;
 
@@ -139,60 +142,71 @@ body {
 
   /* react-toastify colors */
   --toast-shadow: #0000000c;
-  --toast-success: #7CE25D;
-  --toast-error: #E05454;
+  --toast-success: #7ce25d;
+  --toast-error: #e05454;
   --toast-close-icon: #000000;
 
   /* Footer */
   --footer-background: #020202;
   --footer-foreground: #ffffff;
+
+  /* Glass panels */
+  --bg-glass: #ffffff6e;
+  --glass-border: #7a7a7a85;
 }
 
 /* Font Faces */
 /* ------------------------------------------------------------ */
 @font-face {
-  font-family: 'ClashDisplay';
+  font-family: "ClashDisplay";
   font-weight: bold; /* Bold */
-  src: url('/fonts/ClashDisplay-Bold.woff2') format('woff2'),
-       url('/fonts/ClashDisplay-Bold.woff') format('woff');
+  src:
+    url("/fonts/ClashDisplay-Bold.woff2") format("woff2"),
+    url("/fonts/ClashDisplay-Bold.woff") format("woff");
 }
 @font-face {
-  font-family: 'ClashDisplay';
+  font-family: "ClashDisplay";
   font-weight: 600; /* Semibold */
-  src: url('/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
-       url('/fonts/ClashDisplay-Semibold.woff') format('woff');
+  src:
+    url("/fonts/ClashDisplay-Semibold.woff2") format("woff2"),
+    url("/fonts/ClashDisplay-Semibold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'ClashGrotesk';
+  font-family: "ClashGrotesk";
   font-weight: 400; /* Regular */
-  src: url('/fonts/ClashGrotesk-Regular.woff2') format('woff2'),
-       url('/fonts/ClashGrotesk-Regular.woff') format('woff');
+  src:
+    url("/fonts/ClashGrotesk-Regular.woff2") format("woff2"),
+    url("/fonts/ClashGrotesk-Regular.woff") format("woff");
 }
 @font-face {
-  font-family: 'ClashGrotesk';
+  font-family: "ClashGrotesk";
   font-weight: 500; /* Medium */
-  src: url('/fonts/ClashGrotesk-Medium.woff2') format('woff2'),
-       url('/fonts/ClashGrotesk-Medium.woff') format('woff');
+  src:
+    url("/fonts/ClashGrotesk-Medium.woff2") format("woff2"),
+    url("/fonts/ClashGrotesk-Medium.woff") format("woff");
 }
 @font-face {
-  font-family: 'ClashGrotesk';
+  font-family: "ClashGrotesk";
   font-weight: 600; /* Semibold */
-  src: url('/fonts/ClashGrotesk-Semibold.woff2') format('woff2'),
-       url('/fonts/ClashGrotesk-Semibold.woff') format('woff');
+  src:
+    url("/fonts/ClashGrotesk-Semibold.woff2") format("woff2"),
+    url("/fonts/ClashGrotesk-Semibold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'SpaceGrotesk';
+  font-family: "SpaceGrotesk";
   font-weight: bold; /* Bold */
-  src: url('/fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
-       url('/fonts/SpaceGrotesk-Bold.woff') format('woff');
+  src:
+    url("/fonts/SpaceGrotesk-Bold.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk-Bold.woff") format("woff");
 }
 @font-face {
-  font-family: 'SpaceGrotesk';
+  font-family: "SpaceGrotesk";
   font-weight: normal; /* Regular */
-  src: url('/fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
-       url('/fonts/SpaceGrotesk-Regular.woff') format('woff');
+  src:
+    url("/fonts/SpaceGrotesk-Regular.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk-Regular.woff") format("woff");
 }
 
 /** Typography */
@@ -206,7 +220,7 @@ body {
   font-size: 3em;
 }
 
-.nav-link-md{
+.nav-link-md {
   font-size: 1.4rem;
   font-family: "helvetica-neue-lt-pro", sans-serif;
   font-weight: 300;
@@ -254,38 +268,42 @@ body {
 
 .b-caption-sm {
   color: var(--foreground);
-  font-family: "ClashGrotesk", sans-serif;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
   font-weight: 400;
   font-size: medium;
 }
 
 .caption {
-  font-family: "ClashGrotesk", Inter, sans-serif;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
   color: var(--secondary-text);
   font-size: 1.5em;
   letter-spacing: -0.3px;
   font-size: large;
 }
 
-.header-md-normal {
-  color: var(--primary-text);
-  font-family: "ClashGrotesk", sans-serif;
-  font-weight: 500;
+.header-sm-normal {
   font-size: 1.6rem;
-  letter-spacing: -0.3px;
+  font-family: "helvetica-neue-lt-pro", sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+  text-wrap: auto;
+  max-width: 350px;
+  min-width: 300px;
+  color: var(--foreground);
 }
 
 .header-md-bold {
   color: var(--primary-text);
   font-family: "helvetica-neue-lt-pro", sans-serif;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   letter-spacing: -1.2px;
 }
 
-::selection {
+.header-md-bold ::selection {
   background-color: var(--primary-text); /* Highlight background color */
-  color: var(--background);             /* Highlighted text color */
+  color: var(--background); /* Highlighted text color */
 }
 
 /* Toast Containers */
@@ -322,26 +340,29 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  box-shadow: 4px 4px 0 -2px var(--background), 4px 4px 0 0 var(--button-stroke);
+  box-shadow:
+    4px 4px 0 -2px var(--background),
+    4px 4px 0 0 var(--button-stroke);
   animation: fade-up 0.5s;
   transition: 0.3s;
 }
 .brutal-button:hover {
   transition: 0.4s;
-  box-shadow: 5px 5px 0 -2px var(--button-shadow), 5px 5px 0 0 var(--button-stroke);
+  box-shadow:
+    5px 5px 0 -2px var(--button-shadow),
+    5px 5px 0 0 var(--button-stroke);
   background-color: var(--background);
   color: var(--foreground);
-
 }
 @media (max-width: 1000px) {
   .brutal-button {
-      font-size: 14px;
-      padding: 8px 10px;
+    font-size: 14px;
+    padding: 8px 10px;
   }
 }
 @media (max-width: 600px) {
   .brutal-button {
-      font-size: 14px;
-      padding: 8px 10px;
+    font-size: 14px;
+    padding: 8px 10px;
   }
 }

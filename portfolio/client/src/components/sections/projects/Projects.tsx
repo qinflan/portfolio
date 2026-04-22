@@ -4,6 +4,13 @@ import { projectData } from './ProjectData'
 import "./Projects.css"
 
 const Projects: React.FC = () => {
+  if (projectData.length === 0) {
+    return (
+      <div className="projects-page-container">
+        <h2 className="header-md-bold">No projects to show</h2>
+      </div>
+    )
+  }
   return (
     <div className="projects-page-container">
 
@@ -16,6 +23,7 @@ const Projects: React.FC = () => {
             description={projectItem.description}
             skills={projectItem.skills} 
             repo={projectItem.repo}
+            type={projectItem.type}
             />
         )}
       </div>

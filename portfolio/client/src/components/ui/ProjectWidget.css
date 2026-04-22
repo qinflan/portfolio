@@ -5,7 +5,9 @@
   border: 1px solid var(--widget-stroke);
   opacity: 1;
   border-radius: 3px;
-  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  transition:
+    opacity 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
 }
 .project-widget-container:hover {
   transition: 0.2s;
@@ -15,6 +17,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
   padding: 32px;
   gap: 10px;
 }
@@ -59,7 +62,7 @@
 }
 
 .work-widgets-container:hover .project-widget-container:not(:hover) {
-  opacity: 0.5; 
+  opacity: 0.5;
 }
 .project-widget-container .widget-skill-tile {
   background-color: var(--skill-tile-bg);
@@ -68,6 +71,18 @@
 
 .project-widget-container .widget-skill-tile:hover {
   cursor: pointer;
+}
+
+.project-widget-date {
+  color: var(--foreground);
+  font-family: "ClashGrotesk", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  /* align-self: flex-start; */
+  margin-left: auto;
+  margin-top: auto;
+  text-align: right;
+  /* margin-top: 0.12rem; */
 }
 
 @media (max-width: 600px) {
@@ -83,12 +98,13 @@
   .project-widget-container {
     width: 90%;
     opacity: 1;
-    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    transition:
+      opacity 0.2s ease-in-out,
+      transform 0.2s ease-in-out;
   }
-  
+
   .project-widget-description {
     font-size: small;
     line-height: 18px;
   }
-
 }

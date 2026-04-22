@@ -1,0 +1,20 @@
+.button-container {
+  display: flex;
+  background-color: var(--bg-glass);
+  color: var(--foreground);
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border: 1px solid var(--glass-border);
+  border-radius: 3px;
+  transition: 0.2s;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  gap: 4px;
+  min-height: 46px;
+}
+
+.button-label {
+  font-family: "ClashGrotesk", sans-serif;
+}

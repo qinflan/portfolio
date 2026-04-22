@@ -29,7 +29,7 @@ const WorkWidget: React.FC<WorkWidgetProps> = ({title, company, dates, descripti
           </div>
         ))}
       </div>
-      <h3 className="widget-date">{dates}</h3>
+      <h3 className="work-widget-date">{dates}</h3>
     </div>
   )
 }

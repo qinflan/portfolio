@@ -2,43 +2,55 @@ export const projectData = [
   {
     title: "shadersmith",
     dates: "2025",
-    description: "Modular animated gradient components for React applications. I used my own package for the visuals at the top!",
+    description:
+      "Modular animated gradient components for React applications. I used my own package for the visuals at the top!",
     skills: ["TypeScript", "React", "GLSL", "Three.js"],
-    repo: "https://shadersmith.vercel.app"
+    repo: "https://shadersmith.vercel.app",
+    type: "web development",
   },
   {
     title: "macero",
     dates: "2025",
-    description: "An ESP32-based ethical hacking tool designed to demonstrate modern vulnerabilities in Wi-Fi and Bluetooth/BLE protocols across multiple operating systems.",
+    description:
+      "An ESP32-based ethical hacking tool designed to demonstrate modern vulnerabilities in Wi-Fi and Bluetooth/BLE protocols across multiple operating systems.",
     skills: ["C", "C++", "Embedded Systems"],
-    repo: "https://github.com/qinflan/macero"
+    repo: "https://github.com/qinflan/macero",
+    type: "embedded systems",
   },
   {
     title: "curia",
     dates: "2025",
-    description: "A cross-platform mobile application designed for easily consuming unbiased politics based on raw data from the Library of Congress.",
+    description:
+      "A cross-platform mobile application designed for easily consuming unbiased politics based on raw data from the Library of Congress.",
     skills: ["TypeScript", "React Native", "API Development", "AWS"],
-    repo: "https://github.com/qinflan/curia"
+    repo: "https://github.com/qinflan/curia",
+    type: "mobile development",
   },
   {
     title: "dog lips",
     dates: "2025",
-    description: "Modern 2000's inspired responsive website for my band! It shows any media, shop items, and upcoming shows we have going on.",
+    description:
+      "Modern 2000's inspired responsive website for my band! It shows any media, shop items, and upcoming shows we have going on.",
     skills: ["TypeScript", "React", "Go", "PostgreSQL"],
-    repo: "https://doglips.net"
+    repo: "https://doglips.net",
+    type: "full-stack",
   },
   {
     title: "homelabbing",
     dates: "Always",
-    description: "IT stuff I do in my tiny apartment. Anywhere from running a NAS, SDN, custom VPN, and adblocker to clustering old computers to host proxmox linux containers to do my bidding.",
+    description:
+      "IT stuff I do in my tiny apartment. Anywhere from running a NAS, SDN, custom VPN, and adblocker to clustering old computers to host proxmox linux containers to do my bidding.",
     skills: ["Linux", "Kali", "Proxmox", "SSH", "Systems Administration"],
-    repo: "https://github.com/qinflan"
+    repo: "https://github.com/qinflan",
+    type: "IT",
   },
-    {
+  {
     title: "homelabbing",
     dates: "Always",
-    description: "IT stuff I do in my tiny apartment. Anywhere from running a NAS, SDN, custom VPN, and adblocker to clustering old computers to host proxmox linux containers to do my bidding.",
+    description:
+      "IT stuff I do in my tiny apartment. Anywhere from running a NAS, SDN, custom VPN, and adblocker to clustering old computers to host proxmox linux containers to do my bidding.",
     skills: ["Linux", "Kali", "Proxmox", "SSH", "Systems Administration"],
-    repo: "https://github.com/qinflan"
+    repo: "https://github.com/qinflan",
+    type: "IT",
   },
 ];

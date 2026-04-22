@@ -1,16 +1,18 @@
 .projects-page-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%; 
-    padding: 1em 2em;
-    flex: 1;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1em 2em;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-widgets-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    position: relative;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
 }

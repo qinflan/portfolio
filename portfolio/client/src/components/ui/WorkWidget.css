@@ -25,7 +25,7 @@
     font-size: medium;
 }
 
-.widget-date {
+.work-widget-date {
     color: var(--foreground);
     font-family: "ClashGrotesk", sans-serif;
     font-weight: 500;
@@ -87,7 +87,7 @@
         align-items: flex-start;
     }
 
-    .widget-date {
+    .work-widget-date {
         font-size: 12px;
     }
 
